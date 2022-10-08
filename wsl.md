@@ -33,19 +33,15 @@ curl https://packages.microsoft.com/config/rhel/8/prod.repo | sudo tee /etc/yum.
 
 # Install PowerShell
 sudo dnf install --assumeyes powershell
-```
-
-Launch PowerShell using:
-```
 pwsh
 ```
 
-Install Azure PowerShell
+Azure PowerShell
 ```
 Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-Install Azure CLI
+Azure CLI
 ```
 # For RHEL 8 or CentOS Stream 8, add packages-microsoft-com-prod repository:
 sudo dnf install -y https://packages.microsoft.com/config/rhel/8/packages-microsoft-prod.rpm
