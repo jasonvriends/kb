@@ -8,9 +8,9 @@ The Windows Subsystem for Linux (WSL) lets developers run a GNU/Linux environmen
 
 ## Deployment Instructions
 
-[Set up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)
+- [Set up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)
 
-Install [AlmaLinux 8](https://www.microsoft.com/store/productId/9NMD96XJJ19F) from the Microsoft Store.
+- Install [AlmaLinux 8](https://www.microsoft.com/store/productId/9NMD96XJJ19F) from the Microsoft Store.
 
 ### Update Packages
 ```
@@ -56,3 +56,7 @@ sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 sudo yum -y install terraform
 ```
+
+## Known Issues
+
+[Issues with Terraform and WSL: Unable to list provider registration status](https://manualbashing.github.io/posts/terraform-wsl/)
