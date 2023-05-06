@@ -2,6 +2,9 @@
 hide:
   - navigation
   - toc
+
+title: thevriends
+description: Welcome to my personal website! Here, you'll find information about me, my resume, and how to get in touch with me. Additionally, I've created a knowledgebase that covers a wide range of topics, from food and technology to flight simulation and ham radio.
 ---
 
 # Welcome
