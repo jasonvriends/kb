@@ -1,5 +1,5 @@
 site_name: Jason Vriends
-site_url: https://example.com/
+site_url: https://thevriends.com/
 nav:
     - Home: index.md
     - About: about.md
