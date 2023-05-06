@@ -39,7 +39,25 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
   make -j ${nproc} 
   make altinstall 
   ```
-  
+
+### Podman
+
+- Prerequisites ``dnf install epel-release``
+
+- Install ``dnf install podman podman-compose``
+
+## Azure CLI
+
+- Prerequisites ``rpm --import https://packages.microsoft.com/keys/microsoft.asc``
+
+- Install ``dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm``
+
+## Terraform 
+
+- Prerequisites ``yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo``
+
+- Install ``dnf install terraform``
+
 ### Utilities
   
 - Tree ``dnf install tree``
