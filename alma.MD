@@ -4,21 +4,17 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
 
 ## Updates
 
-- Check for available package updates
-  ``dnf check-update``
+- Check for available package updates ``dnf check-update``
 
-- Install a specific package update
-  ``update package-name``
+- Install a specific package update ``update package-name``
 
-- Upgrade all of your system software
-  ``dnf update``
+- Upgrade all of your system software ``dnf update``
   
 ## Software
 
 ### Git
 
-- Install
-  ``dnf install git``
+- Install ``dnf install git``
 
 - Configure
   ```
@@ -43,3 +39,7 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
   make -j ${nproc} 
   make altinstall 
   ```
+  
+### Utilities
+  
+- Tree ``dnf install tree``
