@@ -1,5 +1,7 @@
 site_name: Jason Vriends
+
 site_url: https://thevriends.com/
+
 nav:
     - Home: index.md
     - About: about.md
@@ -18,14 +20,15 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky    
-    - navigation.path
     - navigation.indexes
+    - navigation.prune
     - toc.follow
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - toc.integrate
   language: en
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -58,8 +61,7 @@ extra:
       make our documentation better.
 
 markdown_extensions:
-  - toc:
-      permalink: true
+
   - tables
   - abbr
   - pymdownx.highlight:
@@ -77,6 +79,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - social
+  - search
 
 copyright: |
   <a href="https://github.com/jasonvriends" target="_blank" rel="noopener">Jason Vriends</a>
