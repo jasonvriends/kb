@@ -26,20 +26,20 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
   git config --global user.email "email for git account"
   ```
   
-  ### Python 3.10
+### Python 3.10
   
-  - Prerequisites
-    ```
-    dnf install wget yum-utils make gcc openssl-devel bzip2-devel libffi-devel zlib-devel
-    dnf update
-    ```
+- Prerequisites
+  ```
+  dnf install wget yum-utils make gcc openssl-devel bzip2-devel libffi-devel zlib-devel
+  dnf update
+  ```
   
-  - Install
-    ```
-    wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
-    tar xzf Python-3.10.5.tgz 
-    cd Python-3.10.5
-    ./configure --with-system-ffi --with-computed-gotos --enable-loadable-sqlite-extensions 
-    make -j ${nproc} 
-    make altinstall 
-    ```
+- Install
+  ```
+  wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
+  tar xzf Python-3.10.5.tgz 
+  cd Python-3.10.5
+  ./configure --with-system-ffi --with-computed-gotos --enable-loadable-sqlite-extensions 
+  make -j ${nproc} 
+  make altinstall 
+  ```
