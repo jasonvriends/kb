@@ -2,13 +2,17 @@ site_name: Jason Vriends
 site_url: https://example.com/
 nav:
     - Home: index.md
-    - Knowledge:
-        - AlmaLinux: kb/linux/almalinux.md
     - About: about.md
     - Contact: contact.md
+    - Technology:
+        - AlmaLinux 9: kb/technology/almalinux.md
+        - Containers: kb/technology/containers.md
+        - Python: kb/technology/python.md
+
 theme:
   name: material
   features:
+    - navigation.top
     - navigation.sections
     - navigation.instant
     - navigation.tracking
@@ -16,9 +20,7 @@ theme:
     - navigation.tabs.sticky    
     - navigation.path
     - navigation.indexes
-    - toc.integrate
     - toc.follow
-    - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -55,11 +57,9 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
 
-repo_url: https://github.com/jasonvriends
-
 markdown_extensions:
   - toc:
-      permalink: true  
+      permalink: true
   - tables
   - abbr
   - pymdownx.highlight:
