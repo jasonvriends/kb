@@ -46,13 +46,13 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
 
 - Install ``dnf install podman podman-compose``
 
-## Azure CLI
+### Azure CLI
 
 - Prerequisites ``rpm --import https://packages.microsoft.com/keys/microsoft.asc``
 
 - Install ``dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm``
 
-## Terraform 
+### Terraform 
 
 - Prerequisites ``yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo``
 
