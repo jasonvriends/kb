@@ -1,3 +1,5 @@
+# About
+
 ## Summary
 - Certified Amazon Web Services (AWS) and Microsoft (MS) Azure solutions architect with over 20 years of IT experience in a broad range of roles, most recently as senior cloud engineer (CS-04) in the Information Technology Branch (ITB) at the Canada Revenue Agency (CRA).
 - Demonstrated track record throughout IT professional career, where strategic appreciation combined with a broad range of technical expertise, strong communication skills and abilities to influence direction for the business of transforming IT have led to unique and challenging opportunities with successively senior responsibilities.

@@ -3,13 +3,16 @@ site_name: Jason Vriends
 site_url: https://thevriends.com/
 
 nav:
-    - Home: index.md
-    - About: about.md
-    - Contact: contact.md
-    - Technology:
-        - AlmaLinux 9: kb/technology/almalinux.md
-        - Containers: kb/technology/containers.md
-        - Python: kb/technology/python.md
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
+  - Technology:
+    - Linux:
+      - kb/technology/linux/almalinux.md
+    - Containers: 
+      - kb/technology/containers/podman.md
+    - Coding:
+      - kb/technology/coding/python.md
 
 theme:
   name: material
