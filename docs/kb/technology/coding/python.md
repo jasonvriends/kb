@@ -6,6 +6,10 @@ Python is an easy-to-learn, versatile, and interpreted programming language with
 
 A Python virtual environment is a self-contained directory that contains a specific version of Python interpreter and any necessary dependencies for a particular project. It allows you to create an isolated environment for each project, so you can work on multiple projects with different dependencies without any conflicts.
 
+### venv
+
+The venv module is a built-in module in Python that provides support for creating and managing virtual environments. The venv module was introduced in Python 3.3 as a replacement for the older virtualenv package. It is used to create a new Python environment that includes its own installation of Python, pip, and other required libraries.
+
 - Create a Python Virtual Environment
 ``` bash
 python3.10 -m venv .venv
@@ -14,6 +18,54 @@ python3.10 -m venv .venv
 - Activate the Python Virtual Environment
 ``` bash
 source .venv/bin/activate
+```
+
+### Poetry
+
+Poetry is arguably the most feature-rich dependency management tool for Python. It comes with a powerful CLI used for creating and managing Python projects.
+
+- Install Poetry
+``` bash
+sudo curl -sSL https://install.python-poetry.org | python3.10 -
+```
+
+- Scaffold a new project
+``` bash
+poetry new sample-project
+cd sample-project
+```
+
+Dependencies are managed inside the ==pyproject.toml== file.
+
+- To add new a dependency, simply run:
+``` bash
+poetry add package1
+```
+
+### Pipenv
+
+Pipenv attempts to solve the same problems that Poetry does:
+
+  - Managing dependencies and virtual environments
+  - Reproducing environments
+
+- Install Poetry
+``` bash
+sudo dnf install python3-pip -y
+sudo pip3 install pipenv
+```
+
+- Scaffold a new project
+``` bash
+mkdir sample-project
+cd sample-project
+PYTHON_VERSION=$(python3.10 --version | awk '{print $2}')
+pipenv --python $PYTHON_VERSION
+```
+
+- To add new a dependency, simply run:
+``` bash
+pipenv install package1
 ```
 
 ## Package Manager
