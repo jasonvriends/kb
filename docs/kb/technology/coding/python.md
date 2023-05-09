@@ -6,8 +6,6 @@ Python is an easy-to-learn, versatile, and interpreted programming language with
 
 A Python virtual environment is a self-contained directory that contains a specific version of Python interpreter and any necessary dependencies for a particular project. It allows you to create an isolated environment for each project, so you can work on multiple projects with different dependencies without any conflicts.
 
-### venv
-
 The venv module is a built-in module in Python that provides support for creating and managing virtual environments. The venv module was introduced in Python 3.3 as a replacement for the older virtualenv package. It is used to create a new Python environment that includes its own installation of Python, pip, and other required libraries.
 
 - Create a Python Virtual Environment
@@ -18,6 +16,31 @@ python3.10 -m venv .venv
 - Activate the Python Virtual Environment
 ``` bash
 source .venv/bin/activate
+```
+
+## Package Manager
+
+### Pip
+
+pip is the package installer for Python, which is used to install, manage, and uninstall Python packages and their dependencies. It is a command-line tool that comes with Python and is used to install third-party libraries and modules that are not included in the standard library.
+
+- Upgrade pip
+``` bash
+pip install --upgrade pip
+```
+
+- Install packages via command line
+``` bash
+pip install package1 package2
+```
+
+- Install packages via file
+``` bash title="requirements.txt"
+package1
+package2
+```
+``` bash
+pip install -r requirements.txt
 ```
 
 ### Poetry
@@ -66,29 +89,6 @@ pipenv --python $PYTHON_VERSION
 - To add new a dependency, simply run:
 ``` bash
 pipenv install package1
-```
-
-## Package Manager
-
-pip is the package installer for Python, which is used to install, manage, and uninstall Python packages and their dependencies. It is a command-line tool that comes with Python and is used to install third-party libraries and modules that are not included in the standard library.
-
-- Upgrade pip
-``` bash
-pip install --upgrade pip
-```
-
-- Install packages via command line
-``` bash
-pip install package1 package2
-```
-
-- Install packages via file
-``` bash title="requirements.txt"
-package1
-package2
-```
-``` bash
-pip install -r requirements.txt
 ```
 
 ## Visual Studio Code
