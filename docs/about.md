@@ -6,7 +6,7 @@
 - High-achiever with inherent drive for innovation, solutioning, mentoring and supporting workforces, businesses and communities across professional and personal domains.
 - Since January 2018, as part of the Cloud Centre of Excellence (CCoE) team in ITB at the CRA, provided strategic leadership to technical, business and executive management teams:
     - **Agency-wide**: Led in  application, design and transformation efforts where leveraging the strengths of cloud technologies while addressing uncertainties of working with new technologies is key in supporting CRA’s challenging and growing mandate to improve services to Canadians.
-   - **External organizations**: Appointed by the CIO to provide technical expertise in support of other government department’s cloud journeys and critical cloud-related issue resolution.
+    - **External organizations**: Appointed by the CIO to provide technical expertise in support of other government department’s cloud journeys and critical cloud-related issue resolution.
     - **Government of Canada (GC)**: Participated in multiple high-profile working groups, pilot projects and pathfinder initiatives, that were established to influence the direction for the governments cloud adoption strategy, cloud service offerings, overall digital priorities and business transformation.
 - Ten years owner-operated business that provided strategic leadership, guidance and solutions to a broad range of industries for web hosting and technical support.
 
