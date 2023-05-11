@@ -2,12 +2,12 @@
 
 ## Summary
 - Certified Amazon Web Services (AWS) and Microsoft (MS) Azure solutions architect with over 20 years of IT experience in a broad range of roles, most recently as senior cloud engineer (CS-04) in the Information Technology Branch (ITB) at the Canada Revenue Agency (CRA).
-- Demonstrated track record throughout IT professional career, where strategic appreciation combined with a broad range of technical expertise, strong communication skills and abilities to influence direction for the business of transforming IT have led to unique and challenging opportunities with successively senior responsibilities.
+- Demonstrated track record throughout IT professional career, where strategic appreciation combined with a diverse range of technical expertise, strong communication skills and abilities to influence direction for the business of transforming IT have led to unique and challenging opportunities with successively senior responsibilities.
 - High-achiever with inherent drive for innovation, solutioning, mentoring and supporting workforces, businesses and communities across professional and personal domains.
-- Since January 2018, as part of the Cloud Centre of Excellence (CCoE) team in ITB at the CRA, provided strategic leadership to technical, business, working-level and executive management teams:
-    - Application, design and transformation efforts across the Agency, required to leverage the strengths of cloud technologies while addressing uncertainties of working with new technologies to support CRA’s challenging and growing mandate to improve services to Canadians. 
-    - Other government departments, per CIO-appointment, to provide technical expertise in support of their cloud journey and critical cloud-related issue resolution.
-    - Government of Canada (GC), where participation in multiple high-profile working groups, pilot projects and pathfinder initiatives, established to influence the direction for the governments cloud adoption strategy, cloud service offerings, overall digital priorities and business transformation. 
+- Since January 2018, as part of the Cloud Centre of Excellence (CCoE) team in ITB at the CRA, provided strategic leadership to technical, business and executive management teams:
+    — **Agency-wide**: Led in  application, design and transformation efforts where leveraging the strengths of cloud technologies while addressing uncertainties of working with new technologies is key in supporting CRA’s challenging and growing mandate to improve services to Canadians.
+    — **External organizations**: Appointed by the CIO to provide technical expertise in support of other government department’s cloud journeys and critical cloud-related issue resolution.
+    — **Government of Canada (GC)**: Participated in multiple high-profile working groups, pilot projects and pathfinder initiatives, that were established to influence the direction for the governments cloud adoption strategy, cloud service offerings, overall digital priorities and business transformation.
 - Ten years owner-operated business that provided strategic leadership, guidance and solutions to a broad range of industries for web hosting and technical support.
 
 ## Experience
