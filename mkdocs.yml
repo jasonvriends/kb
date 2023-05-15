@@ -3,16 +3,21 @@ site_name: Jason Vriends
 site_url: https://thevriends.com/
 
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - About: about.md
   - Contact: contact.md
-  - Technology:
-    - Linux:
-      - kb/technology/linux/almalinux.md
-    - Containers: 
-      - kb/technology/containers/podman.md
-    - Coding:
-      - kb/technology/coding/python.md
+  - Topics:
+    
+    - Technology:
+      - Operating Systems:
+        - Linux:
+          - technology/operating-systems/linux/almalinux.md
+        - Windows:
+          - technology/operating-systems/windows/wsl.md
+      - Containers: 
+        - technology/containers/podman.md
+      - Coding:
+        - technology/coding/python.md
 
 theme:
   name: material
@@ -21,8 +26,8 @@ theme:
     - navigation.sections
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky    
+    #- navigation.tabs
+    # - navigation.tabs.sticky    
     - navigation.indexes
     - navigation.prune
     - toc.follow
@@ -68,7 +73,6 @@ extra:
 
 
 markdown_extensions:
-
   - tables
   - abbr
   - pymdownx.highlight:
@@ -81,6 +85,8 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.tilde
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
