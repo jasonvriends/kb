@@ -1,6 +1,9 @@
 site_name: Jason Vriends
-
+site_description: Welcome to our thriving hub for curious minds! Explore a diverse range of captivating topics, from health and technology to flight simulation, amateur radio, and religion. With an abundance of content, let the navigation tree guide you to your first captivating read. Delve into a labyrinth of interconnected ideas, uncover hidden treasures, and follow the rabbit hole of internal links. Embark on an exciting quest of learning and exploration, embraced by a vibrant community of curious minds in our virtual sanctuary. Welcome to our digital garden of knowledge!
+site_author: Jason Vriends
 site_url: https://thevriends.com/
+repo_url: https://github.com/jasonvriends/kb
+edit_uri: edit/main/docs/
 
 nav:
   - Introduction: index.md
@@ -34,6 +37,8 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.action.view
+    - content.action.edit
     - toc.integrate
   language: en
   palette:
@@ -96,6 +101,8 @@ markdown_extensions:
 plugins:
   - social
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 copyright: |
   <a href="https://github.com/jasonvriends" target="_blank" rel="noopener">Jason Vriends</a>
