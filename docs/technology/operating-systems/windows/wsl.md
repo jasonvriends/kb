@@ -8,6 +8,7 @@ The Windows Subsystem for Linux (WSL) is a feature of the Windows operating syst
 - Virtualization enabled in the UEFI/BIOS
 
 ## Installation
+---
 
 ### Windows 10/11
 
@@ -46,6 +47,7 @@ The Windows Subsystem for Linux (WSL) is a feature of the Windows operating syst
 You can browse the Microsoft Store for WSL distributions such as [Ubuntu](https://www.microsoft.com/store/productId/9PDXGNCFSCZV) or [AlmaLinux 9](https://www.microsoft.com/store/productId/9P5RWLM70SN9), or even [import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro).
 
 ## Using Visual Studio Code with WSL
+---
 
 Visual Studio Code, along with the Remote Development extension pack, enables you to use WSL as your full-time development environment directly from VS Code. You can:
 
@@ -72,17 +74,3 @@ Visual Studio Code, along with the Remote Development extension pack, enables yo
 
 - To open a project from your WSL distribution, open the distribution's command line and enter: `code .`
 
-## Network considerations
-
-- [Accessing Linux networking apps from Windows (localhost)](https://learn.microsoft.com/en-us/windows/wsl/networking#accessing-linux-networking-apps-from-windows-localhost)
-
-- [Accessing Windows networking apps from Linux (host IP)](https://learn.microsoft.com/en-us/windows/wsl/networking#accessing-windows-networking-apps-from-linux-host-ip)
-
-- [Connecting via remote IP addresses](https://learn.microsoft.com/en-us/windows/wsl/networking#connecting-via-remote-ip-addresses)
-
-- [Accessing a WSL 2 distribution from your local area network (LAN)](https://learn.microsoft.com/en-us/windows/wsl/networking#accessing-a-wsl-2-distribution-from-your-local-area-network-lan)
-
-
-## File access and permissions
-
-## Backup, move

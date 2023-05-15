@@ -145,7 +145,7 @@
     - Business continuity planning;
     - Virtual CIO services including: setting strategic priorities, key initiatives, and identify ROI;
     - Methods and processes to drive change, and monthly Lunch and Learn sessions for employees, e.g.: security awareness.
-- Keto Enthusiast: Authored a self-published book called Low Carb Coach: Have Your Bacon and Eat It Too 
+- Keto Enthusiast: Authored a self-published book called [Low Carb Coach: Have Your Bacon and Eat It Too](https://www.amazon.ca/Low-Carb-Coach-Have-BACON/dp/0992058503/ref=sr_1_1?crid=38Q2QXQCWYZ0W&keywords=have+your+bacon+and+eat+it+too&qid=1684115087&sprefix=have+your+bacon+and+eat+it+too%2Caps%2C88&sr=8-1)
 - Flight Enthusiast and YouTube content creator: Create X-Plane and Microsoft Flight Simulator tutorials that are easy to understand.  Some of my videos have >800,000 views 
 - Python Enthusiast: Develop and share open-source web applications using frameworks such as FastAPI, Django, etc.  
 

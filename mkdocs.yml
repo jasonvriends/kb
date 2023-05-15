@@ -26,8 +26,6 @@ theme:
     - navigation.sections
     - navigation.instant
     - navigation.tracking
-    #- navigation.tabs
-    # - navigation.tabs.sticky    
     - navigation.indexes
     - navigation.prune
     - toc.follow
@@ -89,6 +87,8 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.mark
   - attr_list
+  - toc:
+      permalink: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
