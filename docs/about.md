@@ -52,7 +52,7 @@
                 - Conducted a current state assessment, created architectural specifications for missing components, created a strategy to test system changes, determined the root cause of IRCC’s issue (misconfigurations with network load balancers, inefficient authentication, etc.) and recommended action plan for expedient resolution.
                 - Presented lessons learned, as a result of IRCC’s incident, to CRA management regarding the importance of documenting current state architecture and design. 
             - Appointed by CIO as member of SWAT team to address GC Key and CRA’s credential stuffing attack in summer 2020. SWAT’s mandate was to stop the attack, prevent it from occurring again, identify ways to improve CRA cyber security, such as: implementing Multi Factor Authentication), collaborate with TBS/GC Key stakeholders, and recommend unique ways to identify other users who may be impacted, e.g.:  using cloud-based Artificial Intelligence/Machine Learning (AI/ML) fraud detection services.
-        - Collaborated and influenced CRA, TBS and SSC procurement organizations to establish a new contracting model, for obtaining access to Fortigate Firewalls via Pay as You Go through the Cloud Marketplace for both AWS and Azure. Faced with unsuccessful avenues to procure Fortigate licences, influenced and advocated with TBS for their endorsement of a new FinOps model which enabled the CRA and other departments to implement critical cloud-based firewall services.
+        - Collaborated and influenced CRA, TBS and SSC procurement organizations to establish a new contracting model, for obtaining access to Fortigate Firewalls via Pay as You Go through the Cloud Marketplace for both AWS and Azure. Faced with unsuccessful avenues to procure Fortigate licenses, influenced and advocated with TBS for their endorsement of a new FinOps model which enabled the CRA and other departments to implement critical cloud-based firewall services.
 
 ??? tip "IT Senior Specialist (CS-04) - Senior Solutions Architect" 
 
@@ -94,7 +94,7 @@
         - 2012 – 2013 : IT Specialist (CS-03) – Server Infrastructure and Directory Services – Digital Identity Engineer
         - 2009 – 2012 : IT Specialist (CS-03) – Infrastructure Engineering – DCE Solutions Engineer
         - 2006 – 2009 : IT Specialist (CS-03) – CTP Engineering – Citrix Engineer
-        - 2003 – 2006 : IT Analyst (CS-02) – Enterprise Solutions Management – National Tivoli Aministrator                                                                                
+        - 2003 – 2006 : IT Analyst (CS-02) – Enterprise Solutions Management – National Tivoli Administrator                                                                                
     - **Where**: 
         - Government of Canada :material-arrow-right: Canada Revenue Agency :material-arrow-right: Information Technology Branch
         - Government of Canada :material-arrow-right: Shared Services Canada
