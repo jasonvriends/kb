@@ -20,6 +20,8 @@ nav:
         - technology/containers/podman.md
       - Coding:
         - technology/coding/python.md
+    - Christianity:
+        - christianity/bible.md
 
 theme:
   name: material
@@ -38,6 +40,7 @@ theme:
     - content.code.copy
     - content.action.view
     - content.action.edit
+    - content.tooltips
     - toc.integrate
   language: en
   palette:
@@ -77,19 +80,21 @@ extra:
 markdown_extensions:
   - tables
   - abbr
+  - pymdownx.smartsymbols
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true      
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - admonition
   - pymdownx.arithmatex:
       generic: true
   - footnotes
   - pymdownx.details
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

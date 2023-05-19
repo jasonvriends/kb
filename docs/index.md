@@ -1,6 +1,6 @@
 # A Thriving Hub for Curious Minds
 
-Hey there, fellow scholars and knowledge seekers! Prepare to embark on an exciting journey as I invite you to step into my digital oasis, where learning and exploration know no bounds. Buckle up and get ready to dive into a diverse array of captivating topics, ranging from health and technology to flight simulation, amateur radio, and even religion.
+Hey there, fellow scholars and knowledge seekers! Prepare to embark on an exciting journey as I invite you to step into my digital oasis, where learning and exploration know no bounds. Buckle up and get ready to dive into a diverse array of captivating topics, ranging from health and technology to flight simulation, amateur radio, and even Christianity.
 
 Now, if this is your first visit, congratulations on stumbling upon this hidden gem! You might find yourself overwhelmed by the sheer abundance of content, unsure of where to begin your reading odyssey. But fret not, my fellow explorers! Simply glance at the navigation tree on the left, and let your instincts guide you towards the first article that captivates your wandering gaze. Trust me, it'll be love at first read!
 
