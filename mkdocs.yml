@@ -29,7 +29,6 @@ theme:
     - navigation.top
     - navigation.sections
     - navigation.instant
-    - navigation.tracking
     - navigation.indexes
     - navigation.prune
     - toc.follow
