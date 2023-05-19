@@ -87,9 +87,9 @@ The following three paraphrase translations offer different approaches to convey
 
 Exegesis is concerned with understanding the original meaning of the biblical text through careful analysis of its ^^historical^^ and ^^literary^^ context.
 
-- What does the scripture ^^say^^?
+- What does the scripture say?
 
-- What does the scripture ^^mean^^?
+- What does the scripture mean?
 
 ### Hermeneutics
 
@@ -116,8 +116,6 @@ Hermeneutics focuses on the interpretive process and applying the meaning or pra
     2. What is the cultural setting?
     3. What are the main teaching points of this scripture?
     4. What does the author hope this scripture accomplishes?
-    5. What does this scripture say about God, and about people?
-    6. What does this scripture say about fear and death?
 
 #### Application
 
