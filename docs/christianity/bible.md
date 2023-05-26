@@ -77,11 +77,23 @@ The following three paraphrase translations offer different approaches to convey
 
 - [The Message](https://www.biblegateway.com/versions/Message-MSG-Bible) is a popular paraphrase translation that aims to present the Bible in the language and style of everyday conversation. It seeks to capture the essence and emotions of the biblical texts, making it relatable and understandable to modern readers.
 
-- [The Living Bible](https://www.biblegateway.com/versions/The-Living-Bible-TLB/) is a dynamic equivalence translation that focuses on expressing the meaning and concepts of the original text in clear and contemporary language. It strives to make the biblical message accessible to a wide range of readers, including those with limited biblical knowledge.
+- [The Living Bible](https://www.biblegateway.com/versions/The-Living-Bible-TLB/) focuses on expressing the meaning and concepts of the original text in clear and contemporary language. It strives to make the biblical message accessible to a wide range of readers, including those with limited biblical knowledge.
 
-- [The Good News Translation](https://www.biblegateway.com/versions/Good-News-Translation-GNT-Bible) is a thought-for-thought translation that aims to provide a clear and easy-to-understand rendering of the biblical text. It seeks to communicate the central ideas and principles of the original texts using simple and modern language, making it accessible to a broad audience.
+- [The Good News Translation](https://www.biblegateway.com/versions/Good-News-Translation-GNT-Bible) aims to provide a clear and easy-to-understand rendering of the biblical text. It seeks to communicate the central ideas and principles of the original texts using simple and modern language, making it accessible to a broad audience.
 
 ## Study
+
+### Reading Plan
+
+A Bible reading plan is a structured guide that helps individuals or groups read and study the Bible systematically over a specific period of time. It provides a suggested schedule of daily readings to cover the entire Bible or specific portions of it within a designated timeframe. Bible reading plans can vary in length, focus, and organization, catering to different needs and interests. They may include a combination of passages from the Old Testament, New Testament, Psalms, Proverbs, or other selected books. These plans are designed to facilitate regular engagement with Scripture, promote understanding, and foster spiritual growth.
+
+#### The M'Cheyne Reading Plan
+
+The M'Cheyne reading system, designed for both personal and family devotions, comprises four distinct readings. Each day involves two passages from the Old Testament, one from the New Testament, and one from either the Psalms or the Gospels. By following this plan, one can complete a full reading of the Old Testament within a year, while the New Testament and Psalms are read twice. You can read the M'Cheyne Reading Plan at the following places:
+
+- [Bible Gateway](https://www.biblegateway.com/reading-plans/mcheyne/next?version=NIV)
+- [Bible Plan](https://bibleplan.org/plans/mcheyne/)
+- [ESV](https://www.esv.org/plans/one-year-tract/)
 
 ### Exegesis
 

@@ -9,3 +9,4 @@
 *[NLT]: New Living Translation
 *[NIV]: New International Version
 *[NABRE]: New American Bible Revised Edition
+*[NRSVue]: New Revised Standard Version
