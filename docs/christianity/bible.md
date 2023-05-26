@@ -92,8 +92,8 @@ The M'Cheyne reading system, designed for both personal and family devotions, co
 - [Bible Gateway](https://www.biblegateway.com/reading-plans/mcheyne/next?version=NIV)
 - [Bible Plan](https://bibleplan.org/plans/mcheyne/)
 - [ESV](https://www.esv.org/plans/one-year-tract/)
-## Study
 
+## Study
 
 ### Exegesis
 
