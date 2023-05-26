@@ -81,19 +81,19 @@ The following three paraphrase translations offer different approaches to convey
 
 - [The Good News Translation](https://www.biblegateway.com/versions/Good-News-Translation-GNT-Bible) aims to provide a clear and easy-to-understand rendering of the biblical text. It seeks to communicate the central ideas and principles of the original texts using simple and modern language, making it accessible to a broad audience.
 
-## Study
-
-### Reading Plan
+## Reading Plans
 
 A Bible reading plan is a structured guide that helps individuals or groups read and study the Bible systematically over a specific period of time. It provides a suggested schedule of daily readings to cover the entire Bible or specific portions of it within a designated timeframe. Bible reading plans can vary in length, focus, and organization, catering to different needs and interests. They may include a combination of passages from the Old Testament, New Testament, Psalms, Proverbs, or other selected books. These plans are designed to facilitate regular engagement with Scripture, promote understanding, and foster spiritual growth.
 
-#### The M'Cheyne Reading Plan
+### The M'Cheyne Reading Plan
 
 The M'Cheyne reading system, designed for both personal and family devotions, comprises four distinct readings. Each day involves two passages from the Old Testament, one from the New Testament, and one from either the Psalms or the Gospels. By following this plan, one can complete a full reading of the Old Testament within a year, while the New Testament and Psalms are read twice. You can read the M'Cheyne Reading Plan at the following places:
 
 - [Bible Gateway](https://www.biblegateway.com/reading-plans/mcheyne/next?version=NIV)
 - [Bible Plan](https://bibleplan.org/plans/mcheyne/)
 - [ESV](https://www.esv.org/plans/one-year-tract/)
+## Study
+
 
 ### Exegesis
 
