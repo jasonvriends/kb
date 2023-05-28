@@ -20,8 +20,11 @@ nav:
         - technology/containers/podman.md
       - Coding:
         - technology/coding/python.md
+        - technology/coding/blazor.md
     - Christianity:
         - christianity/bible.md
+        - Studies:
+          - Psalm 23: christianity/study/psalm-23.md
 
 theme:
   name: material
@@ -79,6 +82,8 @@ extra:
 markdown_extensions:
   - tables
   - abbr
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.smartsymbols
   - pymdownx.highlight:
       anchor_linenums: true
@@ -94,6 +99,9 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.inlinehilite
+  - pymdownx.critic
+  - pymdownx.tasklist:
+      custom_checkbox: true  
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
