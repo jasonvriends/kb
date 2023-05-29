@@ -116,3 +116,11 @@ A command-line utility that displays the directory structure of a file system in
 ``` bash
 sudo dnf install tree -y
 ```
+
+- Zip
+
+A command-line utility used for compressing and packaging files and directories into a compressed archive format. It is typically available in most Unix-like operating systems, including Linux.
+
+``` bash
+sudo dnf install zip -y
+```
