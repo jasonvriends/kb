@@ -89,6 +89,8 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 - Install
 ``` bash
 sudo dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm -y
+
+sudo dnf install azure-cli -y
 ```
 
 ### Terraform 
