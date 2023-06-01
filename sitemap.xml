@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thevriends.com/technology/coding/vue/</loc>
+         <lastmod>2023-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thevriends.com/technology/containers/podman/</loc>
          <lastmod>2023-06-01</lastmod>
          <changefreq>daily</changefreq>
