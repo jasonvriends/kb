@@ -20,7 +20,7 @@ nav:
         - technology/containers/podman.md
       - Coding:
         - technology/coding/python.md
-        - technology/coding/blazor.md
+        - technology/coding/vue.md
     - Christianity:
         - christianity/bible.md
         - Studies:
