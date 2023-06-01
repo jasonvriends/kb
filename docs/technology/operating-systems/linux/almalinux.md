@@ -107,6 +107,15 @@ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashi
 sudo dnf install terraform -y
 ```
 
+### Node Package Manager
+
+npm is an open-source package manager designed for the JavaScript programming language. It serves as a reliable and efficient tool for developers to discover, install, and maintain code packages and libraries used in JavaScript applications. By utilizing npm, developers can effortlessly manage dependencies, ensuring their projects are built on a solid foundation of reusable code components.
+
+- Install
+``` bash
+sudo dnf install npm -y
+```
+
 ### Utilities
   
 - Tree
