@@ -25,7 +25,6 @@ npm create vue@3
     - Add ESLint for code quality: **Yes**
     - Add Prettier for code formatting: **Yes**
 
-
 - Build the project
 ``` bash
 cd app
@@ -33,3 +32,21 @@ npm install
 npm run lint
 npm run dev
 ```
+
+## References
+
+- [Vite](https://vitejs.dev/)
+
+- [Vue.js](https://vuejs.org/)
+
+- [Vue Router](https://router.vuejs.org/)
+
+- [Pinia](https://pinia.vuejs.org/)
+
+- [Vitest](https://vitest.dev/)
+
+- [Cypress](https://www.cypress.io/)
+
+- [ESLint](https://eslint.org/)
+
+- [Prettier](https://prettier.io/)
