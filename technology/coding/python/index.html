@@ -941,61 +941,55 @@
 <p>A Python virtual environment is a self-contained directory that contains a specific version of Python interpreter and any necessary dependencies for a particular project. It allows you to create an isolated environment for each project, so you can work on multiple projects with different dependencies without any conflicts.</p>
 <p>The venv module is a built-in module in Python that provides support for creating and managing virtual environments. The venv module was introduced in Python 3.3 as a replacement for the older virtualenv package. It is used to create a new Python environment that includes its own installation of Python, pip, and other required libraries.</p>
 <ul>
-<li>
-<p>Create a Python Virtual Environment
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3.10<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Activate the Python Virtual Environment
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-</span></code></pre></div></p>
-</li>
+<li>Create a Python Virtual Environment</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3.10<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span></code></pre></div>
+<ul>
+<li>Activate the Python Virtual Environment</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></code></pre></div>
 <h2 id="package-manager">Package Manager<a class="headerlink" href="#package-manager" title="Permanent link">&para;</a></h2>
 <h3 id="pip">Pip<a class="headerlink" href="#pip" title="Permanent link">&para;</a></h3>
 <p>pip is the package installer for Python, which is used to install, manage, and uninstall Python packages and their dependencies. It is a command-line tool that comes with Python and is used to install third-party libraries and modules that are not included in the standard library.</p>
 <ul>
-<li>
-<p>Upgrade pip
+<li>Upgrade pip</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Install packages via command line
+</span></code></pre></div>
+<ul>
+<li>Install packages via command line</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>package1<span class="w"> </span>package2
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Install packages via file
+</span></code></pre></div>
+<ul>
+<li>Install packages via file</li>
+</ul>
 <div class="language-bash highlight"><span class="filename">requirements.txt</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>package1
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>package2
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</span></code></pre></div></p>
-</li>
-</ul>
+</span></code></pre></div>
 <h3 id="poetry">Poetry<a class="headerlink" href="#poetry" title="Permanent link">&para;</a></h3>
 <p>Poetry is arguably the most feature-rich dependency management tool for Python. It comes with a powerful CLI used for creating and managing Python projects.</p>
 <ul>
-<li>
-<p>Install Poetry
+<li>Install Poetry</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>curl<span class="w"> </span>-sSL<span class="w"> </span>https://install.python-poetry.org<span class="w"> </span><span class="p">|</span><span class="w"> </span>python3.10<span class="w"> </span>-
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Scaffold a new project
+</span></code></pre></div>
+<ul>
+<li>Scaffold a new project</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>poetry<span class="w"> </span>new<span class="w"> </span>sample-project
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">cd</span><span class="w"> </span>sample-project
-</span></code></pre></div></p>
-</li>
-</ul>
+</span></code></pre></div>
 <p>Dependencies are managed inside the <mark>pyproject.toml</mark> file.</p>
 <ul>
-<li>To add new a dependency, simply run:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>package1
-</span></code></pre></div></li>
+<li>To add new a dependency, simply run:</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>package1
+</span></code></pre></div>
 <h3 id="pipenv">Pipenv<a class="headerlink" href="#pipenv" title="Permanent link">&para;</a></h3>
 <p>Pipenv attempts to solve the same problems that Poetry does:</p>
 <ul>
@@ -1004,25 +998,25 @@
 <p>Reproducing environments</p>
 </li>
 <li>
-<p>Install Poetry
+<p>Install Poetry</p>
+</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>python3-pip<span class="w"> </span>-y
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>pipenv
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Scaffold a new project
+</span></code></pre></div>
+<ul>
+<li>Scaffold a new project</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mkdir<span class="w"> </span>sample-project
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">cd</span><span class="w"> </span>sample-project
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="k">$(</span>python3.10<span class="w"> </span>--version<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span>
 </span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>pipenv<span class="w"> </span>--python<span class="w"> </span><span class="nv">$PYTHON_VERSION</span>
-</span></code></pre></div></p>
-</li>
-<li>
-<p>To add new a dependency, simply run:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pipenv<span class="w"> </span>install<span class="w"> </span>package1
-</span></code></pre></div></p>
-</li>
+</span></code></pre></div>
+<ul>
+<li>To add new a dependency, simply run:</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pipenv<span class="w"> </span>install<span class="w"> </span>package1
+</span></code></pre></div>
 <h2 id="visual-studio-code">Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permanent link">&para;</a></h2>
 <p>Visual Studio Code is a popular code editor for Python developers, offering features such as syntax highlighting, code completion, code refactoring, debugging, and support for virtual environments. It also has a rich ecosystem of extensions, including those specifically designed for Python development, such as linters, test runners, and code formatters.</p>
 <h3 id="python-extension">Python Extension<a class="headerlink" href="#python-extension" title="Permanent link">&para;</a></h3>
@@ -1037,11 +1031,11 @@
 <p>Be sure to create and activate a Python virtual environment before installing black.</p>
 </div>
 <ul>
-<li>
-<p>Install the black Python package via command line
+<li>Install the black Python package via command line</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>pip<span class="w"> </span>install<span class="w"> </span>black
-</span></code></pre></div></p>
-</li>
+</span></code></pre></div>
+<ul>
 <li>
 <p>Type the <mark>Ctrl + ,</mark> or <mark>Cmd + ,</mark> to open the settings page in the VSCode.</p>
 </li>
@@ -1064,19 +1058,19 @@
 <p>Type <mark>Ctrl + Shift + P</mark> or <mark>Cmd + Shift + P</mark>.</p>
 </li>
 <li>
-<p>Search for <mark>Preferences: Configure Language Specific Settings</mark> and press enter. </p>
+<p>Search for <mark>Preferences: Configure Language Specific Settings</mark> and press enter.</p>
 </li>
 <li>
 <p>Select <mark>Python</mark>. It will open the <mark>settings.json</mark>.</p>
 </li>
 <li>
-<p>Please add the following settings:
+<p>Please add the following settings:</p>
+</li>
+</ul>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&quot;editor.codeActionsOnSave&quot;: {
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    &quot;source.organizeImports&quot;: true
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>}
-</span></code></pre></div></p>
-</li>
-</ul>
+</span></code></pre></div>
 <h3 id="flake8">flake8<a class="headerlink" href="#flake8" title="Permanent link">&para;</a></h3>
 <p>Flake8 is a popular Python linter that checks Python code for style and syntax errors. It combines three tools: PyFlakes, a static analysis tool for detecting errors in Python code; pycodestyle (formerly known as pep8), a tool for enforcing the Python style guide; and McCabe complexity checker, which checks for overly complex code. Flake8 is highly configurable and can be customized with plugins, which allows it to be adapted to a wide range of projects and development workflows. By detecting errors and enforcing a consistent code style, Flake8 can help improve code quality, reduce errors, and make code more maintainable. It can be integrated into various text editors and IDEs, and is often used as a pre-commit hook to ensure code quality is maintained throughout a project.</p>
 <div class="admonition tip">
@@ -1084,16 +1078,16 @@
 <p>Be sure to create and activate a Python virtual environment before installing flake8.</p>
 </div>
 <ul>
-<li>
-<p>Install the flake8 Python package via command line
+<li>Install the flake8 Python package via command line</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>pip<span class="w"> </span>install<span class="w"> </span>flake8
-</span></code></pre></div></p>
-</li>
+</span></code></pre></div>
+<ul>
 <li>
 <p>Type <mark>Ctrl + Shift + P</mark> or <mark>Cmd + Shift + P</mark>.</p>
 </li>
 <li>
-<p>Search for <mark>Python: Select Linter</mark> and press enter. </p>
+<p>Search for <mark>Python: Select Linter</mark> and press enter.</p>
 </li>
 <li>
 <p>Select <mark>flake8</mark>.</p>
@@ -1106,7 +1100,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 4, 2023</span>
       
         <br>
         Created:

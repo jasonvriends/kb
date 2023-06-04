@@ -880,32 +880,30 @@
 <p>These sample Compose files can help you quickly establish the necessary infrastructure for your development projects.</p>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>Delete all containers
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>podman<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span><span class="k">$(</span>podman<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span>-q<span class="k">)</span>
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Delete all images
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>podman<span class="w"> </span>rmi<span class="w"> </span>-f<span class="w"> </span><span class="k">$(</span>podman<span class="w"> </span>images<span class="w"> </span>-q<span class="k">)</span>
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Delete all volumes
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>podman<span class="w"> </span>volume<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>podman<span class="w"> </span>volume<span class="w"> </span>ls<span class="w"> </span>-q<span class="k">)</span>
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Creates and starts containers for all services defined in a Compose file 
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>podman-compose<span class="w"> </span>up<span class="w"> </span>-d
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Stops all containers managed by the Compose file.
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>podman-compose<span class="w"> </span>stop
-</span></code></pre></div></p>
-</li>
+<li>Delete all containers</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>podman<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span><span class="k">$(</span>podman<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span>-q<span class="k">)</span>
+</span></code></pre></div>
+<ul>
+<li>Delete all images</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>podman<span class="w"> </span>rmi<span class="w"> </span>-f<span class="w"> </span><span class="k">$(</span>podman<span class="w"> </span>images<span class="w"> </span>-q<span class="k">)</span>
+</span></code></pre></div>
+<ul>
+<li>Delete all volumes</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>podman<span class="w"> </span>volume<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>podman<span class="w"> </span>volume<span class="w"> </span>ls<span class="w"> </span>-q<span class="k">)</span>
+</span></code></pre></div>
+<ul>
+<li>Creates and starts containers for all services defined in a Compose file</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>podman-compose<span class="w"> </span>up<span class="w"> </span>-d
+</span></code></pre></div>
+<ul>
+<li>Stops all containers managed by the Compose file.</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>podman-compose<span class="w"> </span>stop
+</span></code></pre></div>
 <h2 id="mongodb">MongoDB<a class="headerlink" href="#mongodb" title="Permanent link">&para;</a></h2>
 <div class="language-yaml highlight"><span class="filename">podman-compose.yml</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.8&quot;</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
@@ -948,7 +946,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 4, 2023</span>
       
         <br>
         Created:

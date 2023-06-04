@@ -769,29 +769,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#frameworks" class="md-nav__link">
-    Frameworks
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
   </a>
-  
-    <nav class="md-nav" aria-label="Frameworks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vanilla" class="md-nav__link">
-    Vanilla
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#react-admin" class="md-nav__link">
-    React-Admin
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -969,17 +949,17 @@
 <h4 id="npm">Npm<a class="headerlink" href="#npm" title="Permanent link">&para;</a></h4>
 <p>npm is the go-to package manager for the JavaScript ecosystem, providing a seamless solution for installing, managing, and uninstalling JavaScript packages and their dependencies. Serving as a command-line tool, npm comes bundled with Node.js and facilitates the effortless integration of third-party libraries and modules that extend the capabilities of JavaScript applications beyond the standard library.</p>
 <ul>
-<li>Install npm via command line
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>npm<span class="w"> </span>-y
-</span></code></pre></div></li>
+<li>Install npm via command line</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>npm<span class="w"> </span>-y
+</span></code></pre></div>
 <h4 id="yarn">Yarn<a class="headerlink" href="#yarn" title="Permanent link">&para;</a></h4>
 <p>Yarn is a package manager for JavaScript that was introduced as an alternative to npm (Node Package Manager). It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.</p>
 <ul>
-<li>Install yarn via command line
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>yarn
-</span></code></pre></div></li>
+<li>Install yarn via command line</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>yarn
+</span></code></pre></div>
 <h3 id="module-bundler">Module Bundler<a class="headerlink" href="#module-bundler" title="Permanent link">&para;</a></h3>
 <p>A module bundler is a tool used in web development to combine and package multiple modules or files into a single file, typically for use in a web application. It takes care of resolving dependencies, optimizing code, and creating a production-ready bundle that can be served to the browser.</p>
 <h4 id="parcel">Parcel<a class="headerlink" href="#parcel" title="Permanent link">&para;</a></h4>
@@ -987,20 +967,17 @@
 <h4 id="browserify">Browserify<a class="headerlink" href="#browserify" title="Permanent link">&para;</a></h4>
 <h3 id="compiler">Compiler<a class="headerlink" href="#compiler" title="Permanent link">&para;</a></h3>
 <p>React itself is not compiled, Babel is commonly used to transform JSX syntax and modern JavaScript features into compatible code that can run in different browsers and environments.</p>
-<h2 id="frameworks">Frameworks<a class="headerlink" href="#frameworks" title="Permanent link">&para;</a></h2>
-<p>React is a versatile JavaScript library for building user interfaces, and it can be used with various frameworks and tools to enhance development efficiency and provide additional features. Here are some popular React frameworks and libraries.</p>
-<h3 id="vanilla">Vanilla<a class="headerlink" href="#vanilla" title="Permanent link">&para;</a></h3>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Scaffold a new project
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>init<span class="w"> </span>react-app<span class="w"> </span>app
-</span></code></pre></div></li>
+<li>Scaffold a new project</li>
 </ul>
-<h3 id="react-admin">React-Admin<a class="headerlink" href="#react-admin" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npx<span class="w"> </span>create-react-app<span class="w"> </span>app
+</span></code></pre></div>
 <ul>
-<li>Scaffold a new project
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npx<span class="w"> </span>create-react-admin@latest<span class="w"> </span>&lt;project-name&gt;<span class="w"> </span>--template<span class="w"> </span>typescript
-</span></code></pre></div></li>
+<li>Install Material UI</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@mui/material<span class="w"> </span>@emotion/react<span class="w"> </span>@emotion/styled
+</span></code></pre></div>
 
   <hr>
 <div class="md-source-file">
