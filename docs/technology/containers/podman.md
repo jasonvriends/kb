@@ -9,32 +9,38 @@ These sample Compose files can help you quickly establish the necessary infrastr
 ## Commands
 
 - Delete all containers
-``` bash
+
+```bash
 podman rm -f $(podman ps -a -q)
 ```
 
 - Delete all images
-``` bash
+
+```bash
 podman rmi -f $(podman images -q)
 ```
 
 - Delete all volumes
-``` bash
+
+```bash
 podman volume rm $(podman volume ls -q)
 ```
 
-- Creates and starts containers for all services defined in a Compose file 
-``` bash
+- Creates and starts containers for all services defined in a Compose file
+
+```bash
 podman-compose up -d
 ```
 
 - Stops all containers managed by the Compose file.
-``` bash
+
+```bash
 podman-compose stop
 ```
 
 ## MongoDB
-``` yaml title="podman-compose.yml"
+
+```yaml title="podman-compose.yml"
 version: "3.8"
 
 services:
@@ -55,7 +61,7 @@ volumes:
 
 ## PostgreSQL
 
-``` yaml title="podman-compose.yml"
+```yaml title="podman-compose.yml"
 version: "3.8"
 
 services:

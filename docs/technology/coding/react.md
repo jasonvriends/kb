@@ -13,7 +13,8 @@ npm (comes pre-bundled with Node.js) or Yarn can be used to download and install
 npm is the go-to package manager for the JavaScript ecosystem, providing a seamless solution for installing, managing, and uninstalling JavaScript packages and their dependencies. Serving as a command-line tool, npm comes bundled with Node.js and facilitates the effortless integration of third-party libraries and modules that extend the capabilities of JavaScript applications beyond the standard library.
 
 - Install npm via command line
-``` bash
+
+```bash
 sudo dnf install npm -y
 ```
 
@@ -22,7 +23,8 @@ sudo dnf install npm -y
 Yarn is a package manager for JavaScript that was introduced as an alternative to npm (Node Package Manager). It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.
 
 - Install yarn via command line
-``` bash
+
+```bash
 sudo npm install -g yarn
 ```
 
@@ -40,20 +42,16 @@ A module bundler is a tool used in web development to combine and package multip
 
 React itself is not compiled, Babel is commonly used to transform JSX syntax and modern JavaScript features into compatible code that can run in different browsers and environments.
 
-## Frameworks
-
-React is a versatile JavaScript library for building user interfaces, and it can be used with various frameworks and tools to enhance development efficiency and provide additional features. Here are some popular React frameworks and libraries.
-
-### Vanilla
+## Getting Started
 
 - Scaffold a new project
-``` bash
-npm init react-app app
+
+```bash
+npx create-react-app app
 ```
 
-### React-Admin
+- Install Material UI
 
-- Scaffold a new project
-``` bash
-npx create-react-admin@latest <project-name> --template typescript
+```bash
+npm install @mui/material @emotion/react @emotion/styled
 ```

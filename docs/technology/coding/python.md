@@ -9,12 +9,14 @@ A Python virtual environment is a self-contained directory that contains a speci
 The venv module is a built-in module in Python that provides support for creating and managing virtual environments. The venv module was introduced in Python 3.3 as a replacement for the older virtualenv package. It is used to create a new Python environment that includes its own installation of Python, pip, and other required libraries.
 
 - Create a Python Virtual Environment
-``` bash
+
+```bash
 python3.10 -m venv .venv
 ```
 
 - Activate the Python Virtual Environment
-``` bash
+
+```bash
 source .venv/bin/activate
 ```
 
@@ -25,21 +27,25 @@ source .venv/bin/activate
 pip is the package installer for Python, which is used to install, manage, and uninstall Python packages and their dependencies. It is a command-line tool that comes with Python and is used to install third-party libraries and modules that are not included in the standard library.
 
 - Upgrade pip
-``` bash
+
+```bash
 pip install --upgrade pip
 ```
 
 - Install packages via command line
-``` bash
+
+```bash
 pip install package1 package2
 ```
 
 - Install packages via file
-``` bash title="requirements.txt"
+
+```bash title="requirements.txt"
 package1
 package2
 ```
-``` bash
+
+```bash
 pip install -r requirements.txt
 ```
 
@@ -48,12 +54,14 @@ pip install -r requirements.txt
 Poetry is arguably the most feature-rich dependency management tool for Python. It comes with a powerful CLI used for creating and managing Python projects.
 
 - Install Poetry
-``` bash
+
+```bash
 sudo curl -sSL https://install.python-poetry.org | python3.10 -
 ```
 
 - Scaffold a new project
-``` bash
+
+```bash
 poetry new sample-project
 cd sample-project
 ```
@@ -61,7 +69,8 @@ cd sample-project
 Dependencies are managed inside the ==pyproject.toml== file.
 
 - To add new a dependency, simply run:
-``` bash
+
+```bash
 poetry add package1
 ```
 
@@ -69,17 +78,19 @@ poetry add package1
 
 Pipenv attempts to solve the same problems that Poetry does:
 
-  - Managing dependencies and virtual environments
-  - Reproducing environments
+- Managing dependencies and virtual environments
+- Reproducing environments
 
 - Install Poetry
-``` bash
+
+```bash
 sudo dnf install python3-pip -y
 sudo pip3 install pipenv
 ```
 
 - Scaffold a new project
-``` bash
+
+```bash
 mkdir sample-project
 cd sample-project
 PYTHON_VERSION=$(python3.10 --version | awk '{print $2}')
@@ -87,7 +98,8 @@ pipenv --python $PYTHON_VERSION
 ```
 
 - To add new a dependency, simply run:
-``` bash
+
+```bash
 pipenv install package1
 ```
 
@@ -110,7 +122,8 @@ Black is a popular Python code formatter that automatically formats your code ac
     Be sure to create and activate a Python virtual environment before installing black.
 
 - Install the black Python package via command line
-``` bash
+
+```bash
 pip install black
 ```
 
@@ -132,11 +145,12 @@ isort is a Python library and command-line utility for sorting and organizing im
 
 - Type ==Ctrl + Shift + P== or ==Cmd + Shift + P==.
 
-- Search for ==Preferences: Configure Language Specific Settings== and press enter. 
+- Search for ==Preferences: Configure Language Specific Settings== and press enter.
 
 - Select ==Python==. It will open the ==settings.json==.
 
 - Please add the following settings:
+
 ```
 "editor.codeActionsOnSave": {
     "source.organizeImports": true
@@ -152,13 +166,14 @@ Flake8 is a popular Python linter that checks Python code for style and syntax e
     Be sure to create and activate a Python virtual environment before installing flake8.
 
 - Install the flake8 Python package via command line
-``` bash
+
+```bash
 pip install flake8
 ```
 
 - Type ==Ctrl + Shift + P== or ==Cmd + Shift + P==.
 
-- Search for ==Python: Select Linter== and press enter. 
+- Search for ==Python: Select Linter== and press enter.
 
 - Select ==flake8==.
 

@@ -8,6 +8,7 @@ The Windows Subsystem for Linux (WSL) is a feature of the Windows operating syst
 - Virtualization enabled in the UEFI/BIOS
 
 ## Installation
+
 ---
 
 ### Windows 10/11
@@ -47,6 +48,7 @@ The Windows Subsystem for Linux (WSL) is a feature of the Windows operating syst
 You can browse the Microsoft Store for WSL distributions such as [Ubuntu](https://www.microsoft.com/store/productId/9PDXGNCFSCZV) or [AlmaLinux 9](https://www.microsoft.com/store/productId/9P5RWLM70SN9), or even [import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro).
 
 ## Using Visual Studio Code with WSL
+
 ---
 
 Visual Studio Code, along with the Remote Development extension pack, enables you to use WSL as your full-time development environment directly from VS Code. You can:
@@ -73,4 +75,3 @@ Visual Studio Code, along with the Remote Development extension pack, enables yo
 ### Open a WSL folder in VS Code
 
 - To open a project from your WSL distribution, open the distribution's command line and enter: `code .`
-

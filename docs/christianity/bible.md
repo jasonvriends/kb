@@ -18,10 +18,10 @@ The Catholic Bible encompasses the same ^^66 books^^ as the Protestant Bible and
 
 ## Translations
 
-When the various writings that make up the Bible were first written, they captured exactly what God wanted to say in the languages that 
+When the various writings that make up the Bible were first written, they captured exactly what God wanted to say in the languages that
 ordinary people spoke. In other words, the Bible was originally written in a way that made it easy for ordinary people to understand both the ^^words^^ and their deeper ^^meanings^^.
 
-In today's world, reading the Bible requires a different approach compared to the people of ancient times. Although the languages used in the original texts (Greek, Hebrew, Aramaic) may appear somewhat familiar to those who understand them, most of us are unable to fully grasp their meaning today. As English speakers, we rely on translations because that's the language we understand. 
+In today's world, reading the Bible requires a different approach compared to the people of ancient times. Although the languages used in the original texts (Greek, Hebrew, Aramaic) may appear somewhat familiar to those who understand them, most of us are unable to fully grasp their meaning today. As English speakers, we rely on translations because that's the language we understand.
 
 Fortunately, there is a wide array of Bible translations available, which can be categorized into three types. This diversity of translations allows us to gain different perspectives and interpretations, helping us to better understand the teachings and messages within the Bible.
 
@@ -115,26 +115,26 @@ Hermeneutics focuses on the interpretive process and applying the meaning or pra
 #### Observation
 
 - What does the scripture say?
-    1. Read the scripture three times, utilizing a bible translation from each unique category of translation: word-for-word, thought-for-thought, and paraphrase.
-    2. Note which translations you used and the major differences between the three you read.
-    3. List the questions this scripture raises for you (ask where, what, when, why, who, and how).
-    4. Who is the author and to whom is he writing the scripture to?
-    5. What is the occasion of this writing?
-    6. Are there other people in the scripture to whom the author refers? What was their relationship to the author?
+  1. Read the scripture three times, utilizing a bible translation from each unique category of translation: word-for-word, thought-for-thought, and paraphrase.
+  2. Note which translations you used and the major differences between the three you read.
+  3. List the questions this scripture raises for you (ask where, what, when, why, who, and how).
+  4. Who is the author and to whom is he writing the scripture to?
+  5. What is the occasion of this writing?
+  6. Are there other people in the scripture to whom the author refers? What was their relationship to the author?
 
 #### Interpretation
 
 - What does the scripture mean?
-    1. Why did the author write this?
-    2. What is the cultural setting?
-    3. What are the main teaching points of this scripture?
-    4. What does the author hope this scripture accomplishes?
+  1. Why did the author write this?
+  2. What is the cultural setting?
+  3. What are the main teaching points of this scripture?
+  4. What does the author hope this scripture accomplishes?
 
 #### Application
 
 - What does this scripture mean to me or us?
-    1. What are the principles of the scripture?
-    2. How might those principles apply in your context or in the context of your church?
+  1. What are the principles of the scripture?
+  2. How might those principles apply in your context or in the context of your church?
 
 ### Reference
 
