@@ -47,11 +47,49 @@ React itself is not compiled, Babel is commonly used to transform JSX syntax and
 - Scaffold a new project
 
 ```bash
-npx create-react-app app
+npx create-react-app <project-name>
 ```
 
-- Install Material UI
+### Optional Packages
+
+- Install [Material UI](https://mui.com/material-ui/getting-started/installation/)
 
 ```bash
-npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid
+```
+
+- Install [React Router](https://reactrouter.com/en/main)
+
+```bash
+npm install react-router-dom
+```
+
+- Install [React Pro Sidebar](https://github.com/azouaoui-med/react-pro-sidebar)
+
+```bash
+npm install react-pro-sidebar
+```
+
+- Install [Formik](https://formik.org/)
+
+```bash
+npm install formik
+```
+
+- Install [Yup](https://github.com/jquense/yup)
+
+```bash
+npm install yup
+```
+
+- Install [FullCalendar](https://fullcalendar.io/docs/react)
+
+```bash
+npm install @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/daygrid @fullcalendar/list
+```
+
+- Install [Nivo](https://nivo.rocks/)
+
+```bash
+npm install nivo/core nivo/pie nivo/bar nivo/geo
 ```
