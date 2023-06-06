@@ -178,3 +178,7 @@ Flake8 is a popular Python linter that checks Python code for style and syntax e
 - Select ^^flake8^^.
 
 Linting runs automa.Linting runs automatically when you save a file.
+
+## References
+
+- [Learn Python](https://scrimba.com/learn/python)
