@@ -10,15 +10,15 @@ The venv module is a built-in module in Python that provides support for creatin
 
 - Create a Python Virtual Environment
 
-```bash
-python3.10 -m venv .venv
-```
+    ```bash
+    python3.10 -m venv .venv
+    ```
 
 - Activate the Python Virtual Environment
 
-```bash
-source .venv/bin/activate
-```
+    ```bash
+    source .venv/bin/activate
+    ```
 
 ## Package Manager
 
@@ -28,26 +28,26 @@ pip is the package installer for Python, which is used to install, manage, and u
 
 - Upgrade pip
 
-```bash
-pip install --upgrade pip
-```
+    ```bash
+    pip install --upgrade pip
+    ```
 
 - Install packages via command line
 
-```bash
-pip install package1 package2
-```
+    ```bash
+    pip install package1 package2
+    ```
 
 - Install packages via file
 
-```bash title="requirements.txt"
-package1
-package2
-```
+    ```bash title="requirements.txt"
+    package1
+    package2
+    ```
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ### Poetry
 
@@ -55,24 +55,24 @@ Poetry is arguably the most feature-rich dependency management tool for Python. 
 
 - Install Poetry
 
-```bash
-sudo curl -sSL https://install.python-poetry.org | python3.10 -
-```
+    ```bash
+    sudo curl -sSL https://install.python-poetry.org | python3.10 -
+    ```
 
 - Scaffold a new project
 
-```bash
-poetry new sample-project
-cd sample-project
-```
+    ```bash
+    poetry new sample-project
+    cd sample-project
+    ```
 
-Dependencies are managed inside the ==pyproject.toml== file.
+Dependencies are managed inside the `pyproject.toml` file.
 
 - To add new a dependency, simply run:
 
-```bash
-poetry add package1
-```
+    ```bash
+    poetry add package1
+    ```
 
 ### Pipenv
 
@@ -83,25 +83,25 @@ Pipenv attempts to solve the same problems that Poetry does:
 
 - Install Poetry
 
-```bash
-sudo dnf install python3-pip -y
-sudo pip3 install pipenv
-```
+    ```bash
+    sudo dnf install python3-pip -y
+    sudo pip3 install pipenv
+    ```
 
 - Scaffold a new project
 
-```bash
-mkdir sample-project
-cd sample-project
-PYTHON_VERSION=$(python3.10 --version | awk '{print $2}')
-pipenv --python $PYTHON_VERSION
-```
+    ```bash
+    mkdir sample-project
+    cd sample-project
+    PYTHON_VERSION=$(python3.10 --version | awk '{print $2}')
+    pipenv --python $PYTHON_VERSION
+    ```
 
 - To add new a dependency, simply run:
 
-```bash
-pipenv install package1
-```
+    ```bash
+    pipenv install package1
+    ```
 
 ## Visual Studio Code
 
@@ -123,15 +123,15 @@ Black is a popular Python code formatter that automatically formats your code ac
 
 - Install the black Python package via command line
 
-```bash
-pip install black
-```
+    ```bash
+    pip install black
+    ```
 
-- Type the ==Ctrl + ,== or ==Cmd + ,== to open the settings page in the VSCode.
+- Type the ++ctrl++ `+`, or ++cmd++ `+`, to open the settings page in the VSCode.
 
-- Search ==format on save== and check the checkbox.
+- Search for ^^format on save^^ and check the checkbox.
 
-- Search ==python formatting provider== and select the ==black==.
+- Search for ^^python formatting provider^^ and select the ^^black^^.
 
 Now, if you open the python file and save, it will be auto formatted by the black!
 
@@ -143,11 +143,11 @@ isort is a Python library and command-line utility for sorting and organizing im
 
     Visual Studio Code already has the built-in function to use isort so that we don't need to install it by pip.
 
-- Type ==Ctrl + Shift + P== or ==Cmd + Shift + P==.
+- Type ++ctrl+shift+p++ or ++cmd+shift+p++
 
-- Search for ==Preferences: Configure Language Specific Settings== and press enter.
+- Search for ^^Preferences: Configure Language Specific Settings^^ and press enter.
 
-- Select ==Python==. It will open the ==settings.json==.
+- Select ^^Python^^. It will open the ^^settings.json^^.
 
 - Please add the following settings:
 
@@ -167,14 +167,14 @@ Flake8 is a popular Python linter that checks Python code for style and syntax e
 
 - Install the flake8 Python package via command line
 
-```bash
-pip install flake8
-```
+    ```bash
+    pip install flake8
+    ```
 
-- Type ==Ctrl + Shift + P== or ==Cmd + Shift + P==.
+- Type ++ctrl+shift+p++ or ++cmd+shift+p++
 
-- Search for ==Python: Select Linter== and press enter.
+- Search for ^^Python: Select Linter^^ and press enter.
 
-- Select ==flake8==.
+- Select ^^flake8^^.
 
 Linting runs automa.Linting runs automatically when you save a file.
