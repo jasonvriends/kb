@@ -928,52 +928,56 @@
 <p>An Open Source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL® and pre-Stream CentOS.</p>
 <h2 id="updates">Updates<a class="headerlink" href="#updates" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Check for available package updates</li>
-</ul>
+<li>
+<p>Check for available package updates</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>check-update<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Install a specific package update</li>
-</ul>
+</li>
+<li>
+<p>Install a specific package update</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>update<span class="w"> </span>package-name<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Upgrade all of your system software</li>
-</ul>
+</li>
+<li>
+<p>Upgrade all of your system software</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>update<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Enable automatic security updates</li>
-</ul>
+</li>
+<li>
+<p>Enable automatic security updates</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>dnf-automatic<span class="w"> </span>-y
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;s/apply_updates = no/apply_updates = yes/&quot;</span><span class="w"> </span>/etc/dnf/automatic.conf
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>dnf-automatic.timer
 </span></code></pre></div>
+</li>
+</ul>
 <h2 id="software">Software<a class="headerlink" href="#software" title="Permanent link">&para;</a></h2>
 <h3 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
 <p>A distributed version control system that allows multiple people to collaborate on a project by tracking changes to files and coordinating their work. It enables developers to create branches, make modifications, merge changes, and handle conflicts efficiently. Git is widely used in software development to manage source code and maintain a history of changes.</p>
 <ul>
-<li>Install</li>
-</ul>
+<li>
+<p>Install</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Configure</li>
-</ul>
+</li>
+<li>
+<p>Configure</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;your git username&quot;</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;email for git account&quot;</span>
 </span></code></pre></div>
+</li>
+</ul>
 <h3 id="python-310">Python 3.10<a class="headerlink" href="#python-310" title="Permanent link">&para;</a></h3>
 <p>A high-level, interpreted programming language known for its simplicity and readability. It emphasizes code readability and offers a wide range of libraries and frameworks that make it versatile for various applications. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. It is widely used for web development, data analysis, scientific computing, artificial intelligence, and automation tasks.</p>
 <ul>
-<li>Prerequisites</li>
-</ul>
+<li>
+<p>Prerequisites</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>wget<span class="w"> </span>yum-utils<span class="w"> </span>make<span class="w"> </span>gcc<span class="w"> </span>openssl-devel<span class="w"> </span>bzip2-devel<span class="w"> </span>libffi-devel<span class="w"> </span>zlib-devel<span class="w"> </span>-y
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>update<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Install</li>
-</ul>
+</li>
+<li>
+<p>Install</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>wget<span class="w"> </span>https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>tar<span class="w"> </span>xzf<span class="w"> </span>Python-3.10.5.tgz
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">cd</span><span class="w"> </span>Python-3.10.5
@@ -981,71 +985,83 @@
 </span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>sudo<span class="w"> </span>make<span class="w"> </span>-j<span class="w"> </span><span class="si">${</span><span class="nv">nproc</span><span class="si">}</span>
 </span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>sudo<span class="w"> </span>make<span class="w"> </span>altinstall
 </span></code></pre></div>
+</li>
+</ul>
 <h3 id="podman">Podman<a class="headerlink" href="#podman" title="Permanent link">&para;</a></h3>
 <p>A containerization platform that allows users to manage and run containers on a Linux system. It provides a command-line interface (CLI) for creating, running, and managing containers, similar to Docker. However, Podman offers some advantages over Docker, such as running containers without requiring a daemon process, supporting rootless mode, and providing a more secure and isolated container runtime environment.</p>
 <ul>
-<li>Prerequisites</li>
-</ul>
+<li>
+<p>Prerequisites</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>epel-release<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Install</li>
-</ul>
+</li>
+<li>
+<p>Install</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>podman<span class="w"> </span>podman-compose<span class="w"> </span>-y
 </span></code></pre></div>
+</li>
+</ul>
 <h3 id="azure-cli">Azure CLI<a class="headerlink" href="#azure-cli" title="Permanent link">&para;</a></h3>
 <p>A cross-platform command-line tool provided by Microsoft for managing and interacting with Azure resources. It allows users to manage and automate various Azure services and resources through a command-line interface rather than a graphical user interface (GUI). Azure CLI provides a set of commands and parameters that can be used to perform operations such as creating and managing virtual machines, deploying applications, managing storage accounts, configuring networking, and more. It is available for Windows, macOS, and Linux platforms and supports scripting and automation.</p>
 <ul>
-<li>Prerequisites</li>
-</ul>
+<li>
+<p>Prerequisites</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>rpm<span class="w"> </span>--import<span class="w"> </span>https://packages.microsoft.com/keys/microsoft.asc
 </span></code></pre></div>
-<ul>
-<li>Install</li>
-</ul>
+</li>
+<li>
+<p>Install</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm<span class="w"> </span>-y
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>azure-cli<span class="w"> </span>-y
 </span></code></pre></div>
+</li>
+</ul>
 <h3 id="terraform">Terraform<a class="headerlink" href="#terraform" title="Permanent link">&para;</a></h3>
 <p>An open-source infrastructure-as-code tool used for provisioning and managing cloud infrastructure resources. It allows you to define and create infrastructure components such as virtual machines, storage, and networks using declarative configuration files. Terraform supports multiple cloud providers, including AWS, Azure, and Google Cloud Platform, enabling you to manage your infrastructure in a consistent and reproducible manner.</p>
 <ul>
-<li>Prerequisites</li>
-</ul>
+<li>
+<p>Prerequisites</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>yum-config-manager<span class="w"> </span>--add-repo<span class="w"> </span>https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Install</li>
-</ul>
+</li>
+<li>
+<p>Install</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>terraform<span class="w"> </span>-y
 </span></code></pre></div>
+</li>
+</ul>
 <h3 id="node-package-manager">Node Package Manager<a class="headerlink" href="#node-package-manager" title="Permanent link">&para;</a></h3>
 <p>npm is an open-source package manager designed for the JavaScript programming language. It serves as a reliable and efficient tool for developers to discover, install, and maintain code packages and libraries used in JavaScript applications. By utilizing npm, developers can effortlessly manage dependencies, ensuring their projects are built on a solid foundation of reusable code components.</p>
 <ul>
-<li>Install</li>
-</ul>
+<li>
+<p>Install</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>npm<span class="w"> </span>-y
 </span></code></pre></div>
+</li>
+</ul>
 <h3 id="utilities">Utilities<a class="headerlink" href="#utilities" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Tree</li>
-</ul>
+<li>
+<p>Tree</p>
 <p>A command-line utility that displays the directory structure of a file system in a tree-like format. It shows the hierarchy of directories and their subdirectories, along with the files contained within them. The tree command helps users visualize the organization of files and directories on their system.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>tree<span class="w"> </span>-y
 </span></code></pre></div>
-<ul>
-<li>Zip</li>
-</ul>
+</li>
+<li>
+<p>Zip</p>
 <p>A command-line utility used for compressing and packaging files and directories into a compressed archive format. It is typically available in most Unix-like operating systems, including Linux.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>zip<span class="w"> </span>-y
 </span></code></pre></div>
+</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 4, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 6, 2023</span>
       
         <br>
         Created:
