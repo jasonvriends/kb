@@ -688,14 +688,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#package-manager" class="md-nav__link">
     Package Manager
   </a>
@@ -704,8 +696,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#npm" class="md-nav__link">
-    Npm
+  <a href="#node-package-manager" class="md-nav__link">
+    Node Package Manager
   </a>
   
 </li>
@@ -713,52 +705,6 @@
           <li class="md-nav__item">
   <a href="#yarn" class="md-nav__link">
     Yarn
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#module-bundler" class="md-nav__link">
-    Module Bundler
-  </a>
-  
-    <nav class="md-nav" aria-label="Module Bundler">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parcel" class="md-nav__link">
-    Parcel
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#webpack" class="md-nav__link">
-    Webpack
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#browserify" class="md-nav__link">
-    Browserify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compiler" class="md-nav__link">
-    Compiler
   </a>
   
 </li>
@@ -777,14 +723,95 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#optional-packages" class="md-nav__link">
-    Optional Packages
+  <a href="#scaffold-a-new-project" class="md-nav__link">
+    Scaffold a new project
+  </a>
+  
+    <nav class="md-nav" aria-label="Scaffold a new project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-react-app" class="md-nav__link">
+    Create React App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vite" class="md-nav__link">
+    Vite
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-frameworks" class="md-nav__link">
+    UI Frameworks
+  </a>
+  
+    <nav class="md-nav" aria-label="UI Frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    Bootstrap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-ui-package" class="md-nav__link">
+    Material UI package
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-components" class="md-nav__link">
+    React Components
+  </a>
+  
+    <nav class="md-nav" aria-label="React Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fragments" class="md-nav__link">
+    Fragments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#react-router" class="md-nav__link">
+    React Router
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
   
 </li>
       
@@ -956,79 +983,143 @@
 
 <h1 id="react">React<a class="headerlink" href="#react" title="Permanent link">&para;</a></h1>
 <p>React is a popular JavaScript library for building user interfaces. It was developed by Facebook and released in 2013. React is often used in single-page applications and is known for its component-based architecture.</p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<h3 id="package-manager">Package Manager<a class="headerlink" href="#package-manager" title="Permanent link">&para;</a></h3>
-<p>npm (comes pre-bundled with Node.js) or Yarn can be used to download and install <strong>React</strong> and <strong>React DOM</strong> packages along with component and other third-party libraries.</p>
-<h4 id="npm">Npm<a class="headerlink" href="#npm" title="Permanent link">&para;</a></h4>
-<p>npm is the go-to package manager for the JavaScript ecosystem, providing a seamless solution for installing, managing, and uninstalling JavaScript packages and their dependencies. Serving as a command-line tool, npm comes bundled with Node.js and facilitates the effortless integration of third-party libraries and modules that extend the capabilities of JavaScript applications beyond the standard library.</p>
+<h2 id="package-manager">Package Manager<a class="headerlink" href="#package-manager" title="Permanent link">&para;</a></h2>
+<h3 id="node-package-manager">Node Package Manager<a class="headerlink" href="#node-package-manager" title="Permanent link">&para;</a></h3>
+<p>npm is a package manager for the JavaScript programming language and is primarily used for managing dependencies in Node.js projects. npm allows developers to easily install, update, and remove packages or libraries in their projects.</p>
 <ul>
-<li>Install npm via command line</li>
-</ul>
+<li>
+<p>Install npm via command line</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>npm<span class="w"> </span>-y
 </span></code></pre></div>
-<h4 id="yarn">Yarn<a class="headerlink" href="#yarn" title="Permanent link">&para;</a></h4>
-<p>Yarn is a package manager for JavaScript that was introduced as an alternative to npm (Node Package Manager). It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.</p>
-<ul>
-<li>Install yarn via command line</li>
+</li>
 </ul>
+<h3 id="yarn">Yarn<a class="headerlink" href="#yarn" title="Permanent link">&para;</a></h3>
+<p>Yarn is a package manager for JavaScript that was introduced as an alternative to npm. It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.</p>
+<ul>
+<li>
+<p>Install yarn via command line</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>yarn
 </span></code></pre></div>
-<h3 id="module-bundler">Module Bundler<a class="headerlink" href="#module-bundler" title="Permanent link">&para;</a></h3>
-<p>A module bundler is a tool used in web development to combine and package multiple modules or files into a single file, typically for use in a web application. It takes care of resolving dependencies, optimizing code, and creating a production-ready bundle that can be served to the browser.</p>
-<h4 id="parcel">Parcel<a class="headerlink" href="#parcel" title="Permanent link">&para;</a></h4>
-<h4 id="webpack">Webpack<a class="headerlink" href="#webpack" title="Permanent link">&para;</a></h4>
-<h4 id="browserify">Browserify<a class="headerlink" href="#browserify" title="Permanent link">&para;</a></h4>
-<h3 id="compiler">Compiler<a class="headerlink" href="#compiler" title="Permanent link">&para;</a></h3>
-<p>React itself is not compiled, Babel is commonly used to transform JSX syntax and modern JavaScript features into compatible code that can run in different browsers and environments.</p>
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Scaffold a new project</li>
+</li>
 </ul>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="scaffold-a-new-project">Scaffold a new project<a class="headerlink" href="#scaffold-a-new-project" title="Permanent link">&para;</a></h3>
+<p><a href="https://create-react-app.dev/">Create React App</a> and <a href="https://vitejs.dev/guide/">Vite</a> (my preference) are two of the most popular methods for scaffolding new React projects.</p>
+<h4 id="create-react-app">Create React App<a class="headerlink" href="#create-react-app" title="Permanent link">&para;</a></h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npx<span class="w"> </span>create-react-app<span class="w"> </span>&lt;project-name&gt;
 </span></code></pre></div>
-<h3 id="optional-packages">Optional Packages<a class="headerlink" href="#optional-packages" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Install <a href="https://mui.com/material-ui/getting-started/installation/">Material UI</a></li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@mui/material<span class="w"> </span>@emotion/react<span class="w"> </span>@emotion/styled<span class="w"> </span>@mui/icons-material<span class="w"> </span>@mui/x-data-grid
+<h4 id="vite">Vite<a class="headerlink" href="#vite" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>create<span class="w"> </span>vite@latest
 </span></code></pre></div>
+<h3 id="ui-frameworks">UI Frameworks<a class="headerlink" href="#ui-frameworks" title="Permanent link">&para;</a></h3>
+<h4 id="bootstrap">Bootstrap<a class="headerlink" href="#bootstrap" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Install <a href="https://reactrouter.com/en/main">React Router</a></li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm<span class="w"> </span>install<span class="w"> </span>react-router-dom
+<li>
+<p>Install the <a href="https://getbootstrap.com/">Bootstrap</a> package</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm<span class="w"> </span>install<span class="w"> </span>bootstrap
 </span></code></pre></div>
+</li>
+<li>
+<p>Import the Bootstrap object</p>
+<div class="language-text highlight"><span class="filename">main.tsx</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>import &#39;bootstrap/dist/css/bootstrap.css&#39;
+</span></code></pre></div>
+</li>
+</ul>
+<h4 id="material-ui-package">Material UI package<a class="headerlink" href="#material-ui-package" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Install <a href="https://github.com/azouaoui-med/react-pro-sidebar">React Pro Sidebar</a></li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>react-pro-sidebar
+<li>
+<p>Install <a href="https://mui.com/material-ui/getting-started/installation/">Material UI</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@mui/material<span class="w"> </span>@emotion/react<span class="w"> </span>@emotion/styled<span class="w"> </span>@mui/icons-material<span class="w"> </span>@mui/x-data-grid
 </span></code></pre></div>
+</li>
+</ul>
+<h3 id="react-components">React Components<a class="headerlink" href="#react-components" title="Permanent link">&para;</a></h3>
+<p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types: <ins>Class</ins> components and <ins>Function</ins> components. It's recommended to use Functional Components for new React applications.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Function</label><label for="__tabbed_1_2">Class</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><span class="filename">Car.js</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>function Car() {
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  return &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt;;
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>}
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><span class="filename">Car.js</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>class Car extends React.Component {
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  render() {
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    return &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt;;
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  }
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>}
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="fragments">Fragments<a class="headerlink" href="#fragments" title="Permanent link">&para;</a></h4>
+<p>In a component, you can only return one HTML element (i.e., H1). In order to return multiple HTML elements, you can either nest them inside a DIV or use a React Fragment.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Shortform</label><label for="__tabbed_2_2">Longform</label><label for="__tabbed_2_3">Div</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>function ListGroup() {
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  return (
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="hll">    &lt;&gt;
+</span></span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>      &lt;h1&gt;List Group&lt;/h1&gt;
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="hll">    &lt;/&gt;
+</span></span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  );
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>}
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>export default ListGroup;
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="hll">import { Fragment } from &quot;react&quot;;
+</span></span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>function ListGroup() {
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    return (
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="hll">        &lt;Fragment&gt;
+</span></span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>        &lt;h1&gt;List Group&lt;/h1&gt;
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="hll">        &lt;/Fragment&gt;
+</span></span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    );
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>}
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>export default ListGroup
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>function ListGroup() {
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    return (
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="hll">        &lt;div&gt;
+</span></span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>          &lt;h1&gt;List Group&lt;/h1&gt;
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="hll">        &lt;/div&gt;
+</span></span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    );
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>}
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>export default ListGroup
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="react-router">React Router<a class="headerlink" href="#react-router" title="Permanent link">&para;</a></h2>
+<p>React Router is a popular library for handling routing in React applications. It allows you to create declarative routing in your React components, enabling navigation between different pages or views within your application.</p>
 <ul>
-<li>Install <a href="https://formik.org/">Formik</a></li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>npm<span class="w"> </span>install<span class="w"> </span>formik
+<li>
+<p>Install <a href="https://reactrouter.com/en/main">React Router</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>npm<span class="w"> </span>install<span class="w"> </span>react-router-dom
 </span></code></pre></div>
+</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Install <a href="https://github.com/jquense/yup">Yup</a></li>
+<li><a href="https://scrimba.com/learn/htmlandcss">Learn HTML and CSS</a></li>
+<li><a href="https://scrimba.com/learn/learnjavascript">Learn JavaScript</a></li>
+<li><a href="https://scrimba.com/learn/learnreact">Learn React</a></li>
+<li><a href="https://scrimba.com/learn/reactrouter6">Learn React Router</a></li>
 </ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>npm<span class="w"> </span>install<span class="w"> </span>yup
-</span></code></pre></div>
-<ul>
-<li>Install <a href="https://fullcalendar.io/docs/react">FullCalendar</a></li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@fullcalendar/core<span class="w"> </span>@fullcalendar/daygrid<span class="w"> </span>@fullcalendar/timegrid<span class="w"> </span>@fullcalendar/daygrid<span class="w"> </span>@fullcalendar/list
-</span></code></pre></div>
-<ul>
-<li>Install <a href="https://nivo.rocks/">Nivo</a></li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>npm<span class="w"> </span>install<span class="w"> </span>nivo/core<span class="w"> </span>nivo/pie<span class="w"> </span>nivo/bar<span class="w"> </span>nivo/geo
-</span></code></pre></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 4, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 6, 2023</span>
       
         <br>
         Created:
