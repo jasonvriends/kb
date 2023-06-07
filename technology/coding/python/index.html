@@ -953,6 +953,8 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3.10<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
 </span></code></pre></div>
 </li>
+</ul>
+<ul>
 <li>
 <p>Activate the Python Virtual Environment</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
@@ -968,11 +970,15 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
 </span></code></pre></div>
 </li>
+</ul>
+<ul>
 <li>
 <p>Install packages via command line</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>package1<span class="w"> </span>package2
 </span></code></pre></div>
 </li>
+</ul>
+<ul>
 <li>
 <p>Install packages via file</p>
 <div class="language-bash highlight"><span class="filename">requirements.txt</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>package1
@@ -990,6 +996,8 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>curl<span class="w"> </span>-sSL<span class="w"> </span>https://install.python-poetry.org<span class="w"> </span><span class="p">|</span><span class="w"> </span>python3.10<span class="w"> </span>-
 </span></code></pre></div>
 </li>
+</ul>
+<ul>
 <li>
 <p>Scaffold a new project</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>poetry<span class="w"> </span>new<span class="w"> </span>sample-project
@@ -1009,15 +1017,17 @@
 <p>Pipenv attempts to solve the same problems that Poetry does:</p>
 <ul>
 <li>Managing dependencies and virtual environments</li>
-<li>
-<p>Reproducing environments</p>
-</li>
+<li>Reproducing environments</li>
+</ul>
+<ul>
 <li>
 <p>Install Poetry</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>python3-pip<span class="w"> </span>-y
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>pipenv
 </span></code></pre></div>
 </li>
+</ul>
+<ul>
 <li>
 <p>Scaffold a new project</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mkdir<span class="w"> </span>sample-project
@@ -1026,6 +1036,8 @@
 </span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>pipenv<span class="w"> </span>--python<span class="w"> </span><span class="nv">$PYTHON_VERSION</span>
 </span></code></pre></div>
 </li>
+</ul>
+<ul>
 <li>
 <p>To add new a dependency, simply run:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pipenv<span class="w"> </span>install<span class="w"> </span>package1
@@ -1051,15 +1063,15 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>pip<span class="w"> </span>install<span class="w"> </span>black
 </span></code></pre></div>
 </li>
-<li>
-<p>Type the <span class="keys"><kbd class="key-control">Ctrl</kbd></span> <code>+</code>, or <span class="keys"><kbd class="key-command">Cmd</kbd></span> <code>+</code>, to open the settings page in the VSCode.</p>
-</li>
-<li>
-<p>Search for <ins>format on save</ins> and check the checkbox.</p>
-</li>
-<li>
-<p>Search for <ins>python formatting provider</ins> and select the <ins>black</ins>.</p>
-</li>
+</ul>
+<ul>
+<li>Type the <span class="keys"><kbd class="key-control">Ctrl</kbd></span> <code>+</code>, or <span class="keys"><kbd class="key-command">Cmd</kbd></span> <code>+</code>, to open the settings page in the VSCode.</li>
+</ul>
+<ul>
+<li>Search for <ins>format on save</ins> and check the checkbox.</li>
+</ul>
+<ul>
+<li>Search for <ins>python formatting provider</ins> and select the <ins>black</ins>.</li>
 </ul>
 <p>Now, if you open the python file and save, it will be auto formatted by the black!</p>
 <h3 id="isort">isort<a class="headerlink" href="#isort" title="Permanent link">&para;</a></h3>
@@ -1069,18 +1081,16 @@
 <p>Visual Studio Code already has the built-in function to use isort so that we don't need to install it by pip.</p>
 </div>
 <ul>
-<li>
-<p>Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span></p>
-</li>
-<li>
-<p>Search for <ins>Preferences: Configure Language Specific Settings</ins> and press enter.</p>
-</li>
-<li>
-<p>Select <ins>Python</ins>. It will open the <ins>settings.json</ins>.</p>
-</li>
-<li>
-<p>Please add the following settings:</p>
-</li>
+<li>Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span></li>
+</ul>
+<ul>
+<li>Search for <ins>Preferences: Configure Language Specific Settings</ins> and press enter.</li>
+</ul>
+<ul>
+<li>Select <ins>Python</ins>. It will open the <ins>settings.json</ins>.</li>
+</ul>
+<ul>
+<li>Please add the following settings:</li>
 </ul>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&quot;editor.codeActionsOnSave&quot;: {
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    &quot;source.organizeImports&quot;: true
@@ -1098,15 +1108,15 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>pip<span class="w"> </span>install<span class="w"> </span>flake8
 </span></code></pre></div>
 </li>
-<li>
-<p>Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span></p>
-</li>
-<li>
-<p>Search for <ins>Python: Select Linter</ins> and press enter.</p>
-</li>
-<li>
-<p>Select <ins>flake8</ins>.</p>
-</li>
+</ul>
+<ul>
+<li>Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span></li>
+</ul>
+<ul>
+<li>Search for <ins>Python: Select Linter</ins> and press enter.</li>
+</ul>
+<ul>
+<li>Select <ins>flake8</ins>.</li>
 </ul>
 <p>Linting runs automa.Linting runs automatically when you save a file.</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
@@ -1159,6 +1169,7 @@
   
     <div class="md-copyright__highlight">
       <a href="https://github.com/jasonvriends" target="_blank" rel="noopener">Jason Vriends</a>
+
     </div>
   
   
