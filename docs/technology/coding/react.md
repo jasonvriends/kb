@@ -56,15 +56,36 @@ npm create vite@latest
 
     ```jsx title="main.tsx"
     import 'bootstrap/dist/css/bootstrap.css'
+    import "bootstrap/dist/js/bootstrap.bundle.min";
     ```
 
-#### Material UI package
+#### Material UI
 
 - Install [Material UI](https://mui.com/material-ui/getting-started/installation/)
 
     ```bash
     npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid
     ```
+
+#### Flowbite React
+
+- Install the [Flowbite React](https://www.flowbite-react.com/) package
+
+    ```bash
+    npm install flowbite flowbite-react
+    ```
+
+- [Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard)
+
+### Styling and CSS
+
+React uses `className` instead of `class` is because `class` is a reserved keyword in JavaScript, and JSX (the syntax extension used by React) is essentially JavaScript code. JSX allows you to write HTML-like code within JavaScript, but since `class` has a specific meaning in JavaScript (used for defining classes), it cannot be used as an attribute name in JSX.
+
+```jsx
+render() {
+  return <span className="menu navigation-menu">Menu</span>
+}
+```
 
 ### React Components
 
@@ -152,4 +173,5 @@ React Router is a popular library for handling routing in React applications. It
 - [Learn HTML and CSS](https://scrimba.com/learn/htmlandcss)
 - [Learn JavaScript](https://scrimba.com/learn/learnjavascript)
 - [Learn React](https://scrimba.com/learn/learnreact)
+- [React Tutorial for Beginners](https://www.youtube.com/watch?v=SqcY0GlETPk)
 - [Learn React Router](https://scrimba.com/learn/reactrouter6)
