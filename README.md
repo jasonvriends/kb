@@ -1,4 +1,5 @@
 # kb
+
 Shared Knowledge for future use
 
 # Getting Started
@@ -24,7 +25,7 @@ Shared Knowledge for future use
 - Install packages via command line
 
   ```bash
-  pip install mkdocs-material pillow cairosvg mkdocs-section-index mkdocs-git-revision-date-localized-plugin
+  pip install mkdocs-material pillow cairosvg mkdocs-section-index mkdocs-git-revision-date-localized-plugin mdx_truly_sane_lists
   ```
 
 - Install the cairo graphics library
