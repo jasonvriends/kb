@@ -75,6 +75,8 @@ npm create vite@latest
   npm install flowbite flowbite-react
   ```
 
+- [Flowbite Integration](https://flowbite.com/docs/getting-started/react/)
+
 - [Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard)
 
 ### Styling and CSS
