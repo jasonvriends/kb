@@ -91,77 +91,15 @@ render() {
 
 ### React Components
 
-Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types: ^^Class^^ components and ^^Function^^ components. It's recommended to use Functional Components for new React applications.
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
 
-=== "Function"
+```jsx title="Navbar.js"
+const Navbar = () => {
+  return <>{/* Your navbar content goes here */}</>
+}
 
-    ```jsx title="Car.js"
-    import React from 'react';
-
-    function Car() {
-      return <h2>Hi, I am a Car!</h2>;
-    }
-    ```
-
-=== "Class"
-
-    ```jsx title="Car.js"
-    import React from 'react';
-
-    class Car extends React.Component {
-      render() {
-        return <h2>Hi, I am a Car!</h2>;
-      }
-    }
-    ```
-
-#### Fragments
-
-In a component, you can only return one HTML element (i.e., H1). In order to return multiple HTML elements, you can either nest them inside a DIV or use a React Fragment.
-
-=== "Shortform"
-
-    ```jsx hl_lines="3 5"
-    function ListGroup() {
-      return (
-        <>
-          <h1>List Group</h1>
-        </>
-      );
-    }
-
-    export default ListGroup;
-    ```
-
-=== "Longform"
-
-    ```jsx hl_lines="1 5 7"
-    import { Fragment } from "react";
-
-    function ListGroup() {
-        return (
-            <Fragment>
-            <h1>List Group</h1>
-            </Fragment>
-        );
-    }
-
-    export default ListGroup
-    ```
-
-=== "Div"
-
-    ```jsx hl_lines="3 5"
-    function ListGroup() {
-        return (
-            <div>
-              <h1>List Group</h1>
-            </div>
-        );
-    }
-
-    export default ListGroup
-    ```
+export default Navbar
+```
 
 ## React Router
 
