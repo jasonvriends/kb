@@ -8,7 +8,7 @@ React is a popular JavaScript library for building user interfaces. It was devel
 
 npm is a package manager for the JavaScript programming language and is primarily used for managing dependencies in Node.js projects. npm allows developers to easily install, update, and remove packages or libraries in their projects.
 
-- Install npm via command line
+-   Install npm via command line
 
     ```bash
     sudo dnf install npm -y
@@ -18,7 +18,7 @@ npm is a package manager for the JavaScript programming language and is primaril
 
 Yarn is a package manager for JavaScript that was introduced as an alternative to npm. It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.
 
-- Install yarn via command line
+-   Install yarn via command line
 
     ```bash
     sudo npm install -g yarn
@@ -29,7 +29,7 @@ Yarn is a package manager for JavaScript that was introduced as an alternative t
 ### Scaffold a new project
 
 [Create React App](https://create-react-app.dev/) and [Vite](https://vitejs.dev/guide/) (my preference) are two of the most popular methods for scaffolding new React projects.
- 
+
 #### Create React App
 
 ```bash
@@ -46,22 +46,22 @@ npm create vite@latest
 
 #### Bootstrap
 
-- Install the [Bootstrap](https://getbootstrap.com/) package
+-   Install the [Bootstrap](https://getbootstrap.com/) package
 
     ```bash
     npm install bootstrap
     ```
 
-- Import the Bootstrap object
+-   Import the Bootstrap object
 
     ```jsx title="main.tsx"
-    import 'bootstrap/dist/css/bootstrap.css'
+    import "bootstrap/dist/css/bootstrap.css";
     import "bootstrap/dist/js/bootstrap.bundle.min";
     ```
 
 #### Material UI
 
-- Install [Material UI](https://mui.com/material-ui/getting-started/installation/)
+-   Install [Material UI](https://mui.com/material-ui/getting-started/installation/)
 
     ```bash
     npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid
@@ -69,13 +69,13 @@ npm create vite@latest
 
 #### Flowbite React
 
-- Install the [Flowbite React](https://www.flowbite-react.com/) package
+-   Install the [Flowbite React](https://www.flowbite-react.com/) package
 
     ```bash
     npm install flowbite flowbite-react
     ```
 
-- [Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard)
+-   [Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard)
 
 ### Styling and CSS
 
@@ -94,6 +94,8 @@ Components are independent and reusable bits of code. They serve the same purpos
 === "Function"
 
     ```jsx title="Car.js"
+    import React from 'react';
+
     function Car() {
       return <h2>Hi, I am a Car!</h2>;
     }
@@ -102,13 +104,14 @@ Components are independent and reusable bits of code. They serve the same purpos
 === "Class"
 
     ```jsx title="Car.js"
+    import React from 'react';
+
     class Car extends React.Component {
       render() {
         return <h2>Hi, I am a Car!</h2>;
       }
     }
     ```
-
 
 #### Fragments
 
@@ -124,7 +127,7 @@ In a component, you can only return one HTML element (i.e., H1). In order to ret
         </>
       );
     }
-    
+
     export default ListGroup;
     ```
 
@@ -132,7 +135,7 @@ In a component, you can only return one HTML element (i.e., H1). In order to ret
 
     ```jsx hl_lines="1 5 7"
     import { Fragment } from "react";
-    
+
     function ListGroup() {
         return (
             <Fragment>
@@ -140,7 +143,7 @@ In a component, you can only return one HTML element (i.e., H1). In order to ret
             </Fragment>
         );
     }
-    
+
     export default ListGroup
     ```
 
@@ -154,7 +157,7 @@ In a component, you can only return one HTML element (i.e., H1). In order to ret
             </div>
         );
     }
-    
+
     export default ListGroup
     ```
 
@@ -162,7 +165,7 @@ In a component, you can only return one HTML element (i.e., H1). In order to ret
 
 React Router is a popular library for handling routing in React applications. It allows you to create declarative routing in your React components, enabling navigation between different pages or views within your application.
 
-- Install [React Router](https://reactrouter.com/en/main)
+-   Install [React Router](https://reactrouter.com/en/main)
 
     ```bash
     npm install react-router-dom
@@ -170,8 +173,8 @@ React Router is a popular library for handling routing in React applications. It
 
 ## References
 
-- [Learn HTML and CSS](https://scrimba.com/learn/htmlandcss)
-- [Learn JavaScript](https://scrimba.com/learn/learnjavascript)
-- [Learn React](https://scrimba.com/learn/learnreact)
-- [React Tutorial for Beginners](https://www.youtube.com/watch?v=SqcY0GlETPk)
-- [Learn React Router](https://scrimba.com/learn/reactrouter6)
+-   [Learn HTML and CSS](https://scrimba.com/learn/htmlandcss)
+-   [Learn JavaScript](https://scrimba.com/learn/learnjavascript)
+-   [Learn React](https://scrimba.com/learn/learnreact)
+-   [React Tutorial for Beginners](https://www.youtube.com/watch?v=SqcY0GlETPk)
+-   [Learn React Router](https://scrimba.com/learn/reactrouter6)
