@@ -8,17 +8,17 @@ A Python virtual environment is a self-contained directory that contains a speci
 
 The venv module is a built-in module in Python that provides support for creating and managing virtual environments. The venv module was introduced in Python 3.3 as a replacement for the older virtualenv package. It is used to create a new Python environment that includes its own installation of Python, pip, and other required libraries.
 
--   Create a Python Virtual Environment
+- Create a Python Virtual Environment
 
-    ```bash
-    python3.10 -m venv .venv
-    ```
+  ```bash
+  python3.10 -m venv .venv
+  ```
 
--   Activate the Python Virtual Environment
+- Activate the Python Virtual Environment
 
-    ```bash
-    source .venv/bin/activate
-    ```
+  ```bash
+  source .venv/bin/activate
+  ```
 
 ## Package Manager
 
@@ -26,82 +26,82 @@ The venv module is a built-in module in Python that provides support for creatin
 
 pip is the package installer for Python, which is used to install, manage, and uninstall Python packages and their dependencies. It is a command-line tool that comes with Python and is used to install third-party libraries and modules that are not included in the standard library.
 
--   Upgrade pip
+- Upgrade pip
 
-    ```bash
-    pip install --upgrade pip
-    ```
+  ```bash
+  pip install --upgrade pip
+  ```
 
--   Install packages via command line
+- Install packages via command line
 
-    ```bash
-    pip install package1 package2
-    ```
+  ```bash
+  pip install package1 package2
+  ```
 
--   Install packages via file
+- Install packages via file
 
-    ```bash title="requirements.txt"
-    package1
-    package2
-    ```
+  ```bash title="requirements.txt"
+  package1
+  package2
+  ```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 ### Poetry
 
 Poetry is arguably the most feature-rich dependency management tool for Python. It comes with a powerful CLI used for creating and managing Python projects.
 
--   Install Poetry
+- Install Poetry
 
-    ```bash
-    sudo curl -sSL https://install.python-poetry.org | python3.10 -
-    ```
+  ```bash
+  sudo curl -sSL https://install.python-poetry.org | python3.10 -
+  ```
 
--   Scaffold a new project
+- Scaffold a new project
 
-    ```bash
-    poetry new sample-project
-    cd sample-project
-    ```
+  ```bash
+  poetry new sample-project
+  cd sample-project
+  ```
 
 Dependencies are managed inside the `pyproject.toml` file.
 
--   To add new a dependency, simply run:
+- To add new a dependency, simply run:
 
-    ```bash
-    poetry add package1
-    ```
+  ```bash
+  poetry add package1
+  ```
 
 ### Pipenv
 
 Pipenv attempts to solve the same problems that Poetry does:
 
--   Managing dependencies and virtual environments
--   Reproducing environments
+- Managing dependencies and virtual environments
+- Reproducing environments
 
--   Install Poetry
+- Install Poetry
 
-    ```bash
-    sudo dnf install python3-pip -y
-    sudo pip3 install pipenv
-    ```
+  ```bash
+  sudo dnf install python3-pip -y
+  sudo pip3 install pipenv
+  ```
 
--   Scaffold a new project
+- Scaffold a new project
 
-    ```bash
-    mkdir sample-project
-    cd sample-project
-    PYTHON_VERSION=$(python3.10 --version | awk '{print $2}')
-    pipenv --python $PYTHON_VERSION
-    ```
+  ```bash
+  mkdir sample-project
+  cd sample-project
+  PYTHON_VERSION=$(python3.10 --version | awk '{print $2}')
+  pipenv --python $PYTHON_VERSION
+  ```
 
--   To add new a dependency, simply run:
+- To add new a dependency, simply run:
 
-    ```bash
-    pipenv install package1
-    ```
+  ```bash
+  pipenv install package1
+  ```
 
 ## Visual Studio Code
 
@@ -111,7 +111,7 @@ Visual Studio Code is a popular code editor for Python developers, offering feat
 
 A Visual Studio Code extension with rich support for the Python language (for all actively supported versions of the language: >=3.7), including features such as IntelliSense (Pylance), linting, debugging, code navigation, code formatting, refactoring, variable explorer, test explorer, and more!
 
--   Install [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- Install [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ### black
 
@@ -121,17 +121,17 @@ Black is a popular Python code formatter that automatically formats your code ac
 
     Be sure to create and activate a Python virtual environment before installing black.
 
--   Install the black Python package via command line
+- Install the black Python package via command line
 
-    ```bash
-    pip install black
-    ```
+  ```bash
+  pip install black
+  ```
 
--   Type the ++ctrl++ `+`, or ++cmd++ `+`, to open the settings page in the VSCode.
+- Type the ++ctrl++ `+`, or ++cmd++ `+`, to open the settings page in the VSCode.
 
--   Search for ^^format on save^^ and check the checkbox.
+- Search for ^^format on save^^ and check the checkbox.
 
--   Search for ^^python formatting provider^^ and select the ^^black^^.
+- Search for ^^python formatting provider^^ and select the ^^black^^.
 
 Now, if you open the python file and save, it will be auto formatted by the black!
 
@@ -143,13 +143,13 @@ isort is a Python library and command-line utility for sorting and organizing im
 
     Visual Studio Code already has the built-in function to use isort so that we don't need to install it by pip.
 
--   Type ++ctrl+shift+p++ or ++cmd+shift+p++
+- Type ++ctrl+shift+p++ or ++cmd+shift+p++
 
--   Search for ^^Preferences: Configure Language Specific Settings^^ and press enter.
+- Search for ^^Preferences: Configure Language Specific Settings^^ and press enter.
 
--   Select ^^Python^^. It will open the ^^settings.json^^.
+- Select ^^Python^^. It will open the ^^settings.json^^.
 
--   Please add the following settings:
+- Please add the following settings:
 
 ```
 "editor.codeActionsOnSave": {
@@ -165,20 +165,20 @@ Flake8 is a popular Python linter that checks Python code for style and syntax e
 
     Be sure to create and activate a Python virtual environment before installing flake8.
 
--   Install the flake8 Python package via command line
+- Install the flake8 Python package via command line
 
-    ```bash
-    pip install flake8
-    ```
+  ```bash
+  pip install flake8
+  ```
 
--   Type ++ctrl+shift+p++ or ++cmd+shift+p++
+- Type ++ctrl+shift+p++ or ++cmd+shift+p++
 
--   Search for ^^Python: Select Linter^^ and press enter.
+- Search for ^^Python: Select Linter^^ and press enter.
 
--   Select ^^flake8^^.
+- Select ^^flake8^^.
 
 Linting runs automa.Linting runs automatically when you save a file.
 
 ## References
 
--   [Learn Python](https://scrimba.com/learn/python)
+- [Learn Python](https://scrimba.com/learn/python)

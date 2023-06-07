@@ -8,21 +8,21 @@ React is a popular JavaScript library for building user interfaces. It was devel
 
 npm is a package manager for the JavaScript programming language and is primarily used for managing dependencies in Node.js projects. npm allows developers to easily install, update, and remove packages or libraries in their projects.
 
--   Install npm via command line
+- Install npm via command line
 
-    ```bash
-    sudo dnf install npm -y
-    ```
+  ```bash
+  sudo dnf install npm -y
+  ```
 
 ### Yarn
 
 Yarn is a package manager for JavaScript that was introduced as an alternative to npm. It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.
 
--   Install yarn via command line
+- Install yarn via command line
 
-    ```bash
-    sudo npm install -g yarn
-    ```
+  ```bash
+  sudo npm install -g yarn
+  ```
 
 ## Getting Started
 
@@ -46,36 +46,36 @@ npm create vite@latest
 
 #### Bootstrap
 
--   Install the [Bootstrap](https://getbootstrap.com/) package
+- Install the [Bootstrap](https://getbootstrap.com/) package
 
-    ```bash
-    npm install bootstrap
-    ```
+  ```bash
+  npm install bootstrap
+  ```
 
--   Import the Bootstrap object
+- Import the Bootstrap object
 
-    ```jsx title="main.tsx"
-    import "bootstrap/dist/css/bootstrap.css";
-    import "bootstrap/dist/js/bootstrap.bundle.min";
-    ```
+  ```jsx title="main.tsx"
+  import 'bootstrap/dist/css/bootstrap.css'
+  import 'bootstrap/dist/js/bootstrap.bundle.min'
+  ```
 
 #### Material UI
 
--   Install [Material UI](https://mui.com/material-ui/getting-started/installation/)
+- Install [Material UI](https://mui.com/material-ui/getting-started/installation/)
 
-    ```bash
-    npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid
-    ```
+  ```bash
+  npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid
+  ```
 
 #### Flowbite React
 
--   Install the [Flowbite React](https://www.flowbite-react.com/) package
+- Install the [Flowbite React](https://www.flowbite-react.com/) package
 
-    ```bash
-    npm install flowbite flowbite-react
-    ```
+  ```bash
+  npm install flowbite flowbite-react
+  ```
 
--   [Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard)
+- [Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard)
 
 ### Styling and CSS
 
@@ -165,16 +165,16 @@ In a component, you can only return one HTML element (i.e., H1). In order to ret
 
 React Router is a popular library for handling routing in React applications. It allows you to create declarative routing in your React components, enabling navigation between different pages or views within your application.
 
--   Install [React Router](https://reactrouter.com/en/main)
+- Install [React Router](https://reactrouter.com/en/main)
 
-    ```bash
-    npm install react-router-dom
-    ```
+  ```bash
+  npm install react-router-dom
+  ```
 
 ## References
 
--   [Learn HTML and CSS](https://scrimba.com/learn/htmlandcss)
--   [Learn JavaScript](https://scrimba.com/learn/learnjavascript)
--   [Learn React](https://scrimba.com/learn/learnreact)
--   [React Tutorial for Beginners](https://www.youtube.com/watch?v=SqcY0GlETPk)
--   [Learn React Router](https://scrimba.com/learn/reactrouter6)
+- [Learn HTML and CSS](https://scrimba.com/learn/htmlandcss)
+- [Learn JavaScript](https://scrimba.com/learn/learnjavascript)
+- [Learn React](https://scrimba.com/learn/learnreact)
+- [React Tutorial for Beginners](https://www.youtube.com/watch?v=SqcY0GlETPk)
+- [Learn React Router](https://scrimba.com/learn/reactrouter6)

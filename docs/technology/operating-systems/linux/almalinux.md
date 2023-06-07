@@ -6,29 +6,29 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
 
 - Check for available package updates
 
-    ```bash
-    sudo dnf check-update -y
-    ```
+  ```bash
+  sudo dnf check-update -y
+  ```
 
 - Install a specific package update
 
-    ```bash
-    sudo update package-name -y
-    ```
+  ```bash
+  sudo update package-name -y
+  ```
 
 - Upgrade all of your system software
 
-    ```bash
-    sudo dnf update -y
-    ```
+  ```bash
+  sudo dnf update -y
+  ```
 
 - Enable automatic security updates
 
-    ```bash
-    sudo dnf install dnf-automatic -y
-    sudo sed -i "s/apply_updates = no/apply_updates = yes/" /etc/dnf/automatic.conf
-    sudo systemctl enable --now dnf-automatic.timer
-    ```
+  ```bash
+  sudo dnf install dnf-automatic -y
+  sudo sed -i "s/apply_updates = no/apply_updates = yes/" /etc/dnf/automatic.conf
+  sudo systemctl enable --now dnf-automatic.timer
+  ```
 
 ## Software
 
@@ -38,16 +38,16 @@ A distributed version control system that allows multiple people to collaborate 
 
 - Install
 
-    ```bash
-    sudo dnf install git -y
-    ```
+  ```bash
+  sudo dnf install git -y
+  ```
 
 - Configure
 
-    ```bash
-    git config --global user.name "your git username"
-    git config --global user.email "email for git account"
-    ```
+  ```bash
+  git config --global user.name "your git username"
+  git config --global user.email "email for git account"
+  ```
 
 ### Python 3.10
 
@@ -55,21 +55,21 @@ A high-level, interpreted programming language known for its simplicity and read
 
 - Prerequisites
 
-    ```bash
-    sudo dnf install wget yum-utils make gcc openssl-devel bzip2-devel libffi-devel zlib-devel -y
-    sudo dnf update -y
-    ```
+  ```bash
+  sudo dnf install wget yum-utils make gcc openssl-devel bzip2-devel libffi-devel zlib-devel -y
+  sudo dnf update -y
+  ```
 
 - Install
 
-    ```bash
-    wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
-    tar xzf Python-3.10.5.tgz
-    cd Python-3.10.5
-    ./configure --with-system-ffi --with-computed-gotos --enable-loadable-sqlite-extensions
-    sudo make -j ${nproc}
-    sudo make altinstall
-    ```
+  ```bash
+  wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
+  tar xzf Python-3.10.5.tgz
+  cd Python-3.10.5
+  ./configure --with-system-ffi --with-computed-gotos --enable-loadable-sqlite-extensions
+  sudo make -j ${nproc}
+  sudo make altinstall
+  ```
 
 ### Podman
 
@@ -77,15 +77,15 @@ A containerization platform that allows users to manage and run containers on a 
 
 - Prerequisites
 
-    ```bash
-    sudo dnf install epel-release -y
-    ```
+  ```bash
+  sudo dnf install epel-release -y
+  ```
 
 - Install
 
-    ```bash
-    sudo dnf install podman podman-compose -y
-    ```
+  ```bash
+  sudo dnf install podman podman-compose -y
+  ```
 
 ### Azure CLI
 
@@ -93,17 +93,17 @@ A cross-platform command-line tool provided by Microsoft for managing and intera
 
 - Prerequisites
 
-    ```bash
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    ```
+  ```bash
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  ```
 
 - Install
 
-    ```bash
-    sudo dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm -y
-    
-    sudo dnf install azure-cli -y
-    ```
+  ```bash
+  sudo dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm -y
+
+  sudo dnf install azure-cli -y
+  ```
 
 ### Terraform
 
@@ -111,15 +111,15 @@ An open-source infrastructure-as-code tool used for provisioning and managing cl
 
 - Prerequisites
 
-    ```bash
-    sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo -y
-    ```
+  ```bash
+  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo -y
+  ```
 
 - Install
 
-    ```bash
-    sudo dnf install terraform -y
-    ```
+  ```bash
+  sudo dnf install terraform -y
+  ```
 
 ### Node Package Manager
 
@@ -127,24 +127,24 @@ npm is an open-source package manager designed for the JavaScript programming la
 
 - Install
 
-    ```bash
-    sudo dnf install npm -y
-    ```
+  ```bash
+  sudo dnf install npm -y
+  ```
 
 ### Utilities
 
 - Tree
 
-    A command-line utility that displays the directory structure of a file system in a tree-like format. It shows the hierarchy of directories and their subdirectories, along with the files contained within them. The tree command helps users visualize the organization of files and directories on their system.
-    
-    ```bash
-    sudo dnf install tree -y
-    ```
+  A command-line utility that displays the directory structure of a file system in a tree-like format. It shows the hierarchy of directories and their subdirectories, along with the files contained within them. The tree command helps users visualize the organization of files and directories on their system.
+
+  ```bash
+  sudo dnf install tree -y
+  ```
 
 - Zip
 
-    A command-line utility used for compressing and packaging files and directories into a compressed archive format. It is typically available in most Unix-like operating systems, including Linux.
-    
-    ```bash
-    sudo dnf install zip -y
-    ```
+  A command-line utility used for compressing and packaging files and directories into a compressed archive format. It is typically available in most Unix-like operating systems, including Linux.
+
+  ```bash
+  sudo dnf install zip -y
+  ```

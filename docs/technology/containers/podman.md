@@ -10,38 +10,38 @@ These sample Compose files can help you quickly establish the necessary infrastr
 
 - Delete all containers
 
-    ```bash
-    podman rm -f $(podman ps -a -q)
-    ```
+  ```bash
+  podman rm -f $(podman ps -a -q)
+  ```
 
 - Delete all images
 
-    ```bash
-    podman rmi -f $(podman images -q)
-    ```
+  ```bash
+  podman rmi -f $(podman images -q)
+  ```
 
 - Delete all volumes
 
-    ```bash
-    podman volume rm $(podman volume ls -q)
-    ```
+  ```bash
+  podman volume rm $(podman volume ls -q)
+  ```
 
 - Creates and starts containers for all services defined in a Compose file
 
-    ```bash
-    podman-compose up -d
-    ```
+  ```bash
+  podman-compose up -d
+  ```
 
 - Stops all containers managed by the Compose file.
 
-    ```bash
-    podman-compose stop
-    ```
+  ```bash
+  podman-compose stop
+  ```
 
 ## MongoDB
 
 ```yaml title="podman-compose.yml"
-version: "3.8"
+version: '3.8'
 
 services:
   mongodb:
@@ -51,7 +51,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: mongodb
       MONGO_INITDB_ROOT_PASSWORD: mongodb
     ports:
-      - "27017:27017"
+      - '27017:27017'
     volumes:
       - mongodb_data:/data/db
 
@@ -62,7 +62,7 @@ volumes:
 ## PostgreSQL
 
 ```yaml title="podman-compose.yml"
-version: "3.8"
+version: '3.8'
 
 services:
   db:
@@ -72,7 +72,7 @@ services:
       POSTGRES_PASSWORD: postgresql
       POSTGRES_DB: postgresql
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - pgdata:/var/lib/postgresql/data
 
