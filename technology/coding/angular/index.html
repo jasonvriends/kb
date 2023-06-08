@@ -760,20 +760,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#nebular" class="md-nav__link">
-    Nebular
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bootstrap" class="md-nav__link">
-    Bootstrap
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -967,6 +953,7 @@
 <h1 id="angular">Angular<a class="headerlink" href="#angular" title="Permanent link">&para;</a></h1>
 <p>AngularJS is a JavaScript-based open-source framework developed by Google for building dynamic web applications. It is often referred to as "Angular 1" to distinguish it from later versions of Angular, such as Angular 2+.</p>
 <h2 id="package-manager">Package Manager<a class="headerlink" href="#package-manager" title="Permanent link">&para;</a></h2>
+<hr />
 <h3 id="node-package-manager">Node Package Manager<a class="headerlink" href="#node-package-manager" title="Permanent link">&para;</a></h3>
 <p>npm is a package manager for the JavaScript programming language and is primarily used for managing dependencies in Node.js projects. npm allows developers to easily install, update, and remove packages or libraries in their projects.</p>
 <ul>
@@ -984,6 +971,7 @@
 </li>
 </ul>
 <h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<hr />
 <h3 id="angular-cli">Angular CLI<a class="headerlink" href="#angular-cli" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -993,37 +981,38 @@
 </li>
 </ul>
 <h3 id="scaffold-a-new-project">Scaffold a new project<a class="headerlink" href="#scaffold-a-new-project" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>init<span class="w"> </span>@angular<span class="w"> </span>&lt;project-name&gt;
+<ul>
+<li>
+<p>Using the latest version</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>&lt;project-name&gt;
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>npm<span class="w"> </span>start
 </span></code></pre></div>
+</li>
+</ul>
+<ul>
+<li>Using a specific version
+  <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;<span class="w"> </span>--version<span class="o">=</span><span class="m">15</span>.0.0
+</span></code></pre></div></li>
+</ul>
 <h3 id="ui-frameworks">UI Frameworks<a class="headerlink" href="#ui-frameworks" title="Permanent link">&para;</a></h3>
 <h4 id="angular-material">Angular Material<a class="headerlink" href="#angular-material" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>Install the <a href="https://akveo.github.io/nebular/">Angular Material</a> package</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@angular/material
+<p>Install the <a href="https://material.angular.io/guide/getting-started">Angular Material</a> package</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ng<span class="w"> </span>add<span class="w"> </span>@angular/material
 </span></code></pre></div>
-</li>
-</ul>
-<h4 id="nebular">Nebular<a class="headerlink" href="#nebular" title="Permanent link">&para;</a></h4>
 <ul>
-<li>
-<p>Install the <a href="https://material.angular.io/">Nebular</a> package</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@nebular/theme<span class="w"> </span>@nebular/auth<span class="w"> </span>@nebular/security<span class="w"> </span>@nebular/moment<span class="w"> </span>@nebular/date-fns
-</span></code></pre></div>
-</li>
+<li>Would you like to proceed? <code>Y</code></li>
 </ul>
 <ul>
-<li><a href="https://akveo.github.io/ngx-admin/">NGX Admin</a></li>
+<li>Choose a prebuilt theme name, or "custom" for a custom theme: <code>Indigo/Pink</code></li>
 </ul>
-<h4 id="bootstrap">Bootstrap<a class="headerlink" href="#bootstrap" title="Permanent link">&para;</a></h4>
 <ul>
-<li>
-<p>Install the <a href="">Bootstrap</a> package</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>npm<span class="w"> </span>install<span class="w"> </span>bootstrap<span class="w"> </span>bootstrap-icons
-</span></code></pre></div>
-<p>[ ] TODO: how to integrate it</p>
+<li>Set up global Angular Material typography styles? <code>Y</code></li>
+</ul>
+<ul>
+<li>Include the Angular animations module? <code>Include and enable animations</code></li>
+</ul>
 </li>
 </ul>
 <h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h3>
@@ -1031,7 +1020,7 @@
 <ul>
 <li>
 <p>Create a component with the CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
 </span></code></pre></div>
 </li>
 </ul>
