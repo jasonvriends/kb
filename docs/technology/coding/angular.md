@@ -22,6 +22,14 @@ npm is a package manager for the JavaScript programming language and is primaril
 
 ## Getting Started
 
+### Angular CLI
+
+- Install the [Angular CLI](https://angular.io/cli) package
+
+  ```bash
+  npm install -g @angular/cli
+  ```
+
 ### Scaffold a new project
 
 ```bash
@@ -56,6 +64,18 @@ npm start
 
   ```bash
   npm install bootstrap bootstrap-icons
+  ```
+
+  [ ] TODO: how to integrate it
+
+### Components
+
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+
+- Create a component with the CLI
+
+  ```bash
+  ng generate component <component-name>
   ```
 
 ## References
