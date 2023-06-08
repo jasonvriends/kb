@@ -14,6 +14,12 @@ npm is a package manager for the JavaScript programming language and is primaril
   sudo dnf install npm -y
   ```
 
+- Updating npm
+
+  ```bash
+  sudo npm install -g npm
+  ```
+
 ### Yarn
 
 Yarn is a package manager for JavaScript that was introduced as an alternative to npm. It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.
@@ -113,6 +119,9 @@ React Router is a popular library for handling routing in React applications. It
 
 ## References
 
+- [HTML](https://developer.mozilla.org/docs/Learn/HTML)
+- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Learn HTML and CSS](https://scrimba.com/learn/htmlandcss)
 - [Learn JavaScript](https://scrimba.com/learn/learnjavascript)
 - [Learn React](https://scrimba.com/learn/learnreact)
