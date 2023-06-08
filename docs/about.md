@@ -13,7 +13,11 @@
 
 ## Experience
 
+---
+
 ### IT Senior Specialist (CS-04) - Senior Cloud Engineer
+
+---
 
 - **When**:
   - 2018-01 to Present
@@ -55,7 +59,11 @@
     - Appointed by CIO as member of SWAT team to address GC Key and CRA’s credential stuffing attack in summer 2020. SWAT’s mandate was to stop the attack, prevent it from occurring again, identify ways to improve CRA cyber security, such as: implementing Multi Factor Authentication), collaborate with TBS/GC Key stakeholders, and recommend unique ways to identify other users who may be impacted, e.g.: using cloud-based Artificial Intelligence/Machine Learning (AI/ML) fraud detection services.
   - Collaborated and influenced CRA, TBS and SSC procurement organizations to establish a new contracting model, for obtaining access to Fortigate Firewalls via Pay as You Go through the Cloud Marketplace for both AWS and Azure. Faced with unsuccessful avenues to procure Fortigate licenses, influenced and advocated with TBS for their endorsement of a new FinOps model which enabled the CRA and other departments to implement critical cloud-based firewall services.
 
+---
+
 ### IT Senior Specialist (CS-04) - Senior Solutions Architect
+
+---
 
 - **When**:
   - 2013-11 – 2018-01 : IT Senior Specialist (CS-04) – Senior Solutions Architect
@@ -89,7 +97,11 @@
     - Implementing strategic hardware such as Windows to Go to enable any personal computer to be turned into a highly secure GC furnished device. This enabled highly efficient Business Continuity Plans (connect from anywhere), and reduced the requirement for purchasing IT equipment for contractors, board of management, etc.
     - Delivering digital collaboration tools for CRA’s internal wiki such as GC Tools, Confluence, JIRA, Web Conferencing, etc. Established GC Tools ambassadors from across the CRA to encourage their use.
 
+---
+
 ### IT Specialist (CS-03) - IT Specialist
+
+---
 
 - **When**:
   - 2012 – 2013 : IT Specialist (CS-03) – Server Infrastructure and Directory Services – Digital Identity Engineer
@@ -110,7 +122,11 @@
   - Developed a variety of custom applications using a variety of programming languages to meet Agency requirements including: exchange migration tools, user profile updater, internet kiosk for public internet access, and CRA’s common user desktop to integrate Citrix and non-Citrix users.
   - Responsible for numerous large migration projects to over >56,000 users including: Windows 7, 8.1, 10, Windows Server 2008.
 
+---
+
 ### Vriends Hosting Ltd. – Director/Owner
+
+---
 
 - **When**:
   - 2006-2016
