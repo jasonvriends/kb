@@ -26,6 +26,8 @@ npm is a package manager for the JavaScript programming language and is primaril
 
 ### Angular CLI
 
+The Angular Command-Line Interface (CLI) helps you not only to create an application but also to test, scaffold, and deploy it. It creates a workspace folder and generates a structure for the application.
+
 - Install the [Angular CLI](https://angular.io/cli) package
 
   ```bash
@@ -34,17 +36,23 @@ npm is a package manager for the JavaScript programming language and is primaril
 
 ### Scaffold a new project
 
-- Using the latest version
+- Using the ^^latest^^ version of the Angular CLI
 
   ```bash
   ng new <project-name>
   cd <project-name>
   ```
 
-- Using a specific version
+  - Would you like to add Angular routing? `Y`
+  - Which stylesheet format would you like to use? `SCSS`
+
+- Using a ^^specific^^ version of the Angular CLI
   ```bash
   ng new <project-name> --version=15.0.0
   ```
+
+  - Would you like to add Angular routing? `Y`
+  - Which stylesheet format would you like to use? `SCSS`
 
 ### UI Frameworks
 
@@ -64,6 +72,16 @@ npm is a package manager for the JavaScript programming language and is primaril
 
   - Include the Angular animations module? `Include and enable animations`
 
+### Modules
+
+Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.
+
+- Create a module via the Angular CLI
+
+  ```bash
+  ng generate module <module-name>
+  ```
+
 ### Components
 
 Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
@@ -73,6 +91,16 @@ Components are independent and reusable bits of code. They serve the same purpos
   ```bash
   ng generate component <component-name>
   ```
+
+- Create a component with the CLI and register it in a module
+
+  ```bash
+  ng generate component <component-name> --module=<module-name>
+  ```  
+
+### Folder Structure
+
+The [Angular coding style guide](https://angular.io/guide/styleguide) suggests using a [shared module](https://angular.io/guide/styleguide#shared-feature-module) and a [module for each feature](https://angular.io/guide/styleguide#feature-modules).
 
 ## References
 
