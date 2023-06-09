@@ -766,8 +766,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    Modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#components" class="md-nav__link">
     Components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    Folder Structure
   </a>
   
 </li>
@@ -973,6 +987,7 @@
 <h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <hr />
 <h3 id="angular-cli">Angular CLI<a class="headerlink" href="#angular-cli" title="Permanent link">&para;</a></h3>
+<p>The Angular Command-Line Interface (CLI) helps you not only to create an application but also to test, scaffold, and deploy it. It creates a workspace folder and generates a structure for the application.</p>
 <ul>
 <li>
 <p>Install the <a href="https://angular.io/cli">Angular CLI</a> package</p>
@@ -983,16 +998,26 @@
 <h3 id="scaffold-a-new-project">Scaffold a new project<a class="headerlink" href="#scaffold-a-new-project" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>Using the latest version</p>
+<p>Using the <ins>latest</ins> version of the Angular CLI</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>&lt;project-name&gt;
 </span></code></pre></div>
+<ul>
+<li>Would you like to add Angular routing? <code>Y</code></li>
+<li>Which stylesheet format would you like to use? <code>SCSS</code></li>
+</ul>
 </li>
 </ul>
 <ul>
-<li>Using a specific version
+<li>
+<p>Using a <ins>specific</ins> version of the Angular CLI
   <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;<span class="w"> </span>--version<span class="o">=</span><span class="m">15</span>.0.0
-</span></code></pre></div></li>
+</span></code></pre></div></p>
+<ul>
+<li>Would you like to add Angular routing? <code>Y</code></li>
+<li>Which stylesheet format would you like to use? <code>SCSS</code></li>
+</ul>
+</li>
 </ul>
 <h3 id="ui-frameworks">UI Frameworks<a class="headerlink" href="#ui-frameworks" title="Permanent link">&para;</a></h3>
 <h4 id="angular-material">Angular Material<a class="headerlink" href="#angular-material" title="Permanent link">&para;</a></h4>
@@ -1015,15 +1040,33 @@
 </ul>
 </li>
 </ul>
+<h3 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h3>
+<p>Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.</p>
+<ul>
+<li>
+<p>Create a module via the Angular CLI</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>module<span class="w"> </span>&lt;module-name&gt;
+</span></code></pre></div>
+</li>
+</ul>
 <h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h3>
 <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
 <ul>
 <li>
 <p>Create a component with the CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
 </span></code></pre></div>
 </li>
 </ul>
+<ul>
+<li>
+<p>Create a component with the CLI and register it in a module</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;<span class="w"> </span>--module<span class="o">=</span>&lt;module-name&gt;
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://angular.io/guide/styleguide">Angular coding style guide</a> suggests using a <a href="https://angular.io/guide/styleguide#shared-feature-module">shared module</a> and a <a href="https://angular.io/guide/styleguide#feature-modules">module for each feature</a>.</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://developer.mozilla.org/docs/Learn/HTML">HTML</a></li>
@@ -1038,7 +1081,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 8, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 9, 2023</span>
       
         <br>
         Created:
