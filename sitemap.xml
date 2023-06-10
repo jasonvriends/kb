@@ -26,22 +26,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thevriends.com/technology/coding/angular/</loc>
-         <lastmod>2023-06-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thevriends.com/technology/coding/git/</loc>
          <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thevriends.com/technology/coding/python/</loc>
+         <loc>https://thevriends.com/technology/coding/frameworks/javascript/angular/</loc>
          <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thevriends.com/technology/coding/react/</loc>
+         <loc>https://thevriends.com/technology/coding/frameworks/javascript/react/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thevriends.com/technology/coding/frameworks/python/django/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thevriends.com/technology/coding/frameworks/python/fastapi/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thevriends.com/technology/coding/languages/python/</loc>
          <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
