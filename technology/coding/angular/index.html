@@ -704,16 +704,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#package-manager" class="md-nav__link">
-    Package Manager
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
-    <nav class="md-nav" aria-label="Package Manager">
+    <nav class="md-nav" aria-label="Prerequisites">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    Node.js
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#node-package-manager" class="md-nav__link">
     Node Package Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular-cli" class="md-nav__link">
+    Angular CLI
   </a>
   
 </li>
@@ -732,15 +746,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#angular-cli" class="md-nav__link">
-    Angular CLI
+  <a href="#create-a-new-angular-workspace" class="md-nav__link">
+    Create a new Angular workspace
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#scaffold-a-new-project" class="md-nav__link">
-    Scaffold a new project
+  <a href="#folder-structure" class="md-nav__link">
+    Folder Structure
   </a>
   
 </li>
@@ -760,8 +774,30 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#tailwind-css-flowbite" class="md-nav__link">
+    Tailwind CSS + Flowbite
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fundamentals" class="md-nav__link">
+    Fundamentals
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
   
 </li>
         
@@ -773,16 +809,28 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
+  <a href="#templates" class="md-nav__link">
+    Templates
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#folder-structure" class="md-nav__link">
-    Folder Structure
+  <a href="#directives" class="md-nav__link">
+    Directives
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    Services
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -966,65 +1014,95 @@
 
 <h1 id="angular">Angular<a class="headerlink" href="#angular" title="Permanent link">&para;</a></h1>
 <p>AngularJS is a JavaScript-based open-source framework developed by Google for building dynamic web applications. It is often referred to as "Angular 1" to distinguish it from later versions of Angular, such as Angular 2+.</p>
-<h2 id="package-manager">Package Manager<a class="headerlink" href="#package-manager" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <hr />
+<h3 id="nodejs">Node.js<a class="headerlink" href="#nodejs" title="Permanent link">&para;</a></h3>
+<p>Node.js is an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
+<ul>
+<li>
+<p>To install Node.js</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>nodejs<span class="w"> </span>-y
+</span></code></pre></div>
+</li>
+</ul>
 <h3 id="node-package-manager">Node Package Manager<a class="headerlink" href="#node-package-manager" title="Permanent link">&para;</a></h3>
-<p>npm is a package manager for the JavaScript programming language and is primarily used for managing dependencies in Node.js projects. npm allows developers to easily install, update, and remove packages or libraries in their projects.</p>
+<p>Node.js is all about modularity, and with that comes the need for a quality package manager; for this purpose, npm was made. npm is a package manager for Node.js packages or modules.</p>
 <ul>
 <li>
-<p>Install npm via command line</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>npm<span class="w"> </span>-y
+<p>To install npm</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>npm<span class="w"> </span>-y
 </span></code></pre></div>
 </li>
 </ul>
 <ul>
 <li>
-<p>Updating npm</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>npm
+<p>To install a packge or module using npm</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>&lt;package-name&gt;
 </span></code></pre></div>
 </li>
 </ul>
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<hr />
+<ul>
+<li>
+<p>To utilize the precise dependency versions specified in a <code>package-lock.json</code> file when installing npm packages</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>ci
+</span></code></pre></div>
+</li>
+</ul>
 <h3 id="angular-cli">Angular CLI<a class="headerlink" href="#angular-cli" title="Permanent link">&para;</a></h3>
 <p>The Angular Command-Line Interface (CLI) helps you not only to create an application but also to test, scaffold, and deploy it. It creates a workspace folder and generates a structure for the application.</p>
 <ul>
 <li>
-<p>Install the <a href="https://angular.io/cli">Angular CLI</a> package</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@angular/cli
+<p>To install the <a href="https://angular.io/cli">Angular CLI</a> npm package globally (i.e., outside of a specific project)</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@angular/cli
 </span></code></pre></div>
 </li>
 </ul>
-<h3 id="scaffold-a-new-project">Scaffold a new project<a class="headerlink" href="#scaffold-a-new-project" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Refer to the <a href="https://angular.io/cli">CLI Overview and Command Reference</a> for usage information.</li>
+</ul>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="create-a-new-angular-workspace">Create a new Angular workspace<a class="headerlink" href="#create-a-new-angular-workspace" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>Using the <ins>latest</ins> version of the Angular CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>&lt;project-name&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">cd</span><span class="w"> </span>&lt;project-name&gt;
 </span></code></pre></div>
 <ul>
 <li>Would you like to add Angular routing? <code>Y</code></li>
-<li>Which stylesheet format would you like to use? <code>SCSS</code></li>
+<li>Which stylesheet format would you like to use? <code>CSS</code></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li>
 <p>Using a <ins>specific</ins> version of the Angular CLI
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;<span class="w"> </span>--version<span class="o">=</span><span class="m">15</span>.0.0
+  <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ng<span class="w"> </span>new<span class="w"> </span>&lt;project-name&gt;<span class="w"> </span>--version<span class="o">=</span><span class="m">16</span>.0.5
 </span></code></pre></div></p>
 <ul>
 <li>Would you like to add Angular routing? <code>Y</code></li>
-<li>Which stylesheet format would you like to use? <code>SCSS</code></li>
+<li>Which stylesheet format would you like to use? <code>CSS</code></li>
 </ul>
 </li>
 </ul>
+<ul>
+<li>
+<p>To see what version of the Angular CLI you are using</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ng<span class="w"> </span>version
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://angular.io/guide/styleguide">Angular coding style guide</a> suggests using a <a href="https://angular.io/guide/styleguide#shared-feature-module">shared module</a> and a <a href="https://angular.io/guide/styleguide#feature-modules">module for each feature</a>.</p>
 <h3 id="ui-frameworks">UI Frameworks<a class="headerlink" href="#ui-frameworks" title="Permanent link">&para;</a></h3>
+<p>There are serveral popular UI Frameworks available for building Angular applications. Below are some notable ones.</p>
 <h4 id="angular-material">Angular Material<a class="headerlink" href="#angular-material" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>Install the <a href="https://material.angular.io/guide/getting-started">Angular Material</a> package</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ng<span class="w"> </span>add<span class="w"> </span>@angular/material
+<p>Install the <a href="https://material.angular.io/guide/getting-started">Angular Material</a> npm package</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ng<span class="w"> </span>add<span class="w"> </span>@angular/material
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>ng<span class="w"> </span>add<span class="w"> </span>@angular/cdk
 </span></code></pre></div>
 <ul>
 <li>Would you like to proceed? <code>Y</code></li>
@@ -1040,40 +1118,170 @@
 </ul>
 </li>
 </ul>
-<h3 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h3>
-<p>Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.</p>
+<h4 id="tailwind-css-flowbite">Tailwind CSS + Flowbite<a class="headerlink" href="#tailwind-css-flowbite" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p>Create a module via the Angular CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>module<span class="w"> </span>&lt;module-name&gt;
+<p>Install the <a href="https://tailwindcss.com/docs/guides/angular">Tailwind</a> npm package</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-D<span class="w"> </span>tailwindcss<span class="w"> </span>postcss<span class="w"> </span>autoprefixer
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>npx<span class="w"> </span>tailwindcss<span class="w"> </span>init
 </span></code></pre></div>
 </li>
 </ul>
-<h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Configure your template paths inside the <code>tailwind.config.js</code> file:</p>
+<div class="language-bash highlight"><span class="filename">tailwind.config.js</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>/**<span class="w"> </span>@type<span class="w"> </span><span class="o">{</span>import<span class="o">(</span><span class="s1">&#39;tailwindcss&#39;</span><span class="o">)</span>.Config<span class="o">}</span><span class="w"> </span>*/
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>module.exports<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="hll"><span class="w">  </span>content:<span class="w"> </span><span class="o">[</span>
+</span></span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="hll"><span class="w">    </span><span class="s2">&quot;./src/**/*.{html,ts}&quot;</span>,
+</span></span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="hll"><span class="w">  </span><span class="o">]</span>,
+</span></span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span>theme:<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span>extend:<span class="w"> </span><span class="o">{}</span>,
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">  </span><span class="o">}</span>,
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">  </span>plugins:<span class="w"> </span><span class="o">[]</span>,
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="o">}</span>
+</span></code></pre></div>
+</li>
+</ul>
+<ul>
+<li>
+<p>Add the Tailwind directives to your CSS</p>
+<div class="language-css highlight"><span class="filename">./src/styles.css</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">@</span><span class="k">tailwind</span><span class="w"> </span><span class="nt">base</span><span class="p">;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="p">@</span><span class="k">tailwind</span><span class="w"> </span><span class="nt">components</span><span class="p">;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">@</span><span class="k">tailwind</span><span class="w"> </span><span class="nt">utilities</span><span class="p">;</span>
+</span></code></pre></div>
+</li>
+</ul>
+<ul>
+<li>
+<p>Install the <a href="https://flowbite.com/docs/getting-started/quickstart/">Flowbite</a> npm package</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>npm<span class="w"> </span>install<span class="w"> </span>flowbite
+</span></code></pre></div>
+</li>
+</ul>
+<ul>
+<li>
+<p>Configure Flowbite inside the <code>tailwind.config.js</code> file:</p>
+<div class="language-bash highlight"><span class="filename">tailwind.config.js</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>/**<span class="w"> </span>@type<span class="w"> </span><span class="o">{</span>import<span class="o">(</span><span class="s1">&#39;tailwindcss&#39;</span><span class="o">)</span>.Config<span class="o">}</span><span class="w"> </span>*/
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>module.exports<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span>content:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="s2">&quot;./src/**/*.{html,ts}&quot;</span>,
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="hll"><span class="w">    </span><span class="s2">&quot;./node_modules/flowbite/**/*.js&quot;</span>
+</span></span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">  </span>theme:<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span>extend:<span class="w"> </span><span class="o">{}</span>,
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">  </span><span class="o">}</span>,
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">  </span>plugins:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="hll"><span class="w">    </span>require<span class="o">(</span><span class="s1">&#39;flowbite/plugin&#39;</span><span class="o">)</span>
+</span></span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="o">}</span>
+</span></code></pre></div>
+</li>
+</ul>
+<ul>
+<li>
+<p>Add the Stylesheet and JavaScript code that powers Flowbite:</p>
+<div class="language-bash highlight"><span class="filename">index.html</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>&lt;!doctype<span class="w"> </span>html&gt;
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>&lt;html<span class="w"> </span><span class="nv">lang</span><span class="o">=</span><span class="s2">&quot;en&quot;</span>&gt;
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>&lt;head&gt;
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">  </span>&lt;meta<span class="w"> </span><span class="nv">charset</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span>&gt;
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">  </span>&lt;title&gt;App&lt;/title&gt;
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">  </span>&lt;base<span class="w"> </span><span class="nv">href</span><span class="o">=</span><span class="s2">&quot;/&quot;</span>&gt;
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">  </span>&lt;meta<span class="w"> </span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;viewport&quot;</span><span class="w"> </span><span class="nv">content</span><span class="o">=</span><span class="s2">&quot;width=device-width, initial-scale=1&quot;</span>&gt;
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">  </span>&lt;link<span class="w"> </span><span class="nv">rel</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="w"> </span><span class="nv">type</span><span class="o">=</span><span class="s2">&quot;image/x-icon&quot;</span><span class="w"> </span><span class="nv">href</span><span class="o">=</span><span class="s2">&quot;favicon.ico&quot;</span>&gt;
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="hll"><span class="w">  </span>&lt;link<span class="w"> </span><span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css&quot;</span><span class="w"> </span><span class="nv">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="w"> </span>/&gt;
+</span></span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>&lt;/head&gt;
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>&lt;body<span class="w"> </span><span class="nv">class</span><span class="o">=</span><span class="s2">&quot;bg-gray-50 dark:bg-gray-800&quot;</span>&gt;
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">  </span>&lt;app-root&gt;&lt;/app-root&gt;
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="hll"><span class="w">  </span>&lt;script<span class="w"> </span><span class="nv">src</span><span class="o">=</span><span class="s2">&quot;https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js&quot;</span>&gt;&lt;/script&gt;
+</span></span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>&lt;/body&gt;
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>&lt;/html&gt;
+</span></code></pre></div>
+</li>
+</ul>
+<p>A great starter template that you can use to copy HTML from is the <a href="https://github.com/themesberg/flowbite-admin-dashboard.">Flowbite Admin Dashboard</a></p>
+<h3 id="fundamentals">Fundamentals<a class="headerlink" href="#fundamentals" title="Permanent link">&para;</a></h3>
+<p>The basic building blocks in Angular applications are: Components, Templates, Directives, and Services.</p>
+<h4 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h4>
 <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
 <ul>
 <li>
 <p>Create a component with the CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
+</span></code></pre></div>
+</li>
+</ul>
+<h4 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h4>
+<p>Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.</p>
+<ul>
+<li>
+<p>Create a module via the Angular CLI</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>module<span class="w"> </span>&lt;module-name&gt;
 </span></code></pre></div>
 </li>
 </ul>
 <ul>
 <li>
-<p>Create a component with the CLI and register it in a module</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;<span class="w"> </span>--module<span class="o">=</span>&lt;module-name&gt;
+<p>Create a component and register it within a module via the Angular CLI</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;module-name&gt;/&lt;component-name&gt;<span class="w"> </span>--module<span class="o">=</span>&lt;module-name&gt;
 </span></code></pre></div>
 </li>
 </ul>
-<h3 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">&para;</a></h3>
-<p>The <a href="https://angular.io/guide/styleguide">Angular coding style guide</a> suggests using a <a href="https://angular.io/guide/styleguide#shared-feature-module">shared module</a> and a <a href="https://angular.io/guide/styleguide#feature-modules">module for each feature</a>.</p>
+<ul>
+<li>
+<p>Export the component so that it can be available in any Angular module that needs it</p>
+<div class="language-bash highlight"><span class="filename"><module-name/<module-name>.module.ts></span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CommonModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/common&#39;</span><span class="p">;</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>ProductItemComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./product-item/product-item.component&#39;</span><span class="p">;</span>
+</span></span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>@NgModule<span class="o">({</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>ProductItemComponent<span class="o">]</span>,
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span>CommonModule
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="hll"><span class="w">  </span>exports:<span class="w"> </span><span class="o">[</span>ProductItemComponent<span class="o">]</span>
+</span></span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="o">})</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>ProductsModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span><span class="w">  </span><span class="o">]</span>
+</span></code></pre></div>
+</li>
+</ul>
+<ul>
+<li>
+<p>Import the module into the AppModule to register the modual globally in AppModule</p>
+<div class="language-bash highlight"><span class="filename">app.module.ts</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>BrowserModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/platform-browser&#39;</span><span class="p">;</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app.component&#39;</span><span class="p">;</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="hll">import<span class="w"> </span><span class="o">{</span>ProductsModule<span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s2">&quot;./products/products.module&quot;</span>
+</span></span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>@NgModule<span class="o">({</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span>AppComponent,
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">    </span>BrowserModule,
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="hll"><span class="w">    </span>ProductsModule
+</span></span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">  </span>providers:<span class="w"> </span><span class="o">[]</span>,
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="w">  </span>bootstrap:<span class="w"> </span><span class="o">[</span>AppComponent<span class="o">]</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="o">})</span>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>AppModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
+</span></code></pre></div>
+</li>
+</ul>
+<h4 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h4>
+<h4 id="directives">Directives<a class="headerlink" href="#directives" title="Permanent link">&para;</a></h4>
+<h4 id="services">Services<a class="headerlink" href="#services" title="Permanent link">&para;</a></h4>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://developer.mozilla.org/docs/Learn/HTML">HTML</a></li>
 <li><a href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a></li>
 <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-<li><a href="https://scrimba.com/learn/htmlandcss">Learn HTML and CSS</a></li>
-<li><a href="https://scrimba.com/learn/learnjavascript">Learn JavaScript</a></li>
+<li><a href="https://www.youtube.com/watch?v=k5E2AVpwsko">Angular Tutorial for Beginners</a></li>
 </ul>
 
   <hr>
@@ -1081,7 +1289,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 9, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 10, 2023</span>
       
         <br>
         Created:
