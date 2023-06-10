@@ -208,52 +208,68 @@ Modules are a way to organize and bundle related components, directives, service
   ng generate module <module-name>
   ```
 
-- Create a component and register it within a module via the Angular CLI
+- Create a component,  register it within a module, and add it to its exports property so that other modules can use it.
 
-  ```bash
-  ng generate component <module-name>/<component-name> --module=<module-name>
-  ```  
+  - Angular CLI syntax
 
-- Export the component so that it can be available in any Angular module that needs it
+    ```bash
+    ng generate component <module-name>/<component-name> --module=<module-name> --export
+    ```  
 
-  ```bash title="<module-name/<module-name>.module.ts>" hl_lines="3 10"
-  import { NgModule } from '@angular/core';
-  import { CommonModule } from '@angular/common';
-  import { ProductItemComponent } from './product-item/product-item.component';
+  - Example
 
-  @NgModule({
-    declarations: [ProductItemComponent],
-    imports: [
-      CommonModule
-    ],
-    exports: [ProductItemComponent]
-  })
-  
-  export class ProductsModule { }  ]
-  ```
+    ```bash
+    ng generate component core/header --module=core --export
+    ```  
 
-- Import the module into the AppModule to register the modual globally in AppModule
+    ```bash title="app/core/core.module.ts" hl_lines="3 13"
+    import { NgModule } from '@angular/core';
+    import { CommonModule } from '@angular/common';
+    import { HeaderComponent } from './header/header.component';
 
-  ```bash title="app.module.ts" hl_lines="4 12"
-  import { NgModule } from '@angular/core';
-  import { BrowserModule } from '@angular/platform-browser';
-  import { AppComponent } from './app.component';
-  import {ProductsModule} from "./products/products.module"
-  
-  @NgModule({
-    declarations: [
-      AppComponent,
-    ],
-    imports: [
-      BrowserModule,
-      ProductsModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
-  })
-  
-  export class AppModule { }
-  ```
+    @NgModule({
+      declarations: [
+        HeaderComponent
+      ],
+      imports: [
+        CommonModule
+      ],
+      exports: [
+        HeaderComponent
+      ]
+    })
+
+    export class CoreModule { }
+    ```
+
+  - Import the module into the AppModule to register the module globally in AppModule
+
+    ```bash title="app.module.ts" hl_lines="6 17"
+    import { NgModule } from '@angular/core';
+    import { BrowserModule } from '@angular/platform-browser';
+
+    import { AppRoutingModule } from './app-routing.module';
+    import { AppComponent } from './app.component';
+    import { CoreModule } from './core/core.module';
+
+
+    @NgModule({
+      declarations: [
+        AppComponent,
+
+      ],
+      imports: [
+        BrowserModule,
+        AppRoutingModule,
+        CoreModule
+
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+
+    export class AppModule { }
+    ```
 
 #### Templates
 
@@ -265,7 +281,12 @@ Modules are a way to organize and bundle related components, directives, service
 
 #### Services
 
+ng generate service <service-name> 
+ng g c core/header --module=core --export
 
+https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2
+https://medium.com/angular-in-depth/angular-routing-reusing-common-layout-for-pages-from-different-modules-440a23f86b57
+https://subscription.packtpub.com/book/web-development/9781800205260/2/ch02lvl1sec16/creating-the-basic-layout-of-our-blog
 
 ## References
 
