@@ -273,20 +273,21 @@ Modules are a way to organize and bundle related components, directives, service
 
 #### Templates
 
-
+TODO
 
 #### Directives
 
-
+TODO
 
 #### Services
 
-ng generate service <service-name> 
-ng g c core/header --module=core --export
+A service is a class that provides shared functionality or data to multiple components in your application. Services are used to centralize common functionality, such as data fetching from an API, sharing data between components, or performing utility operations.
 
-https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2
-https://medium.com/angular-in-depth/angular-routing-reusing-common-layout-for-pages-from-different-modules-440a23f86b57
-https://subscription.packtpub.com/book/web-development/9781800205260/2/ch02lvl1sec16/creating-the-basic-layout-of-our-blog
+- Create a service via Angular CLI
+
+  ```bash
+  ng generate service <service-name> 
+  ```  
 
 ## References
 
