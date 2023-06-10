@@ -1225,57 +1225,79 @@
 </ul>
 <ul>
 <li>
-<p>Create a component and register it within a module via the Angular CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;module-name&gt;/&lt;component-name&gt;<span class="w"> </span>--module<span class="o">=</span>&lt;module-name&gt;
+<p>Create a component,  register it within a module, and add it to its exports property so that other modules can use it.</p>
+<ul>
+<li>
+<p>Angular CLI syntax</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;module-name&gt;/&lt;component-name&gt;<span class="w"> </span>--module<span class="o">=</span>&lt;module-name&gt;<span class="w"> </span>--export
 </span></code></pre></div>
 </li>
 </ul>
 <ul>
 <li>
-<p>Export the component so that it can be available in any Angular module that needs it</p>
-<div class="language-bash highlight"><span class="filename"><module-name/<module-name>.module.ts></span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CommonModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/common&#39;</span><span class="p">;</span>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>ProductItemComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./product-item/product-item.component&#39;</span><span class="p">;</span>
-</span></span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>@NgModule<span class="o">({</span>
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>ProductItemComponent<span class="o">]</span>,
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span>CommonModule
-</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">  </span><span class="o">]</span>,
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="hll"><span class="w">  </span>exports:<span class="w"> </span><span class="o">[</span>ProductItemComponent<span class="o">]</span>
-</span></span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="o">})</span>
-</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
-</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>ProductsModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span><span class="w">  </span><span class="o">]</span>
+<p>Example</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>core/header<span class="w"> </span>--module<span class="o">=</span>core<span class="w"> </span>--export
+</span></code></pre></div>
+<div class="language-bash highlight"><span class="filename">app/core/core.module.ts</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CommonModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/common&#39;</span><span class="p">;</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>HeaderComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./header/header.component&#39;</span><span class="p">;</span>
+</span></span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>@NgModule<span class="o">({</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">    </span>HeaderComponent
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">    </span>CommonModule
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">  </span>exports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="hll"><span class="w">    </span>HeaderComponent
+</span></span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">  </span><span class="o">]</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="o">})</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>CoreModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
 </span></code></pre></div>
 </li>
 </ul>
 <ul>
 <li>
-<p>Import the module into the AppModule to register the modual globally in AppModule</p>
-<div class="language-bash highlight"><span class="filename">app.module.ts</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>BrowserModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/platform-browser&#39;</span><span class="p">;</span>
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app.component&#39;</span><span class="p">;</span>
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="hll">import<span class="w"> </span><span class="o">{</span>ProductsModule<span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s2">&quot;./products/products.module&quot;</span>
-</span></span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
-</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>@NgModule<span class="o">({</span>
-</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span>AppComponent,
-</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">  </span><span class="o">]</span>,
-</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">    </span>BrowserModule,
-</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="hll"><span class="w">    </span>ProductsModule
-</span></span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">  </span><span class="o">]</span>,
-</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">  </span>providers:<span class="w"> </span><span class="o">[]</span>,
-</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="w">  </span>bootstrap:<span class="w"> </span><span class="o">[</span>AppComponent<span class="o">]</span>
-</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="o">})</span>
-</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>
-</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>AppModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
+<p>Import the module into the AppModule to register the module globally in AppModule</p>
+<div class="language-bash highlight"><span class="filename">app.module.ts</span><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>BrowserModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/platform-browser&#39;</span><span class="p">;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppRoutingModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app-routing.module&#39;</span><span class="p">;</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app.component&#39;</span><span class="p">;</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CoreModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./core/core.module&#39;</span><span class="p">;</span>
+</span></span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>@NgModule<span class="o">({</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">    </span>AppComponent,
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">    </span>BrowserModule,
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="w">    </span>AppRoutingModule,
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="hll"><span class="w">    </span>CoreModule
+</span></span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a><span class="w">  </span>providers:<span class="w"> </span><span class="o">[]</span>,
+</span><span id="__span-20-21"><a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a><span class="w">  </span>bootstrap:<span class="w"> </span><span class="o">[</span>AppComponent<span class="o">]</span>
+</span><span id="__span-20-22"><a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="o">})</span>
+</span><span id="__span-20-23"><a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a>
+</span><span id="__span-20-24"><a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>AppModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
 </span></code></pre></div>
+</li>
+</ul>
 </li>
 </ul>
 <h4 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h4>
 <h4 id="directives">Directives<a class="headerlink" href="#directives" title="Permanent link">&para;</a></h4>
 <h4 id="services">Services<a class="headerlink" href="#services" title="Permanent link">&para;</a></h4>
+<p>ng generate service <service-name> 
+ng g c core/header --module=core --export</p>
+<p>https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2
+https://medium.com/angular-in-depth/angular-routing-reusing-common-layout-for-pages-from-different-modules-440a23f86b57
+https://subscription.packtpub.com/book/web-development/9781800205260/2/ch02lvl1sec16/creating-the-basic-layout-of-our-blog</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://developer.mozilla.org/docs/Learn/HTML">HTML</a></li>
