@@ -2,32 +2,38 @@
 
 React is a popular JavaScript library for building user interfaces. It was developed by Facebook and released in 2013. React is often used in single-page applications and is known for its component-based architecture.
 
-## Package Manager
+## Prerequisites
+
+### Node.js
+
+Node.js is an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+
+- To install Node.js
+
+  ```bash
+  sudo dnf install nodejs -y
+  ```
 
 ### Node Package Manager
 
-npm is a package manager for the JavaScript programming language and is primarily used for managing dependencies in Node.js projects. npm allows developers to easily install, update, and remove packages or libraries in their projects.
+Node.js is all about modularity, and with that comes the need for a quality package manager; for this purpose, npm was made. npm is a package manager for Node.js packages or modules.
 
-- Install npm via command line
+- To install npm
 
   ```bash
   sudo dnf install npm -y
   ```
 
-- Updating npm
+- To install a packge or module using npm
 
   ```bash
-  sudo npm install -g npm
+  npm install <package-name>
   ```
 
-### Yarn
-
-Yarn is a package manager for JavaScript that was introduced as an alternative to npm. It was created by Facebook, Exponent, Google, and Tilde to address some of the limitations and performance issues of npm.
-
-- Install yarn via command line
+- To utilize the precise dependency versions specified in a `package-lock.json` file when installing packages
 
   ```bash
-  sudo npm install -g yarn
+  npm ci
   ```
 
 ## Getting Started

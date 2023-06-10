@@ -2,39 +2,57 @@
 
 AngularJS is a JavaScript-based open-source framework developed by Google for building dynamic web applications. It is often referred to as "Angular 1" to distinguish it from later versions of Angular, such as Angular 2+.
 
-## Package Manager
+## Prerequisites
 ---
+
+### Node.js
+
+Node.js is an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+
+- To install Node.js
+
+  ```bash
+  sudo dnf install nodejs -y
+  ```
 
 ### Node Package Manager
 
-npm is a package manager for the JavaScript programming language and is primarily used for managing dependencies in Node.js projects. npm allows developers to easily install, update, and remove packages or libraries in their projects.
+Node.js is all about modularity, and with that comes the need for a quality package manager; for this purpose, npm was made. npm is a package manager for Node.js packages or modules.
 
-- Install npm via command line
+- To install npm
 
   ```bash
   sudo dnf install npm -y
   ```
 
-- Updating npm
+- To install a packge or module using npm
 
   ```bash
-  sudo npm install -g npm
+  npm install <package-name>
   ```
 
-## Getting Started
----
+- To utilize the precise dependency versions specified in a `package-lock.json` file when installing npm packages
+
+  ```bash
+  npm ci
+  ```
 
 ### Angular CLI
 
 The Angular Command-Line Interface (CLI) helps you not only to create an application but also to test, scaffold, and deploy it. It creates a workspace folder and generates a structure for the application.
 
-- Install the [Angular CLI](https://angular.io/cli) package
+- To install the [Angular CLI](https://angular.io/cli) npm package globally (i.e., outside of a specific project)
 
   ```bash
   npm install -g @angular/cli
   ```
 
-### Scaffold a new project
+- Refer to the [CLI Overview and Command Reference](https://angular.io/cli) for usage information.
+
+## Getting Started
+---
+
+### Create a new Angular workspace
 
 - Using the ^^latest^^ version of the Angular CLI
 
@@ -44,24 +62,37 @@ The Angular Command-Line Interface (CLI) helps you not only to create an applica
   ```
 
   - Would you like to add Angular routing? `Y`
-  - Which stylesheet format would you like to use? `SCSS`
+  - Which stylesheet format would you like to use? `CSS`
 
 - Using a ^^specific^^ version of the Angular CLI
   ```bash
-  ng new <project-name> --version=15.0.0
+  ng new <project-name> --version=16.0.5
   ```
 
   - Would you like to add Angular routing? `Y`
-  - Which stylesheet format would you like to use? `SCSS`
+  - Which stylesheet format would you like to use? `CSS`
+
+- To see what version of the Angular CLI you are using
+
+  ```bash
+  ng version
+  ```
+
+### Folder Structure
+
+The [Angular coding style guide](https://angular.io/guide/styleguide) suggests using a [shared module](https://angular.io/guide/styleguide#shared-feature-module) and a [module for each feature](https://angular.io/guide/styleguide#feature-modules).
 
 ### UI Frameworks
 
+There are serveral popular UI Frameworks available for building Angular applications. Below are some notable ones.
+
 #### Angular Material
 
-- Install the [Angular Material](https://material.angular.io/guide/getting-started) package
+- Install the [Angular Material](https://material.angular.io/guide/getting-started) npm package
 
   ```bash
   ng add @angular/material
+  ng add @angular/cdk
   ```
 
   - Would you like to proceed? `Y`
@@ -72,17 +103,92 @@ The Angular Command-Line Interface (CLI) helps you not only to create an applica
 
   - Include the Angular animations module? `Include and enable animations`
 
-### Modules
+#### Tailwind CSS + Flowbite
 
-Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.
-
-- Create a module via the Angular CLI
+- Install the [Tailwind](https://tailwindcss.com/docs/guides/angular) npm package
 
   ```bash
-  ng generate module <module-name>
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init
   ```
 
-### Components
+- Configure your template paths inside the `tailwind.config.js` file:
+
+  ```bash title="tailwind.config.js" hl_lines="3 4 5"
+  /** @type {import('tailwindcss').Config} */
+  module.exports = {
+    content: [
+      "./src/**/*.{html,ts}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+  ```
+
+- Add the Tailwind directives to your CSS
+
+  ```css title="./src/styles.css"
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  ```
+
+- Install the [Flowbite](https://flowbite.com/docs/getting-started/quickstart/) npm package
+
+  ```bash
+  npm install flowbite
+  ```
+
+- Configure Flowbite inside the `tailwind.config.js` file:
+
+  ```bash title="tailwind.config.js" hl_lines="5 11"
+  /** @type {import('tailwindcss').Config} */
+  module.exports = {
+    content: [
+      "./src/**/*.{html,ts}",
+      "./node_modules/flowbite/**/*.js"
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [
+      require('flowbite/plugin')
+    ],
+  }
+  ```
+
+- Add the Stylesheet and JavaScript code that powers Flowbite:
+
+  ```bash title="index.html" hl_lines="10 15"
+  <!doctype html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-gray-50 dark:bg-gray-800">
+    <app-root></app-root>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+
+  </html>
+  ```
+
+A great starter template that you can use to copy HTML from is the [Flowbite Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard.)
+
+### Fundamentals
+
+The basic building blocks in Angular applications are: Components, Templates, Directives, and Services.
+
+#### Components
 
 Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
 
@@ -92,20 +198,78 @@ Components are independent and reusable bits of code. They serve the same purpos
   ng generate component <component-name>
   ```
 
-- Create a component with the CLI and register it in a module
+#### Modules
+
+Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.
+
+- Create a module via the Angular CLI
 
   ```bash
-  ng generate component <component-name> --module=<module-name>
+  ng generate module <module-name>
+  ```
+
+- Create a component and register it within a module via the Angular CLI
+
+  ```bash
+  ng generate component <module-name>/<component-name> --module=<module-name>
   ```  
 
-### Folder Structure
+- Export the component so that it can be available in any Angular module that needs it
 
-The [Angular coding style guide](https://angular.io/guide/styleguide) suggests using a [shared module](https://angular.io/guide/styleguide#shared-feature-module) and a [module for each feature](https://angular.io/guide/styleguide#feature-modules).
+  ```bash title="<module-name/<module-name>.module.ts>" hl_lines="3 10"
+  import { NgModule } from '@angular/core';
+  import { CommonModule } from '@angular/common';
+  import { ProductItemComponent } from './product-item/product-item.component';
+
+  @NgModule({
+    declarations: [ProductItemComponent],
+    imports: [
+      CommonModule
+    ],
+    exports: [ProductItemComponent]
+  })
+  
+  export class ProductsModule { }  ]
+  ```
+
+- Import the module into the AppModule to register the modual globally in AppModule
+
+  ```bash title="app.module.ts" hl_lines="4 12"
+  import { NgModule } from '@angular/core';
+  import { BrowserModule } from '@angular/platform-browser';
+  import { AppComponent } from './app.component';
+  import {ProductsModule} from "./products/products.module"
+  
+  @NgModule({
+    declarations: [
+      AppComponent,
+    ],
+    imports: [
+      BrowserModule,
+      ProductsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+  })
+  
+  export class AppModule { }
+  ```
+
+#### Templates
+
+
+
+#### Directives
+
+
+
+#### Services
+
+
 
 ## References
 
 - [HTML](https://developer.mozilla.org/docs/Learn/HTML)
 - [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Learn HTML and CSS](https://scrimba.com/learn/htmlandcss)
-- [Learn JavaScript](https://scrimba.com/learn/learnjavascript)
+- [Angular Tutorial for Beginners](https://www.youtube.com/watch?v=k5E2AVpwsko)

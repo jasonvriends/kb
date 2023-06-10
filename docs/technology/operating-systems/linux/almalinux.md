@@ -121,14 +121,36 @@ An open-source infrastructure-as-code tool used for provisioning and managing cl
   sudo dnf install terraform -y
   ```
 
+### Node.js
+
+Node.js is an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+
+- To install Node.js
+
+  ```bash
+  sudo dnf install nodejs -y
+  ```
+
 ### Node Package Manager
 
-npm is an open-source package manager designed for the JavaScript programming language. It serves as a reliable and efficient tool for developers to discover, install, and maintain code packages and libraries used in JavaScript applications. By utilizing npm, developers can effortlessly manage dependencies, ensuring their projects are built on a solid foundation of reusable code components.
+Node.js is all about modularity, and with that comes the need for a quality package manager; for this purpose, npm was made. npm is a package manager for Node.js packages or modules.
 
-- Install
+- To install npm
 
   ```bash
   sudo dnf install npm -y
+  ```
+
+- To install a packge or module using npm
+
+  ```bash
+  npm install <package-name>
+  ```
+
+- To utilize the precise dependency versions specified in a `package-lock.json` file when installing packages
+
+  ```bash
+  npm ci
   ```
 
 ### Utilities
