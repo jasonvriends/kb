@@ -19,9 +19,16 @@ nav:
           - Containers:
               - technology/containers/podman.md
           - Coding:
-              - technology/coding/python.md
-              - technology/coding/react.md
-              - technology/coding/angular.md
+              - technology/coding/git.md
+              - Languages:
+                - technology/coding/languages/python.md
+              - Frameworks:
+                - Python:
+                  - technology/coding/frameworks/python/django.md
+                  - technology/coding/frameworks/python/fastapi.md
+                - JavaScript:
+                  - technology/coding/frameworks/javascript/react.md
+                  - technology/coding/frameworks/javascript/angular.md
       - Christianity:
           - christianity/bible.md
           - Studies:

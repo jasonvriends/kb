@@ -1,9 +1,13 @@
-# A Thriving Hub for Curious Minds
+# Introduction
 
-Hey there, fellow scholars and knowledge seekers! Prepare to embark on an exciting journey as I invite you to step into my digital oasis, where learning and exploration know no bounds. Buckle up and get ready to dive into a diverse array of captivating topics, ranging from health and technology to flight simulation, amateur radio, and even Christianity.
+Welcome to my personal digital garden, where I share my knowledge on a wide range of topics, including health, technology, flight simulation, amateur radio, and Christianity.
 
-Now, if this is your first visit, congratulations on stumbling upon this hidden gem! You might find yourself overwhelmed by the sheer abundance of content, unsure of where to begin your reading odyssey. But fret not, my fellow explorers! Simply glance at the navigation tree on the left, and let your instincts guide you towards the first article that captivates your wandering gaze. Trust me, it'll be love at first read!
+Unlike traditional blogging, where articles are written and forgotten, the posts in this garden are treated as plants in different stages of growth and care. Some may wither and fade away, while others will thrive and become a valuable source of ongoing knowledge for both myself and the community that visits.
 
-Once you embark on your chosen adventure, get ready to be transported through a labyrinth of interconnected ideas and concepts. Be prepared to uncover hidden treasures and follow the rabbit hole of internal links that will lead you to a world of even more captivating articles. It's like discovering secret passageways in an ancient library, each one opening up a new realm of enlightenment.
+## Exploring the garden
 
-So, fellow knowledge enthusiasts, are you ready to dive into my digital garden? Let's embark on this exciting quest together, as we embrace the beauty of learning, exploration, and the ever-growing community of curious minds that make this virtual sanctuary come alive. Welcome, one and all, to the vibrant world of my personal digital garden!
+If this is your first visit, I extend a warm welcome! With the abundance of content available, it may be overwhelming to decide where to begin reading. I suggest starting with the first article that catches your attention in the navigation tree on the left. Be prepared to follow internal links to explore related topics and delve deeper into the garden.
+
+## Contributing
+
+If you come across any errors or wish to contribute new content, please feel free to make the necessary changes. You can use the edit button located in the top right corner of any article to submit your changes via a pull request. If you're unfamiliar with this process, you can always open an [issue](https://github.com/jasonvriends/kb/issues) or send me an [email](mailto:jason@thevriends.com).

@@ -1,4 +1,4 @@
-# Git
+# Django
 
 ## Prerequisites
 ---
