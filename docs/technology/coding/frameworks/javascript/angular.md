@@ -149,6 +149,8 @@ Terminate your Angular application by pressing ++ctrl+c++.
 
 ### Folder and File Structure
 
+The Angular CLI will create the following folder and file structure after executing the `ng new <workspace-name>` command:
+
 ```bash title="workspace-name"
 .
 ├── README.md
@@ -174,7 +176,13 @@ Terminate your Angular application by pressing ++ctrl+c++.
 └── tsconfig.spec.json
 ```
 
-The [Angular coding style guide](https://angular.io/guide/styleguide) suggests using a [shared module](https://angular.io/guide/styleguide#shared-feature-module) and a [module for each feature](https://angular.io/guide/styleguide#feature-modules).
+The [Angular coding style guide](https://angular.io/guide/styleguide#!#application-structure-and-angular-modules) outlines an opinionated guide to Angular syntax, conventions, and application structure.
+
+However, different projects will have different requirements, and the idea of one size fits all, like so many other things, simply wont always work. Have a near-term view of implementation and a long-term vision. Start small but keep in mind where the app is heading down the road.
+
+The Angular CLI produces a workspace and a good suggested default layout. As such, we are mainly concerned about looking at the `src/app` folder, where all the actual logic is going to go.
+
+####
 
 ### UI Frameworks
 
@@ -274,21 +282,25 @@ A great starter template that you can use to copy HTML from is the [Flowbite Adm
 
 ### Fundamentals
 
-The basic building blocks in Angular applications are: Components, Templates, Directives, and Services.
-
-#### Components
-
-Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
-
-- Create a component with the CLI
-
-  ```bash
-  ng generate component <component-name>
-  ```
+Angular applications are constructed using various fundamental elements such as Components, Templates, Directives, Pipes, and Services. These building blocks are essential in creating comprehensive applications. However, as the size of the application expands, it becomes challenging to manage and organize these blocks effectively. This is where Angular modules, also known as ngModules, come into play.
 
 #### Modules
 
-Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.
+Angular Modules are utilized to group and consolidate related Components, Templates, Directives, Pipes, and Services, enabling cohesive units and managing dependencies between different parts of an application. To organize modules effectively, it is recommended to categorize them into four distinct categories:
+
+##### Root Module
+
+Angular requires one module to be loaded as the application starts. We call this as root module. The root module loads the root component and all other modules. The root module is conventionally called `AppModule` and created in the root of the `/src/app` folder.
+
+##### Feature Module
+
+The Feature module implements a specific feature of the Application. All the Components, Templates, Directives, Pipes, and Services which comprise of the feature become part of the module.
+
+##### Shared Module
+
+There are many Components, Templates, Directives, Pipes, and Services we may like to share across various modules. All these items should go into the shared module.
+
+##### Core Module
 
 - Create a module via the Angular CLI
 
@@ -358,6 +370,16 @@ Modules are a way to organize and bundle related components, directives, service
 
     export class AppModule { }
     ```
+
+#### Components
+
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+
+- Create a component with the CLI
+
+  ```bash
+  ng generate component <component-name>
+  ```
 
 #### Templates
 
