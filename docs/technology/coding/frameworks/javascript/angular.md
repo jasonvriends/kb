@@ -1,186 +1,274 @@
 # Angular
 
-AngularJS is a JavaScript-based open-source framework developed by Google for building dynamic web applications. It is often referred to as "Angular 1" to distinguish it from later versions of Angular, such as Angular 2+.
+Angular is a development platform, built on TypeScript. As a platform, Angular includes:
+
+- A component-based framework (i.e., Model View Component or MVC) for building scalable web applications
+- A collection of well-integrated libraries (i.e., routing, HTTP, validation, etc.) that cover a wide variety of features, including routing, forms management, client-server communication, and more
+- A suite of developer tools (i.e., testing tools, build, run, etc.) to help you develop, build, test, and update your code
+
+With Angular, you're taking advantage of a platform that can scale from single-developer projects to enterprise-level applications. Angular is designed to make updating as straightforward as possible, so take advantage of the latest developments with minimal effort. Best of all, the Angular ecosystem consists of a diverse group of over 1.7 million developers, library authors, and content creators.
 
 ## Prerequisites
+
 ---
 
-### Node.js
+### Knowledge
 
-Node.js is an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+To develop applications using the Angular framework, a prerequisite is to possess a proficient understanding of HTML, CSS, JavaScript, and TypeScript. These fundamental web technologies form the building blocks for Angular development.
 
-- To install Node.js
+#### HTML
 
-  ```bash
-  sudo dnf install nodejs -y
-  ```
+HyperText Markup Language (HTML) is a standard markup language used for creating web pages. It employs a set of tags and attributes to structure and present content on the web. HTML documents consist of elements enclosed in opening and closing tags, allowing the definition of headings, paragraphs, images, links, tables, forms, and more. [Learn HTML](https://developer.mozilla.org/docs/Learn/HTML)
 
-### Node Package Manager
+#### CSS
 
-Node.js is all about modularity, and with that comes the need for a quality package manager; for this purpose, npm was made. npm is a package manager for Node.js packages or modules.
+Cascading Style Sheets (CSS) is a style sheet language used to define the visual appearance and presentation of HTML and XML documents. It allows web developers to separate the content and structure of a webpage from its design, enabling them to specify colors, fonts, spacing, positioning, and other visual properties. CSS works by selecting HTML elements and applying styles to them, either inline, within the HTML document, or in external CSS files. [Learn CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
 
-- To install npm
+#### JavaScript
 
-  ```bash
-  sudo dnf install npm -y
-  ```
+JavaScript is a versatile and widely used programming language that enables dynamic behavior and interactivity on web pages. It allows developers to create interactive elements, manipulate and modify content, handle events, and communicate with servers. JavaScript is primarily executed on the client-side, meaning it runs in the web browser, providing the ability to respond to user actions in real-time without requiring page reloads [Learn JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 
-- To install a packge or module using npm
+#### TypeScript
 
-  ```bash
-  npm install <package-name>
-  ```
+TypeScript is a programming language that extends the capabilities of JavaScript by adding static typing to it. It provides developers with optional type annotations, which enable the specification of the data types of variables, function parameters, and return values. This allows for early error detection and improved code reliability. TypeScript code is transpiled into JavaScript, making it compatible with existing JavaScript environments and enabling developers to leverage modern JavaScript features while benefiting from the added type checking and enhanced tooling support offered by TypeScript. [Learn TypeScript](https://www.typescriptlang.org/)
 
-- To utilize the precise dependency versions specified in a `package-lock.json` file when installing npm packages
+### Environment & Tools
 
-  ```bash
-  npm ci
-  ```
+To develop applications using the Angular framework, you'll need a computer or laptop that meets the system requirements and has the necessary software, tools, and configurations to build, test, and debug Angular applications locally. This can be achieved through various means, such as using a physical machine, a Mac, or a virtual machine. For example, you can utilize [Windows Subsystem for Linux](https://thevriends.com/technology/operating-systems/windows/wsl/) running [AlmaLinux 9](https://thevriends.com/technology/operating-systems/linux/almalinux/) as the underlying operating system. WSL provides a compatibility layer that allows running Linux distributions on Windows, while AlmaLinux is a Linux distribution known for its stability and compatibility.
 
-### Angular CLI
+#### Node.js
 
-The Angular Command-Line Interface (CLI) helps you not only to create an application but also to test, scaffold, and deploy it. It creates a workspace folder and generates a structure for the application.
+Node.js is an open-source, server-side JavaScript runtime environment built on the Chrome V8 JavaScript engine. It allows developers to execute JavaScript code outside of a web browser, making it possible to run JavaScript on servers and build scalable and high-performance network applications. Node.js provides an event-driven, non-blocking I/O model that makes it efficient and suitable for handling concurrent requests. It also offers a rich set of built-in modules and a vast ecosystem of third-party libraries, enabling developers to easily create web servers, APIs, real-time applications, command-line tools, and more using JavaScript.
 
-- To install the [Angular CLI](https://angular.io/cli) npm package globally (i.e., outside of a specific project)
+To install the latest version of Node.js on AlmaLinux 9:
 
-  ```bash
-  npm install -g @angular/cli
-  ```
+```bash
+sudo dnf install nodejs -y
+```
 
-- Refer to the [CLI Overview and Command Reference](https://angular.io/cli) for usage information.
+#### NPM
+
+Node Package Manager (NPM) is a package manager for JavaScript and Node.js. It is a command-line tool that simplifies the process of installing, managing, and sharing reusable code packages or modules. NPM allows developers to easily incorporate third-party libraries and frameworks into their projects, saving time and effort in writing code from scratch.
+
+To install the latest version of NPM on AlmaLinux 9:
+
+```bash
+sudo dnf install npm -y
+```
+
+!!! warning annotate "Local vs global package scope"
+
+    Local NPM packages are project-specific dependencies, confined to a particular directory, while global packages are installed at the system level and accessible across projects. Using the  `-g` command will configure the package scope to globhal thus use this with caution.
+
+Update to the latest version of NPM on AlmaLinux 9:
+
+```bash
+sudo npm install -g npm@latest
+```
+
+List installed packages:
+
+```bash
+npm list
+```
+
+Install packge(s):
+
+```bash
+npm install <package> <package> <package>
+```
+
+Uninstall packge(s):
+
+```bash
+npm uninstall <package> <package> <package>
+```
+
+Update package(s):
+
+```bash
+npm update <package> <package> <package>
+```
+
+Clean and install project dependencies based on the `package-lock.json` file:
+
+```bash
+npm ci
+```
+
+#### Angular CLI
+
+The Angular CLI (Command Line Interface) is a powerful tool that simplifies and automates various development tasks when working with the Angular framework. It provides a command-line interface for creating, managing, and building Angular projects effortlessly. The Angular CLI streamlines the process of generating components, services, modules, and other project structures, reducing manual effort and ensuring consistent code organization. It also facilitates quick scaffolding of boilerplate code, running tests, serving the application locally for development, and bundling the code for deployment. With its extensive set of commands and options, the Angular CLI enhances developer productivity and helps maintain best practices while working on Angular projects.
+
+To install the [Angular CLI](https://angular.io/cli) NPM package globally on AlmaLinux 9:
+
+```bash
+npm install -g @angular/cli
+```
+
+To see what version of the Angular CLI you are using:
+
+```bash
+ng version
+```
+
+The Angular CLI is considered one of the highlights of the Angular framework, making it highly recommended to explore the [CLI Overview and Command Reference](https://angular.io/cli) for detailed information on its usage.
 
 ## Getting Started
+
 ---
 
-### Create a new Angular workspace
+### Angular workspace
 
-- Using the ^^latest^^ version of the Angular CLI
+!!! Note annotate "Angular versions"
 
-  ```bash
-  ng new <project-name>
-  cd <project-name>
-  ```
+    If you require a specific version of Angular, you have the option to utilize the `--version` switch. To illustrate, when working with Angular CLI and needing version 16.0.5, you can indicate this by specifying `--version=16.0.5`.
 
-  - Would you like to add Angular routing? `Y`
-  - Which stylesheet format would you like to use? `CSS`
+Create a new Angular workspace:
 
-- Using a ^^specific^^ version of the Angular CLI
-  ```bash
-  ng new <project-name> --version=16.0.5
-  ```
+```bash
+ng new <workspace-name>
+```
 
-  - Would you like to add Angular routing? `Y`
-  - Which stylesheet format would you like to use? `CSS`
+- Would you like to add Angular routing? (y/N): ==Y==
+- Which stylesheet format would you like to use? (Use arrow keys): ==CSS==
 
-- To see what version of the Angular CLI you are using
+Navigate to your newly created Angular workspace directory:
 
-  ```bash
-  ng version
-  ```
+```bash
+cd <workspace-name>
+```
 
-### Folder Structure
+Run your Angular application:
+
+```bash
+ng serve
+```
+
+Terminate your Angular application by pressing ++ctrl+c++.
+
+### Folder and File Structure
+
+```bash title="workspace-name"
+.
+├── README.md
+├── angular.json
+├── node_modules
+├── package-lock.json
+├── package.json
+├── src
+│   ├── app
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   ├── assets
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.css
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
+```
 
 The [Angular coding style guide](https://angular.io/guide/styleguide) suggests using a [shared module](https://angular.io/guide/styleguide#shared-feature-module) and a [module for each feature](https://angular.io/guide/styleguide#feature-modules).
 
 ### UI Frameworks
 
-There are serveral popular UI Frameworks available for building Angular applications. Below are some notable ones.
+An Angular UI framework is a collection of pre-built user interface components, styles, and tools specifically designed to work seamlessly with Angular applications. These frameworks provide a set of reusable and customizable UI components that enable developers to quickly build interactive and visually appealing user interfaces for their Angular projects. Some popular Angular UI frameworks include [Angular Material](https://material.angular.io), [PrimeNG](https://primeng.org/), [Nebular](https://akveo.github.io/nebular/), and [Clarity](https://clarity.design/). I prefer using [Tailwind CSS](https://tailwindcss.com/) and [Flowbite](https://flowbite.com/). Below, I will provide instructions on how to integrate them into your Angular workspace.
 
-#### Angular Material
+#### Tailwind CSS
 
-- Install the [Angular Material](https://material.angular.io/guide/getting-started) npm package
+Install [Tailwind CSS with Angular](https://tailwindcss.com/docs/guides/angular):
 
-  ```bash
-  ng add @angular/material
-  ng add @angular/cdk
-  ```
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
 
-  - Would you like to proceed? `Y`
+Initialize Tailwind CSS:
 
-  - Choose a prebuilt theme name, or "custom" for a custom theme: `Indigo/Pink`
+```bash
+npx tailwindcss init
+```
 
-  - Set up global Angular Material typography styles? `Y`
+!!! note ""
 
-  - Include the Angular animations module? `Include and enable animations`
+    This command will create a default `tailwind.config.js` file in your workspace directory.
 
-#### Tailwind CSS + Flowbite
+Configure content paths inside the `tailwind.config.js` file:
 
-- Install the [Tailwind](https://tailwindcss.com/docs/guides/angular) npm package
+```bash title="tailwind.config.js" hl_lines="3 4 5"
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
 
-  ```bash
-  npm install -D tailwindcss postcss autoprefixer
-  npx tailwindcss init
-  ```
+Add the Tailwind directives to your CSS:
 
-- Configure your template paths inside the `tailwind.config.js` file:
+```css title="./src/styles.css"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-  ```bash title="tailwind.config.js" hl_lines="3 4 5"
-  /** @type {import('tailwindcss').Config} */
-  module.exports = {
-    content: [
-      "./src/**/*.{html,ts}",
-    ],
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  }
-  ```
+#### Flowbite
 
-- Add the Tailwind directives to your CSS
+Install the [Flowbite](https://flowbite.com/docs/getting-started/quickstart/) NPM package:
 
-  ```css title="./src/styles.css"
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  ```
+```bash
+npm install flowbite
+```
 
-- Install the [Flowbite](https://flowbite.com/docs/getting-started/quickstart/) npm package
+Configure Tailwind CSS to use Flowbite:
 
-  ```bash
-  npm install flowbite
-  ```
+```bash title="tailwind.config.js" hl_lines="5 11"
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+    "./node_modules/flowbite/**/*.js"
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('flowbite/plugin')
+  ],
+}
+```
 
-- Configure Flowbite inside the `tailwind.config.js` file:
+Add the Stylesheet and JavaScript code that powers Flowbite:
 
-  ```bash title="tailwind.config.js" hl_lines="5 11"
-  /** @type {import('tailwindcss').Config} */
-  module.exports = {
-    content: [
-      "./src/**/*.{html,ts}",
-      "./node_modules/flowbite/**/*.js"
-    ],
-    theme: {
-      extend: {},
-    },
-    plugins: [
-      require('flowbite/plugin')
-    ],
-  }
-  ```
+```bash title="index.html" hl_lines="10 15"
+<!doctype html>
+<html lang="en">
 
-- Add the Stylesheet and JavaScript code that powers Flowbite:
+<head>
+  <meta charset="utf-8">
+  <title>App</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+</head>
 
-  ```bash title="index.html" hl_lines="10 15"
-  <!doctype html>
-  <html lang="en">
+<body class="bg-gray-50 dark:bg-gray-800">
+  <app-root></app-root>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
 
-  <head>
-    <meta charset="utf-8">
-    <title>App</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-  </head>
-
-  <body class="bg-gray-50 dark:bg-gray-800">
-    <app-root></app-root>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-  </body>
-
-  </html>
-  ```
+</html>
+```
 
 A great starter template that you can use to copy HTML from is the [Flowbite Admin Dashboard](https://github.com/themesberg/flowbite-admin-dashboard.)
 
@@ -208,19 +296,19 @@ Modules are a way to organize and bundle related components, directives, service
   ng generate module <module-name>
   ```
 
-- Create a component,  register it within a module, and add it to its exports property so that other modules can use it.
+- Create a component, register it within a module, and add it to its exports property so that other modules can use it.
 
   - Angular CLI syntax
 
     ```bash
     ng generate component <module-name>/<component-name> --module=<module-name> --export
-    ```  
+    ```
 
   - Example
 
     ```bash
     ng generate component core/header --module=core --export
-    ```  
+    ```
 
     ```bash title="app/core/core.module.ts" hl_lines="3 13"
     import { NgModule } from '@angular/core';
@@ -286,12 +374,18 @@ A service is a class that provides shared functionality or data to multiple comp
 - Create a service via Angular CLI
 
   ```bash
-  ng generate service <service-name> 
-  ```  
+  ng generate service <service-name>
+  ```
 
 ## References
 
-- [HTML](https://developer.mozilla.org/docs/Learn/HTML)
-- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
-- [TypeScript](https://www.typescriptlang.org/)
 - [Angular Tutorial for Beginners](https://www.youtube.com/watch?v=k5E2AVpwsko)
+
+### Tutorials
+
+- [Angular Basics](https://www.fabiobiondi.dev/tutorials/angular/angular-basics/1-angular-hello-world)
+- [Core Module and Navigation Bar](https://www.fabiobiondi.dev/tutorials/angular/angular-ng-modules-and-router/2-core-module-and-navbar)
+- [Create a simple CRUD app](https://www.fabiobiondi.dev/tutorials/angular/simple-crud-in-angular/3-template-driven-forms)
+- [Create an application with ngModules and nested routes](https://www.fabiobiondi.dev/tutorials/angular/angular-ng-modules-and-router/1-create-the-project)
+- [Create a Project with Standalone Components and Routing](https://www.fabiobiondi.dev/tutorials/angular/angular-standalone-apps)
+- [Enable Type Checking](https://www.fabiobiondi.dev/tutorials/react/vite-and-vitest/1-react-vite-and-typescript)
