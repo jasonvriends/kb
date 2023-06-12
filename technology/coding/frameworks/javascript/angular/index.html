@@ -997,22 +997,16 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#folder-and-file-structure" class="md-nav__link">
-    Folder and File Structure
-  </a>
-  
-    <nav class="md-nav" aria-label="Folder and File Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#naming-convention" class="md-nav__link">
+    Naming Convention
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#folder-and-file-structure" class="md-nav__link">
+    Folder and File Structure
+  </a>
   
 </li>
         
@@ -1414,8 +1408,12 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>ng<span class="w"> </span>serve
 </span></code></pre></div>
 <p>Terminate your Angular application by pressing <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span>.</p>
+<h3 id="naming-convention">Naming Convention<a class="headerlink" href="#naming-convention" title="Permanent link">&para;</a></h3>
+<p>Files should use kebab-case (i.e., using hyphens to separate words) and should include their purpose or type, e.g., home-routing.module.ts, home.component.ts, home.component.scss, home.module.ts.</p>
+<p>Classes should use TitleCase (i.e., all major words are capitalized, while minor words are lowercased) style with the added suffix representing your file type e.g., HomeComponent.</p>
+<p>Everything else, such as methods and variables, should use camelCase (i.e., requires the first letter of every word to be capitalized except the first word). Private methods and variables can be prefixed with an underscore, e.g. _privateVariable.</p>
 <h3 id="folder-and-file-structure">Folder and File Structure<a class="headerlink" href="#folder-and-file-structure" title="Permanent link">&para;</a></h3>
-<p>The Angular CLI will create the following folder and file structure after executing the <code>ng new &lt;workspace-name&gt;</code> command:</p>
+<p>The Angular CLI produces a workspace and a good suggested default layout. As such, we are mainly concerned about looking at the <code>src/app</code> folder, where all the actual logic is going to go.</p>
 <div class="language-bash highlight"><span class="filename">workspace-name</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>.
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>├──<span class="w"> </span>README.md
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>├──<span class="w"> </span>angular.json
@@ -1439,10 +1437,8 @@
 </span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>├──<span class="w"> </span>tsconfig.json
 </span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>└──<span class="w"> </span>tsconfig.spec.json
 </span></code></pre></div>
-<p>The <a href="https://angular.io/guide/styleguide#!#application-structure-and-angular-modules">Angular coding style guide</a> outlines an opinionated guide to Angular syntax, conventions, and application structure.</p>
-<p>However, different projects will have different requirements, and the idea of one size fits all, like so many other things, simply wont always work. Have a near-term view of implementation and a long-term vision. Start small but keep in mind where the app is heading down the road.</p>
-<p>The Angular CLI produces a workspace and a good suggested default layout. As such, we are mainly concerned about looking at the <code>src/app</code> folder, where all the actual logic is going to go.</p>
-<h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<p>The <a href="https://angular.io/guide/styleguide#!#application-structure-and-angular-modules">Angular coding style guide</a> outlines an opinionated guide to Angular syntax, conventions, and application structure. However, different projects will have different requirements, and the idea of one size fits all, like so many other things, simply wont always work.</p>
+<p>At this point, I haven't developed a personal opinion on the ideal file and folder structure. However, I have found the video titled "How to structure your Angular apps like a Googler" (https://www.youtube.com/watch?v=7SDpTOLeqHE) quite insightful and appealing so far.</p>
 <h3 id="ui-frameworks">UI Frameworks<a class="headerlink" href="#ui-frameworks" title="Permanent link">&para;</a></h3>
 <p>An Angular UI framework is a collection of pre-built user interface components, styles, and tools specifically designed to work seamlessly with Angular applications. These frameworks provide a set of reusable and customizable UI components that enable developers to quickly build interactive and visually appealing user interfaces for their Angular projects. Some popular Angular UI frameworks include <a href="https://material.angular.io">Angular Material</a>, <a href="https://primeng.org/">PrimeNG</a>, <a href="https://akveo.github.io/nebular/">Nebular</a>, and <a href="https://clarity.design/">Clarity</a>. I prefer using <a href="https://tailwindcss.com/">Tailwind CSS</a> and <a href="https://flowbite.com/">Flowbite</a>. Below, I will provide instructions on how to integrate them into your Angular workspace.</p>
 <h4 id="tailwind-css">Tailwind CSS<a class="headerlink" href="#tailwind-css" title="Permanent link">&para;</a></h4>
