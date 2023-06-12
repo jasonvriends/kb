@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Welcome to our thriving hub for curious minds! Explore a diverse range of captivating topics, from health and technology to flight simulation, amateur radio, and religion. With an abundance of content, let the navigation tree guide you to your first captivating read. Delve into a labyrinth of interconnected ideas, uncover hidden treasures, and follow the rabbit hole of internal links. Embark on an exciting quest of learning and exploration, embraced by a vibrant community of curious minds in our virtual sanctuary. Welcome to our digital garden of knowledge!">
+        <meta name="description" content="Welcome to my personal digital garden, where I share my knowledge on a wide range of topics, including health, technology, flight simulation, amateur radio, and Christianity. Unlike traditional blogging, where articles are written and forgotten, the posts in this garden are treated as plants in different stages of growth and care. Some may wither and fade away, while others will thrive and become a valuable source of ongoing knowledge for both myself and the community that visits.">
       
       
         <meta name="author" content="Jason Vriends">
@@ -71,7 +71,7 @@
       
         <meta  property="og:title"  content="Angular - Jason Vriends" >
       
-        <meta  property="og:description"  content="Welcome to our thriving hub for curious minds! Explore a diverse range of captivating topics, from health and technology to flight simulation, amateur radio, and religion. With an abundance of content, let the navigation tree guide you to your first captivating read. Delve into a labyrinth of interconnected ideas, uncover hidden treasures, and follow the rabbit hole of internal links. Embark on an exciting quest of learning and exploration, embraced by a vibrant community of curious minds in our virtual sanctuary. Welcome to our digital garden of knowledge!" >
+        <meta  property="og:description"  content="Welcome to my personal digital garden, where I share my knowledge on a wide range of topics, including health, technology, flight simulation, amateur radio, and Christianity. Unlike traditional blogging, where articles are written and forgotten, the posts in this garden are treated as plants in different stages of growth and care. Some may wither and fade away, while others will thrive and become a valuable source of ongoing knowledge for both myself and the community that visits." >
       
         <meta  property="og:image"  content="https://thevriends.com/assets/images/social/technology/coding/frameworks/javascript/angular.png" >
       
@@ -87,7 +87,7 @@
       
         <meta  name="twitter:title"  content="Angular - Jason Vriends" >
       
-        <meta  name="twitter:description"  content="Welcome to our thriving hub for curious minds! Explore a diverse range of captivating topics, from health and technology to flight simulation, amateur radio, and religion. With an abundance of content, let the navigation tree guide you to your first captivating read. Delve into a labyrinth of interconnected ideas, uncover hidden treasures, and follow the rabbit hole of internal links. Embark on an exciting quest of learning and exploration, embraced by a vibrant community of curious minds in our virtual sanctuary. Welcome to our digital garden of knowledge!" >
+        <meta  name="twitter:description"  content="Welcome to my personal digital garden, where I share my knowledge on a wide range of topics, including health, technology, flight simulation, amateur radio, and Christianity. Unlike traditional blogging, where articles are written and forgotten, the posts in this garden are treated as plants in different stages of growth and care. Some may wither and fade away, while others will thrive and become a valuable source of ongoing knowledge for both myself and the community that visits." >
       
         <meta  name="twitter:image"  content="https://thevriends.com/assets/images/social/technology/coding/frameworks/javascript/angular.png" >
       
@@ -1001,6 +1001,19 @@
     Folder and File Structure
   </a>
   
+    <nav class="md-nav" aria-label="Folder and File Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1039,15 +1052,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
+  <a href="#modules" class="md-nav__link">
+    Modules
+  </a>
+  
+    <nav class="md-nav" aria-label="Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#root-module" class="md-nav__link">
+    Root Module
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modules" class="md-nav__link">
-    Modules
+  <a href="#feature-module" class="md-nav__link">
+    Feature Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-module" class="md-nav__link">
+    Shared Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-module" class="md-nav__link">
+    Core Module
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
   </a>
   
 </li>
@@ -1368,6 +1415,7 @@
 </span></code></pre></div>
 <p>Terminate your Angular application by pressing <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span>.</p>
 <h3 id="folder-and-file-structure">Folder and File Structure<a class="headerlink" href="#folder-and-file-structure" title="Permanent link">&para;</a></h3>
+<p>The Angular CLI will create the following folder and file structure after executing the <code>ng new &lt;workspace-name&gt;</code> command:</p>
 <div class="language-bash highlight"><span class="filename">workspace-name</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>.
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>├──<span class="w"> </span>README.md
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>├──<span class="w"> </span>angular.json
@@ -1391,7 +1439,10 @@
 </span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>├──<span class="w"> </span>tsconfig.json
 </span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>└──<span class="w"> </span>tsconfig.spec.json
 </span></code></pre></div>
-<p>The <a href="https://angular.io/guide/styleguide">Angular coding style guide</a> suggests using a <a href="https://angular.io/guide/styleguide#shared-feature-module">shared module</a> and a <a href="https://angular.io/guide/styleguide#feature-modules">module for each feature</a>.</p>
+<p>The <a href="https://angular.io/guide/styleguide#!#application-structure-and-angular-modules">Angular coding style guide</a> outlines an opinionated guide to Angular syntax, conventions, and application structure.</p>
+<p>However, different projects will have different requirements, and the idea of one size fits all, like so many other things, simply wont always work. Have a near-term view of implementation and a long-term vision. Start small but keep in mind where the app is heading down the road.</p>
+<p>The Angular CLI produces a workspace and a good suggested default layout. As such, we are mainly concerned about looking at the <code>src/app</code> folder, where all the actual logic is going to go.</p>
+<h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <h3 id="ui-frameworks">UI Frameworks<a class="headerlink" href="#ui-frameworks" title="Permanent link">&para;</a></h3>
 <p>An Angular UI framework is a collection of pre-built user interface components, styles, and tools specifically designed to work seamlessly with Angular applications. These frameworks provide a set of reusable and customizable UI components that enable developers to quickly build interactive and visually appealing user interfaces for their Angular projects. Some popular Angular UI frameworks include <a href="https://material.angular.io">Angular Material</a>, <a href="https://primeng.org/">PrimeNG</a>, <a href="https://akveo.github.io/nebular/">Nebular</a>, and <a href="https://clarity.design/">Clarity</a>. I prefer using <a href="https://tailwindcss.com/">Tailwind CSS</a> and <a href="https://flowbite.com/">Flowbite</a>. Below, I will provide instructions on how to integrate them into your Angular workspace.</p>
 <h4 id="tailwind-css">Tailwind CSS<a class="headerlink" href="#tailwind-css" title="Permanent link">&para;</a></h4>
@@ -1462,22 +1513,20 @@
 </span></code></pre></div>
 <p>A great starter template that you can use to copy HTML from is the <a href="https://github.com/themesberg/flowbite-admin-dashboard.">Flowbite Admin Dashboard</a></p>
 <h3 id="fundamentals">Fundamentals<a class="headerlink" href="#fundamentals" title="Permanent link">&para;</a></h3>
-<p>The basic building blocks in Angular applications are: Components, Templates, Directives, and Services.</p>
-<h4 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h4>
-<p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
-<ul>
-<li>
-<p>Create a component with the CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
-</span></code></pre></div>
-</li>
-</ul>
+<p>Angular applications are constructed using various fundamental elements such as Components, Templates, Directives, Pipes, and Services. These building blocks are essential in creating comprehensive applications. However, as the size of the application expands, it becomes challenging to manage and organize these blocks effectively. This is where Angular modules, also known as ngModules, come into play.</p>
 <h4 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h4>
-<p>Modules are a way to organize and bundle related components, directives, services, and other code into cohesive units. They provide a mechanism for managing the dependencies between different parts of an application.</p>
+<p>Angular Modules are utilized to group and consolidate related Components, Templates, Directives, Pipes, and Services, enabling cohesive units and managing dependencies between different parts of an application. To organize modules effectively, it is recommended to categorize them into four distinct categories:</p>
+<h5 id="root-module">Root Module<a class="headerlink" href="#root-module" title="Permanent link">&para;</a></h5>
+<p>Angular requires one module to be loaded as the application starts. We call this as root module. The root module loads the root component and all other modules. The root module is conventionally called <code>AppModule</code> and created in the root of the <code>/src/app</code> folder.</p>
+<h5 id="feature-module">Feature Module<a class="headerlink" href="#feature-module" title="Permanent link">&para;</a></h5>
+<p>The Feature module implements a specific feature of the Application. All the Components, Templates, Directives, Pipes, and Services which comprise of the feature become part of the module.</p>
+<h5 id="shared-module">Shared Module<a class="headerlink" href="#shared-module" title="Permanent link">&para;</a></h5>
+<p>There are many Components, Templates, Directives, Pipes, and Services we may like to share across various modules. All these items should go into the shared module.</p>
+<h5 id="core-module">Core Module<a class="headerlink" href="#core-module" title="Permanent link">&para;</a></h5>
 <ul>
 <li>
 <p>Create a module via the Angular CLI</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>module<span class="w"> </span>&lt;module-name&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>module<span class="w"> </span>&lt;module-name&gt;
 </span></code></pre></div>
 </li>
 </ul>
@@ -1487,65 +1536,74 @@
 <ul>
 <li>
 <p>Angular CLI syntax</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;module-name&gt;/&lt;component-name&gt;<span class="w"> </span>--module<span class="o">=</span>&lt;module-name&gt;<span class="w"> </span>--export
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;module-name&gt;/&lt;component-name&gt;<span class="w"> </span>--module<span class="o">=</span>&lt;module-name&gt;<span class="w"> </span>--export
 </span></code></pre></div>
 </li>
 </ul>
 <ul>
 <li>
 <p>Example</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>core/header<span class="w"> </span>--module<span class="o">=</span>core<span class="w"> </span>--export
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>core/header<span class="w"> </span>--module<span class="o">=</span>core<span class="w"> </span>--export
 </span></code></pre></div>
-<div class="language-bash highlight"><span class="filename">app/core/core.module.ts</span><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
-</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CommonModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/common&#39;</span><span class="p">;</span>
-</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>HeaderComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./header/header.component&#39;</span><span class="p">;</span>
-</span></span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
-</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>@NgModule<span class="o">({</span>
-</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">    </span>HeaderComponent
-</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="w">  </span><span class="o">]</span>,
-</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="w">    </span>CommonModule
-</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="w">  </span><span class="o">]</span>,
-</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="w">  </span>exports:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="hll"><span class="w">    </span>HeaderComponent
-</span></span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="w">  </span><span class="o">]</span>
-</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="o">})</span>
-</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>
-</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>CoreModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
+<div class="language-bash highlight"><span class="filename">app/core/core.module.ts</span><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CommonModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/common&#39;</span><span class="p">;</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>HeaderComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./header/header.component&#39;</span><span class="p">;</span>
+</span></span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>@NgModule<span class="o">({</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="w">    </span>HeaderComponent
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="w">    </span>CommonModule
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="w">  </span>exports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="hll"><span class="w">    </span>HeaderComponent
+</span></span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="w">  </span><span class="o">]</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a><span class="o">})</span>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>CoreModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
 </span></code></pre></div>
 </li>
 </ul>
 <ul>
 <li>
 <p>Import the module into the AppModule to register the module globally in AppModule</p>
-<div class="language-bash highlight"><span class="filename">app.module.ts</span><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
-</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>BrowserModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/platform-browser&#39;</span><span class="p">;</span>
-</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>
-</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppRoutingModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app-routing.module&#39;</span><span class="p">;</span>
-</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app.component&#39;</span><span class="p">;</span>
-</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CoreModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./core/core.module&#39;</span><span class="p">;</span>
-</span></span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>
-</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
-</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>@NgModule<span class="o">({</span>
-</span><span id="__span-26-10"><a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-26-11"><a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="w">    </span>AppComponent,
-</span><span id="__span-26-12"><a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>
-</span><span id="__span-26-13"><a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a><span class="w">  </span><span class="o">]</span>,
-</span><span id="__span-26-14"><a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-26-15"><a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a><span class="w">    </span>BrowserModule,
-</span><span id="__span-26-16"><a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a><span class="w">    </span>AppRoutingModule,
-</span><span id="__span-26-17"><a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a><span class="hll"><span class="w">    </span>CoreModule
-</span></span><span id="__span-26-18"><a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>
-</span><span id="__span-26-19"><a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a><span class="w">  </span><span class="o">]</span>,
-</span><span id="__span-26-20"><a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a><span class="w">  </span>providers:<span class="w"> </span><span class="o">[]</span>,
-</span><span id="__span-26-21"><a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a><span class="w">  </span>bootstrap:<span class="w"> </span><span class="o">[</span>AppComponent<span class="o">]</span>
-</span><span id="__span-26-22"><a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a><span class="o">})</span>
-</span><span id="__span-26-23"><a id="__codelineno-26-23" name="__codelineno-26-23" href="#__codelineno-26-23"></a>
-</span><span id="__span-26-24"><a id="__codelineno-26-24" name="__codelineno-26-24" href="#__codelineno-26-24"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>AppModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
+<div class="language-bash highlight"><span class="filename">app.module.ts</span><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>NgModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>BrowserModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@angular/platform-browser&#39;</span><span class="p">;</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppRoutingModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app-routing.module&#39;</span><span class="p">;</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>AppComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./app.component&#39;</span><span class="p">;</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="hll">import<span class="w"> </span><span class="o">{</span><span class="w"> </span>CoreModule<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./core/core.module&#39;</span><span class="p">;</span>
+</span></span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>@NgModule<span class="o">({</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="w">  </span>declarations:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="w">    </span>AppComponent,
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="w">  </span>imports:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="w">    </span>BrowserModule,
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="w">    </span>AppRoutingModule,
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="hll"><span class="w">    </span>CoreModule
+</span></span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>
+</span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a><span class="w">  </span><span class="o">]</span>,
+</span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="w">  </span>providers:<span class="w"> </span><span class="o">[]</span>,
+</span><span id="__span-25-21"><a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a><span class="w">  </span>bootstrap:<span class="w"> </span><span class="o">[</span>AppComponent<span class="o">]</span>
+</span><span id="__span-25-22"><a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a><span class="o">})</span>
+</span><span id="__span-25-23"><a id="__codelineno-25-23" name="__codelineno-25-23" href="#__codelineno-25-23"></a>
+</span><span id="__span-25-24"><a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a><span class="nb">export</span><span class="w"> </span>class<span class="w"> </span>AppModule<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
 </span></code></pre></div>
 </li>
 </ul>
+</li>
+</ul>
+<h4 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h4>
+<p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
+<ul>
+<li>
+<p>Create a component with the CLI</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>&lt;component-name&gt;
+</span></code></pre></div>
 </li>
 </ul>
 <h4 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h4>
