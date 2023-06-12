@@ -147,9 +147,17 @@ ng serve
 
 Terminate your Angular application by pressing ++ctrl+c++.
 
+### Naming Convention
+
+Files should use kebab-case (i.e., using hyphens to separate words) and should include their purpose or type, e.g., home-routing.module.ts, home.component.ts, home.component.scss, home.module.ts.
+
+Classes should use TitleCase (i.e., all major words are capitalized, while minor words are lowercased) style with the added suffix representing your file type e.g., HomeComponent.
+
+Everything else, such as methods and variables, should use camelCase (i.e., requires the first letter of every word to be capitalized except the first word). Private methods and variables can be prefixed with an underscore, e.g. \_privateVariable.
+
 ### Folder and File Structure
 
-The Angular CLI will create the following folder and file structure after executing the `ng new <workspace-name>` command:
+The Angular CLI produces a workspace and a good suggested default layout. As such, we are mainly concerned about looking at the `src/app` folder, where all the actual logic is going to go.
 
 ```bash title="workspace-name"
 .
@@ -176,13 +184,9 @@ The Angular CLI will create the following folder and file structure after execut
 └── tsconfig.spec.json
 ```
 
-The [Angular coding style guide](https://angular.io/guide/styleguide#!#application-structure-and-angular-modules) outlines an opinionated guide to Angular syntax, conventions, and application structure.
+The [Angular coding style guide](https://angular.io/guide/styleguide#!#application-structure-and-angular-modules) outlines an opinionated guide to Angular syntax, conventions, and application structure. However, different projects will have different requirements, and the idea of one size fits all, like so many other things, simply wont always work.
 
-However, different projects will have different requirements, and the idea of one size fits all, like so many other things, simply wont always work. Have a near-term view of implementation and a long-term vision. Start small but keep in mind where the app is heading down the road.
-
-The Angular CLI produces a workspace and a good suggested default layout. As such, we are mainly concerned about looking at the `src/app` folder, where all the actual logic is going to go.
-
-####
+At this point, I haven't developed a personal opinion on the ideal file and folder structure. However, I have found the video titled "How to structure your Angular apps like a Googler" (https://www.youtube.com/watch?v=7SDpTOLeqHE) quite insightful and appealing so far.
 
 ### UI Frameworks
 
