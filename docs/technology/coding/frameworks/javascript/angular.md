@@ -126,8 +126,12 @@ The Angular CLI is considered one of the highlights of the Angular framework, ma
 
 Create a new Angular workspace:
 
+- `--standalone` creates an application based upon the standalone API, without NgModules.
+- `--inline-style` include styles inline in the component TS file. By default, an external styles file is created and referenced in the component TypeScript file.
+- `--inline-template` include template inline in the component TS file. By default, an external template file is created and referenced in the component TypeScript file.
+
 ```bash
-ng new <workspace-name>
+ng new <workspace-name> --standalone --inline-style --inline-template --skip-tests
 ```
 
 - Would you like to add Angular routing? (y/N): ==Y==
@@ -157,6 +161,17 @@ Everything else, such as methods and variables, should use camelCase (i.e., requ
 
 ### Folder and File Structure
 
+https://blog.bitsrc.io/how-not-get-lost-in-my-project-feature-based-folder-structure-in-angular-16-35091577f30c
+
+Feature based folder structure
+
+core
+feature1
+feature2
+shared
+utils
+https://angular.io/guide/file-structure
+
 The Angular CLI produces a workspace and a good suggested default layout. As such, we are mainly concerned about looking at the `src/app` folder, where all the actual logic is going to go.
 
 ```bash title="workspace-name"
@@ -168,12 +183,12 @@ The Angular CLI produces a workspace and a good suggested default layout. As suc
 ├── package.json
 ├── src
 │   ├── app
-│   │   ├── app-routing.module.ts
 │   │   ├── app.component.css
 │   │   ├── app.component.html
 │   │   ├── app.component.spec.ts
 │   │   ├── app.component.ts
-│   │   └── app.module.ts
+│   │   └── app.config.ts
+│   │   └── app.routes.ts
 │   ├── assets
 │   ├── favicon.ico
 │   ├── index.html
@@ -286,126 +301,15 @@ A great starter template that you can use to copy HTML from is the [Flowbite Adm
 
 ### Fundamentals
 
-Angular applications are constructed using various fundamental elements such as Components, Templates, Directives, Pipes, and Services. These building blocks are essential in creating comprehensive applications. However, as the size of the application expands, it becomes challenging to manage and organize these blocks effectively. This is where Angular modules, also known as ngModules, come into play.
+https://www.fabiobiondi.dev/tutorials/angular/angular-standalone-apps
 
-#### Modules
-
-Angular Modules are utilized to group and consolidate related Components, Templates, Directives, Pipes, and Services, enabling cohesive units and managing dependencies between different parts of an application. To organize modules effectively, it is recommended to categorize them into four distinct categories:
-
-##### Root Module
-
-Angular requires one module to be loaded as the application starts. We call this as root module. The root module loads the root component and all other modules. The root module is conventionally called `AppModule` and created in the root of the `/src/app` folder.
-
-##### Feature Module
-
-The Feature module implements a specific feature of the Application. All the Components, Templates, Directives, Pipes, and Services which comprise of the feature become part of the module.
-
-##### Shared Module
-
-There are many Components, Templates, Directives, Pipes, and Services we may like to share across various modules. All these items should go into the shared module.
-
-##### Core Module
-
-- Create a module via the Angular CLI
-
-  ```bash
-  ng generate module <module-name>
-  ```
-
-- Create a component, register it within a module, and add it to its exports property so that other modules can use it.
-
-  - Angular CLI syntax
-
-    ```bash
-    ng generate component <module-name>/<component-name> --module=<module-name> --export
-    ```
-
-  - Example
-
-    ```bash
-    ng generate component core/header --module=core --export
-    ```
-
-    ```bash title="app/core/core.module.ts" hl_lines="3 13"
-    import { NgModule } from '@angular/core';
-    import { CommonModule } from '@angular/common';
-    import { HeaderComponent } from './header/header.component';
-
-    @NgModule({
-      declarations: [
-        HeaderComponent
-      ],
-      imports: [
-        CommonModule
-      ],
-      exports: [
-        HeaderComponent
-      ]
-    })
-
-    export class CoreModule { }
-    ```
-
-  - Import the module into the AppModule to register the module globally in AppModule
-
-    ```bash title="app.module.ts" hl_lines="6 17"
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-
-    import { AppRoutingModule } from './app-routing.module';
-    import { AppComponent } from './app.component';
-    import { CoreModule } from './core/core.module';
-
-
-    @NgModule({
-      declarations: [
-        AppComponent,
-
-      ],
-      imports: [
-        BrowserModule,
-        AppRoutingModule,
-        CoreModule
-
-      ],
-      providers: [],
-      bootstrap: [AppComponent]
-    })
-
-    export class AppModule { }
-    ```
-
-#### Components
-
-Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
-
-- Create a component with the CLI
-
-  ```bash
-  ng generate component <component-name>
-  ```
-
-#### Templates
-
-TODO
-
-#### Directives
-
-TODO
-
-#### Services
-
-A service is a class that provides shared functionality or data to multiple components in your application. Services are used to centralize common functionality, such as data fetching from an API, sharing data between components, or performing utility operations.
-
-- Create a service via Angular CLI
-
-  ```bash
-  ng generate service <service-name>
-  ```
+ng new <workspace-name> --standalone --inline-style 1 --inline-template 1
 
 ## References
 
 - [Angular Tutorial for Beginners](https://www.youtube.com/watch?v=k5E2AVpwsko)
+
+- [Different layout for different pages](https://stackoverflow.com/questions/46527826/best-method-to-set-different-layout-for-different-pages-in-angular-4)
 
 ### Tutorials
 
