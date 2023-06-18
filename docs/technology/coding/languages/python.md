@@ -11,7 +11,7 @@ The venv module is a built-in module in Python that provides support for creatin
 - Create a Python Virtual Environment
 
   ```bash
-  python3.10 -m venv .venv
+  python3.11 -m venv .venv
   ```
 
 - Activate the Python Virtual Environment

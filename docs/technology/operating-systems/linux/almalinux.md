@@ -49,7 +49,7 @@ A distributed version control system that allows multiple people to collaborate 
   git config --global user.email "email for git account"
   ```
 
-### Python 3.10
+### Python 3.11.4
 
 A high-level, interpreted programming language known for its simplicity and readability. It emphasizes code readability and offers a wide range of libraries and frameworks that make it versatile for various applications. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. It is widely used for web development, data analysis, scientific computing, artificial intelligence, and automation tasks.
 
@@ -63,9 +63,9 @@ A high-level, interpreted programming language known for its simplicity and read
 - Install
 
   ```bash
-  wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
-  tar xzf Python-3.10.5.tgz
-  cd Python-3.10.5
+  wget https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tgz
+  tar xzf Python-3.11.4.tgz
+  cd Python-3.11.4
   ./configure --with-system-ffi --with-computed-gotos --enable-loadable-sqlite-extensions
   sudo make -j ${nproc}
   sudo make altinstall
